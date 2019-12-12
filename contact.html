@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+* {
+    padding: 0;
+    margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 0px;
+  background:#f1f1f1;
+  margin:0px;
+}
+
+.big{
+    background-color: #eee;
+    overflow: hidden;
+  }
+  .big a{
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 5px;
+  }
+  .big a:hover{
+    background-color:rgba(201, 208, 241, 0.575);
+    color:black;
+  }
+  .big a.active{
+    background-color: #eee;
+    color: black;
+  }
+  .fonts{
+font-family: 'Poppins', sans-serif;
+
+  }
+
+
+.Contact11 {
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(90deg, #66ccff , #0066ff);
+  
+}
+
+.Contact11 h1 {
+  font-size: 50px;
+  color: white;
+}
+
+
+.leftcolumn {   
+  float: left;
+  width: 60%;
+  background-color: #f1f1f1;
+  
+}
+.input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display:inline-block;
+}
+
+input[type=submit] {
+  background-color: #66ccff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  width: 250px;
+  cursor: pointer;
+  float: left;
+  margin-top: 7px;
+}
+
+input[type=submit]:hover {
+  background-color: #66ccff;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  height: 535px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ margin-right: 20px;
+ margin-left: 50px;
+ 
+}
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 40%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+
+  
+ 
+}
+
+
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 17px;
+  border-radius: 25px;
+  height: 260px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 50px;
+  margin-left: 2px;
+  
+  
+}
+
+
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer{
+    width: 100%;
+    background: black;
+    display: block;
+}
+.inner-footer{
+    width: 95%;
+    margin: auto;
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.footer-items{
+    width: 33%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+h1{
+    padding: 15px 0;
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer-items p{
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 25px;
+}
+ul{
+    list-style: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+ul a{
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    transition: 0.3s;
+}
+ul li{
+    margin: 5px 0;
+    height: 25px;
+}
+.social-media{
+    width: 100%;
+    color: #fff;
+}
+
+.social-media a{
+    text-decoration: none;
+}
+.social-media i{
+    height: 30px;
+    width: 30px;                                                                                                                                                                                                                                                                                                                                                                            
+    margin-right: 40px;
+    color: #fff;
+    transition: 0.3s;
+}
+.social{
+    font-size: 20px;
+}
+.social li{
+    margin-bottom: 15px;
+}
+.footer-bottom{
+    padding: 10px;
+    text-align: center;
+    background: black;
+    color: #fff;
+    font-size: 12px;
+}
+@media screen and (max-width:940px)
+{   .footer-items{
+        width: 50%;
+    }
+
+}
+@media screen and (max-width:600px)
+{
+    .footer-items{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+  .leftcolumn, .rightcolumn {   
+    width: 80vw;
+    padding: 0;
+    align-items: center;
+    align-content: center;
+    margin: 0vh 10vw;
+  }
+  .card{
+    margin: 5vh 12vw;
+    width: 80%;
+}
+
+
+@media screen and (max-width: 600px) {
+  .leftcolumn, .rightcolumn {   
+    width: 80vw;
+    padding: 0;
+    align-items: center;
+    align-content: center;
+    margin: 0vh 10vw;
+  }
+  .card{
+    margin: 5vh 12vw;
+    width: 80%;
+  }
+}
+
+  
+
+
+</style>
+</head>
+<body>
+
+        
+  
+
+
+        
+    </div>
+    <div class="Contact11">
+            <h1>Contact</h1>
+    </div>
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+   <div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <label class="required" for="name">Full name:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="50" /><br />
+    <span id="name_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email"> Email address:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="50" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+        <label class="required" for="phoneno"> Phone no:</label><br />
+        <input id="phoneno" class="input" name="phoneno" type="text" value="" size="50" /><br />
+        <span id="phoneno_validation" class="error_message"></span>
+      </div>
+  <div class="row">
+    <label class="required" for="message"> Message:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="47.5"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+    
+    <input id="submit_button" type="submit" value="send message" />
+  </form>
+</div>
+    
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      
+      <h2> Contact info</h2>
+      <br>
+      <p><b>Address</b></p>
+      <p>Vellore Institute Of Technology, Vellore 632014, Tamilnadu</p>
+      <br>
+      <p><b>Phone</b></p>
+      <p>223344555</p>
+      <br>
+      <p><b>Email</b></p>
+      <p> xyz@adgvit.com</p>
+    </div>
+    
+    <div class="card">
+      <h2>More info</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo perspiciatis praesentium, ab veritatis voluptas earum expedita porro at quae. Dolorem esse ipsum repellendus officia assumenda. Pariatur atque voluptas quo? Aut?</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+        <div class="inner-footer">
+            <div class="footer-items">
+                <h1>About</h1>
+                 <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae non vitae laudantium eligendi
+    
+                 </p>
+            </div>
+    
+            <div class="footer-items">
+                    <h1>Quick Links</h1>
+                     <div class="border">
+                         <ul>
+                             <a href="#"><li>Home</li></a>
+                             <a href="#"><li>About</li></a>
+                             <a href="#"><li>Event</li></a>
+                             <a href="#"><li>Support Us</li></a>
+                             <a href="#"><li>Contact</li></a>
+                         </ul>
+                     </div>
+                </div>
+                    <div class="footer-items">
+                            <h1>Social</h1>
+                            <div class="border">
+                             <div class="social-media">
+                                 <ul class="social">
+                                    <li><a href="https://www.facebook.com/vitios/" target="_blank"><i class="fa fa-facebook " aria-hidden="true"></i>Facebook</a></li>
+                                     <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><i class="fa fa-linkedin " aria-hidden="true"></i>Linkedin</a></li>
+                                     <li><a href="https://www.instagram.com/adgvit/" target="_blank"><i class="fa fa-instagram " aria-hidden="true"></i>Instagram</a></li>
+                                     <li><a href="#" target="_blank"><i class="fa fa-twitter " aria-hidden="true"></i>Twitter</a></li>
+                                 </ul>
+                             </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="footer-bottom">
+            Copyright &copy; 2k19 Apple Developers Group
+        </div>
+    </div>
+    </div>
+
+
+
+
+</body>
+</html>
