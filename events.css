@@ -7,7 +7,7 @@ body
 .text
 {
     color:white;
-    font-size: 50px;
+    font-size: 60px;
     text-align:center;
     padding-top: 5%;
     background: linear-gradient(to left, #0099cc 0%, #00ccff 98%);
@@ -156,7 +156,7 @@ body
 }*/
 .column2{
     width: 100%;
-    padding-left: 8%;
+    padding-left: 10%;
     padding-right: 8%;
     /* float: left; */
     /* padding: 30px 10px; */
@@ -166,7 +166,7 @@ body
 {
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
     max-width: 80vw;
-    margin: 2vh 10vw;
+    margin: 4vh 8vw;
     height: auto;
     width: 750px;
     /* margin-top: 15px; */
@@ -176,9 +176,10 @@ body
     /* padding-bottom: 15px; */
 }
 .ig{
-    width: 55vw;
+    width: 50vw;
     height: 50vh;
     padding: 4%;
+    border-radius: 10%;
 }
 
 /*.view-tran:hover a.info 
