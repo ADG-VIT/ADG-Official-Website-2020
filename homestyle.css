@@ -182,11 +182,21 @@ nav{
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: center;
+    /* text-align: center; */
 }
 .footer-items{
     width: 33%;
     padding: 10px 20px;
     box-sizing: border-box;
+}
+.foot1{
+    margin-right: 30px;
+}
+.foot2{
+    margin-left: 10vw;
+}
+.foot3{
+    float: right;
 }
 h1{
     padding: 15px 0;
@@ -411,3 +421,5 @@ ul li{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
+/* #56ccF2
+#2F80ED */
