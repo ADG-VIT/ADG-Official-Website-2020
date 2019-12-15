@@ -48,7 +48,6 @@ nav{
 {
     display: flex;
     width: 50%;
-    /* background-color: red; */
     justify-content: space-around;
     /* margin-left: 40vw; */
     
@@ -62,9 +61,12 @@ nav{
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 20px;
+    padding: 10px;
 }
 .nav-links a:hover{
     color: #0066ff;
+    /* background: #488aec ; */
+    font-size: 25px;
 }
 .burger{
     display: none;
@@ -102,6 +104,7 @@ nav{
     font-weight: 700;
     font-size: 3.5em;
     color: black;
+    letter-spacing: 0.08em;
 }
 .column{
     width: 50%;
@@ -133,9 +136,14 @@ nav{
 .title{
     color: black;
     font-size: 20px;
-    margin: 35px 0;
+    margin: 20px 0 10px 0;
+    padding: 0 10px;
 }
-
+.events{
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
 /* .head1{
     margin: 20px;
 } */
@@ -147,7 +155,7 @@ nav{
 }
 
 .column2{
-    width: 25%;
+    width: 20%;
     float: left;
     padding: 30px 10px;
 }
@@ -169,6 +177,9 @@ nav{
     margin: 20px;
     text-justify: auto;
 }
+.img3{
+    width: 100px; height: 100px; padding-top: 10px; margin: 30px;
+}
 .footer{
     width: 100%;
     background: black;
@@ -176,13 +187,14 @@ nav{
 }
 .inner-footer{
     width: 95%;
-    margin: auto;
-    padding: 10px 10px;
+    margin: 0 auto;
+    padding: 0px 10px;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: center;
     /* text-align: center; */
+    /* height: 32vh; */
 }
 .footer-items{
     width: 33%;
@@ -190,36 +202,36 @@ nav{
     box-sizing: border-box;
 }
 .foot1{
-    margin-right: 30px;
+    margin-right: 80px;
 }
-.foot2{
+/* .foot2{
     margin-left: 10vw;
 }
 .foot3{
     float: right;
-}
+} */
 h1{
     padding: 15px 0;
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
     text-transform: uppercase;
 }
 .footer-items p{
-    color: #fff;
-    font-size: 18px;
+    color: rgb(212, 209, 209);
+    font-size: 14px;
     text-align: justify;
-    line-height: 25px;
+    line-height: 24px;
 }
 ul{
     list-style: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.5px;
 }
 ul a{
     text-decoration: none;
     outline: none;
-    color: #fff;
+    color: rgb(212, 209, 209);
     transition: 0.3s;
 }
 ul li{
@@ -228,7 +240,7 @@ ul li{
 }
 .social-media{
     width: 100%;
-    color: #fff;
+    color: rgb(212, 209, 209);
 }
 
 .social-media a{
@@ -238,11 +250,11 @@ ul li{
     height: 30px;
     width: 30px;                                                                                                                                                                                                                                                                                                                                                                            
     margin-right: 40px;
-    color: #fff;
+    color: rgb(212, 209, 209);
     transition: 0.3s;
 }
 .social{
-    font-size: 20px;
+    font-size: 18px;
 }
 .social li{
     margin-bottom: 15px;
@@ -292,18 +304,30 @@ ul li{
     .nav-links li{
         opacity: 0;
     }
+    
     .card{
-        height: 30vh;
+        width: 40vw;
+        height: 40vh;
+        margin: 0 5vw;
+        padding: 0;
     }
     .column2{
         width: 50%;
         align-items: center;
     }
+    /* .column2:nth-child(5){
+        width: 100vw;
+        margin: 0 30vw;    
+    }
+  
+    .card2{
+        margin: 0;
+    } */
     .head1{
         margin: 0px;
     }
-    .footer-items{
-        width: 50%;
+    .foot1{
+        margin-right: 50px;
     }
 
 }
@@ -343,7 +367,8 @@ ul li{
         margin: 5px 0;
     }
     .head1{
-        margin: 3vh;
+        margin-top: 3vh;
+        margin-bottom: 2.5vh;
     }
     .column{
         width: 100%;
@@ -358,7 +383,7 @@ ul li{
     .card{
         margin: 0vh 10vw;
         width: 80vw;
-        height: 38vh;
+        height: 42vh;
         align-items: center;
         align-content: center;
     }
@@ -380,6 +405,13 @@ ul li{
     }
     .footer-items{
         width: 100%;
+        padding: 5px 20px;
+    }
+    .foot1{
+        margin-right: 0px;
+    }
+    .img3{
+        margin: 15px;
     }
 }
 .nav-active{
@@ -387,7 +419,7 @@ ul li{
     display: flex;
     /* visibility: visible; */
 }
-@media screen and (max-width:350px)
+@media screen and (max-width:400px)
 {
     .card{
         margin: 0vh 10vw;
@@ -395,6 +427,9 @@ ul li{
         height: 42vh;
         align-items: center;
         align-content: center;
+    }
+    .hd{
+        font-size: 1.5em;
     }
     .img2{
         width: 80px;
