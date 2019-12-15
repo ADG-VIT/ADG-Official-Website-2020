@@ -1,0 +1,324 @@
+ /*.big {
+    background-color: white;
+    overflow: hidden;
+}
+
+.big a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.big a:hover {
+    background-color: rgba(201, 208, 241, 0.575);
+    color: black;
+}
+
+.big a.active {
+    background-color: white;
+    color: black;
+}
+*/
+nav{
+    display: flex;
+    /* position: fixed; */
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: #fff;
+}
+.logo{
+    display: flex;
+    text-transform: uppercase;
+    /* letter-spacing: 2px; */
+    font-size: 20px;
+    width: 50%;
+    margin-bottom: 1.5vh;
+}
+.adg-logo{
+    width: 35px; 
+    height: 35px; 
+    margin-top: 1.5vh;
+    margin-left: 2vw;
+}
+.hd1{
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+.nav-links
+{
+    display: flex;
+    width: 50%;
+    /* background-color: red; */
+    justify-content: space-around;
+    /* margin-left: 40vw; */
+    
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav-links a:hover{
+    color: #0066ff;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #0066ff;
+    margin: 5px;
+    transition: 0.3s;
+}
+.fonts {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about_us {
+    background: rgb(47, 166, 187);
+    font-size: 5vw;
+    color: white;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: bold;
+}
+
+.textsection1 {
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: justify;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    padding-top: 4%;
+    text-align: justify;
+    padding-bottom: 4%;
+}
+
+.image1 {
+    /* background-image: url(image1.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+}
+
+.image2 {
+    /* background-image: url(image2.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+}
+
+.text2 {
+    font-size: 4vw;
+    color: black;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: bold;
+    line-height: 90%;
+}
+
+.textinside {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.black {
+    background: black;
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    background: black;
+    display: block;
+}
+
+.inner-footer {
+    width: 95%;
+    margin: auto;
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.footer-items {
+    width: 33%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 15px 0;
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer-items p {
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+ul {
+    list-style: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+ul a {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+ul li {
+    margin: 5px 0;
+    height: 25px;
+}
+
+.social-media {
+    width: 100%;
+    color: #fff;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media i {
+    height: 30px;
+    width: 30px;
+    margin-right: 40px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.social {
+    font-size: 20px;
+}
+
+.social li {
+    margin-bottom: 15px;
+}
+
+.footer-bottom {
+    padding: 10px;
+    text-align: center;
+    background: black;
+    color: #fff;
+    font-size: 12px;
+}
+
+#grad {
+    background-color: red;
+    background-image: linear-gradient(to bottom right, rgb(101, 195, 233), rgb(66, 83, 231));
+}
+
+@media screen and (max-width:1080px) {
+    body{
+        overflow-x: hidden;
+    }
+    .logo{
+        width: 60%;
+        margin-right: 94px;
+    }
+    .nav{
+        width: 10%;
+    }
+    .hd1{
+        font-size: 15px;
+    }
+    .adg-logo{
+        margin-top: 2vh;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px ;
+        height: 92vh;
+        top: 8vh;
+        background-color: #f3f4f7;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+        padding: 0;
+    }
+    .nav-links a{
+        color: black;
+        text-decoration: none;
+        /* letter-spacing: 3px; */
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .footer-items {
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .footer-items {
+        width: 100%;
+    }
+    
+}
+.nav-active{
+    transform: translate(0%);
+    display: flex;
+    /* visibility: visible; */
+}
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
