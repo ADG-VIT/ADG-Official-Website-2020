@@ -3,7 +3,8 @@
 <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <link rel="icon" type="image/jpeg" href="/assets/adg logo.png">
+        <title>ADG | VIT Vellore</title>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
 * {
@@ -65,6 +66,7 @@ nav{
 }
 .nav-links a:hover{
     color: #0066ff;
+    font-size: 25px;
 }
 .burger{
     display: none;
@@ -210,6 +212,9 @@ input[type=submit]:hover {
     .nav{
         width: 10%;
     }
+    .hd1{
+      font-size: 15px;
+    }
     .nav-links{
         position: absolute;
         right: 0px ;
@@ -308,12 +313,13 @@ input[type=submit]:hover {
 }
 .inner-footer{
     width: 95%;
-    margin: auto;
-    padding: 10px 10px;
+    margin: 0 auto;
+    padding: 0px 10px;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: center;
+    /* height: 32vh; */
 }
 .footer-items{
     width: 33%;
@@ -322,26 +328,29 @@ input[type=submit]:hover {
 }
 h1{
     padding: 15px 0;
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
     text-transform: uppercase;
 }
 .footer-items p{
-    color: #fff;
-    font-size: 18px;
+    color: rgb(212, 209, 209);
+    font-size: 14px;
     text-align: justify;
     line-height: 25px;
 }
+.foot1{
+    margin-right: 100px;
+}
 ul{
     list-style: none;
-    color: #fff;
+    color: rgb(212, 209, 209);
     font-size: 18px;
     letter-spacing: 0.5px;
 }
 ul a{
     text-decoration: none;
     outline: none;
-    color: #fff;
+    color: rgb(212, 209, 209);
     transition: 0.3s;
 }
 ul li{
@@ -350,7 +359,7 @@ ul li{
 }
 .social-media{
     width: 100%;
-    color: #fff;
+    color: rgb(212, 209, 209);
 }
 
 .social-media a{
@@ -360,11 +369,11 @@ ul li{
     height: 30px;
     width: 30px;                                                                                                                                                                                                                                                                                                                                                                            
     margin-right: 40px;
-    color: #fff;
+    color: rgb(212, 209, 209);
     transition: 0.3s;
 }
 .social{
-    font-size: 20px;
+    font-size: 18px;
 }
 .social li{
     margin-bottom: 15px;
@@ -376,9 +385,12 @@ ul li{
     color: #fff;
     font-size: 12px;
 }
-@media screen and (max-width:940px)
-{   .footer-items{
-        width: 50%;
+@media screen and (max-width:1080px)
+{   .head1{
+        margin: 0px;
+    }
+    .foot1{
+        margin-right: 50px;
     }
 
 }
@@ -386,6 +398,10 @@ ul li{
 {
     .footer-items{
         width: 100%;
+        padding: 5px 20px;
+    }
+    .foot1{
+        margin-right: 0px;
     }
 }
 
@@ -456,9 +472,6 @@ ul li{
                     </li>
                     <li>
                         <a href="events.html"> Event</a>
-                    </li>
-                    <li>
-                        <a href="#">Support Us</a>
                     </li>
                     <li>
                             <a href="contact.html">Contact</a>
@@ -536,13 +549,14 @@ ul li{
 <div class="footer">
         <div class="inner-footer">
             <div class="footer-items">
+              <div class="foot1">
                 <h1>About</h1>
                  <p>
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae non vitae laudantium eligendi
+                    Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. It is a registered student community at VIT, Vellore established under the Apple University program. A coterie of talented minds seeking not just success but perfection.
     
                  </p>
             </div>
-    
+          </div>
             <div class="footer-items">
                     <h1>Quick Links</h1>
                      <div class="border">
