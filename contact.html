@@ -14,9 +14,9 @@
 }
 
 body {
-  font-family: Arial;
+  
   padding: 0px;
-  background:#f1f1f1;
+  background:white;
   margin:0px;
 }
 nav{
@@ -107,22 +107,26 @@ font-family: 'Poppins', sans-serif;
 
 
 .Contact11 {
-  padding: 30px;
-  text-align: center;
-  background: linear-gradient(90deg, #66ccff , #0066ff);
+  padding-top: 4%;
+  padding-bottom:4%;
+
+  background: linear-gradient(90deg, #56ccf2 , #2f80ad);
   
 }
 
 .Contact11 h1 {
-  font-size: 50px;
+  font-size: 80px;
   color: white;
+  font-family: Arial;
+  text-align: center;
+  text-transform:capitalize;
 }
 
 
 .leftcolumn {   
   float: left;
-  width: 60%;
-  background-color: #f1f1f1;
+  width: 70%;
+  background-color: white;
   
 }
 .input[type=text], select, textarea {
@@ -148,13 +152,13 @@ label {
 input[type=submit] {
   background-color: #66ccff;
   color: white;
-  padding: 12px 20px;
+  padding: 15px 30px;
   border: none;
   border-radius: 12px;
   width: 250px;
   cursor: pointer;
   float: left;
-  margin-top: 7px;
+  margin-top: 10px;
 }
 
 input[type=submit]:hover {
@@ -167,9 +171,9 @@ input[type=submit]:hover {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border-radius: 25px;
-  height: 535px;
+  height: 540px;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  margin-right: 20px;
  margin-left: 50px;
@@ -239,15 +243,15 @@ input[type=submit]:hover {
     }
   .col-25, .col-75, input[type=submit] {
     width: 100%;
-    margin-top: 0;
+    margin-top: 10px;
   }
 }
 
 /* Right column */
 .rightcolumn {
   float: left;
-  width: 40%;
-  background-color: #f1f1f1;
+  width: 30%;
+  background-color: white;
   padding-left: 20px;
 
   
@@ -401,31 +405,48 @@ ul li{
     }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 9px) {
   .leftcolumn, .rightcolumn {   
     width: 80vw;
     padding: 0;
     align-items: center;
     align-content: center;
-    margin: 0vh 10vw;
+    margin: 0 0;
   }
   .card{
-    margin: 5vh 12vw;
-    width: 80%;
+    margin: 5vh 10vw;
+     width: 80vw;
+    margin-left:72px;
 }
+
+.container{
+      margin: 5vh 10vw;
+      width: 80vw;
+}
+}
+
 
 
 @media screen and (max-width: 600px) {
   .leftcolumn, .rightcolumn {   
-    width: 80vw;
+    width: 100%;
     padding: 0;
     align-items: center;
     align-content: center;
-    margin: 0vh 10vw;
+    margin: 0 ;
   }
   .card{
-    margin: 5vh 12vw;
-    width: 80%;
+    margin: 10vh 10vw;
+    width: 80vw;
+    margin-top: 5vw;
+  }
+  .container{
+      margin: 5vh 10vw;
+      width: 80vw;
+      
+  }
+  .Contact11 h1 {
+      font-size:60px;
   }
 }
 
@@ -467,7 +488,7 @@ ul li{
         
     </div>
     <div class="Contact11">
-            <h1>Contact</h1>
+            <h1> Contact </h1>
     </div>
 
 
@@ -475,7 +496,7 @@ ul li{
 <div class="row">
   <div class="leftcolumn">
    <div class="container">
-  <form action="/action_page.php">
+  <form action="https://formspree.io/appledevelopersgroup@gmail.com" method="POST">
   <div class="row">
     <label class="required" for="name">Full name:</label><br />
     <input id="name" class="input" name="name" type="text" value="" size="50" /><br />
@@ -519,6 +540,7 @@ ul li{
     
     <div class="card">
       <h2>More info</h2>
+      <br>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo perspiciatis praesentium, ab veritatis voluptas earum expedita porro at quae. Dolorem esse ipsum repellendus officia assumenda. Pariatur atque voluptas quo? Aut?</p>
     </div>
   </div>
