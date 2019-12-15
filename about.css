@@ -172,15 +172,15 @@ nav{
 }
 
 h1 {
-    padding: 15px 0;
-    font-size: 25px;
+    padding: 6px;
+    font-size: 18px;
     color: #fff;
     text-transform: uppercase;
 }
 
 .footer-items p {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
     line-height: 25px;
 }
@@ -188,7 +188,7 @@ h1 {
 ul {
     list-style: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 0.5px;
 }
 
