@@ -226,7 +226,7 @@ nav{
 
 .card2
 {
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    box-shadow: 0 4px 8px 0 rgba(70, 70, 70, 0.185);
     width: 60vw;
     margin: 4vh 20vw;
     height: auto;
