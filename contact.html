@@ -32,7 +32,7 @@ nav{
     text-transform: uppercase;
     /* letter-spacing: 2px; */
     font-size: 20px;
-    width: 50%;
+    width: 60%;
     margin-bottom: 1.5vh;
 }
 .adg-logo{
@@ -44,11 +44,13 @@ nav{
 .hd1{
     margin-top: 2vh;
     margin-left: 2vh;
+    word-spacing: 3px;
+    letter-spacing: 2px;
 }
 .nav-links
 {
     display: flex;
-    width: 50%;
+    width: 40%;
     /* background-color: red; */
     justify-content: space-around;
     /* margin-left: 40vw; */
@@ -63,6 +65,7 @@ nav{
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 20px;
+    margin: 10px 10px 10px 20px;
 }
 .nav-links a:hover{
     color: #0066ff;
@@ -234,12 +237,14 @@ input[type=submit]:hover {
         /* letter-spacing: 3px; */
         font-weight: bold;
         font-size: 15px;
+        margin-bottom: 12vh;
     }
     .burger{
         display: block;
     }
     .nav-links li{
         opacity: 0;
+        margin-bottom: 12vh;
     }
   .col-25, .col-75, input[type=submit] {
     width: 100%;
@@ -396,9 +401,20 @@ ul li{
 }
 @media screen and (max-width:600px)
 {
+  .adg-logo{
+        width: 40px; 
+        height: 40px; 
+        margin-top: 2vh;
+        margin-left: 5px;
+    }
     .footer-items{
         width: 100%;
         padding: 5px 20px;
+    }
+    .hd1{
+      font-size: 17px;
+        letter-spacing: 0;
+        margin-left: 10px;
     }
     .foot1{
         margin-right: 0px;
