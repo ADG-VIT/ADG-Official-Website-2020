@@ -36,7 +36,7 @@ nav{
     text-transform: uppercase;
     /* letter-spacing: 2px; */
     font-size: 20px;
-    width: 50%;
+    width: 60%;
     margin-bottom: 1.5vh;
 }
 .adg-logo{
@@ -48,14 +48,17 @@ nav{
 .hd1{
     margin-top: 2vh;
     margin-left: 2vh;
+    word-spacing: 3px;
+    letter-spacing: 2px;    
 }
 .nav-links
 {
     display: flex;
-    width: 50%;
+    width: 40%;
     /* background-color: red; */
     justify-content: space-around;
     /* margin-left: 40vw; */
+    margin: 0 0 5px 0;
     
 }
 .nav-links li{
@@ -67,6 +70,7 @@ nav{
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 20px;
+    margin: 10px 10px 10px 20px;
 }
 .nav-links a:hover{
     color: #0066ff;
@@ -176,8 +180,8 @@ nav{
     margin-right: 100px;
 }
 h1 {
-    padding: 15px 0;
-    font-size: 20px;
+    padding: 6px;
+    font-size: 18px;
     color: #fff;
     text-transform: uppercase;
 }
@@ -262,7 +266,7 @@ ul li {
         font-size: 15px;
     }
     .adg-logo{
-        margin-top: 2vh;
+        margin-top: 15px;
     }
     .nav-links{
         position: absolute;
@@ -276,7 +280,6 @@ ul li {
         width: 50%;
         transform: translate(100%);
         transition: transform 0.5s ease-in;
-        padding: 0;
     }
     .nav-links a{
         color: black;
@@ -284,12 +287,14 @@ ul li {
         /* letter-spacing: 3px; */
         font-weight: bold;
         font-size: 15px;
+        /* margin-bottom: 12vh; */
     }
     .burger{
         display: block;
     }
     .nav-links li{
         opacity: 0;
+        margin-bottom: 12vh;
     }
     .head1{
         margin: 0px;
@@ -304,12 +309,18 @@ ul li {
     /* .inner-footer{
         height: 250px;
     } */
+    
     .footer-items{
         width: 100%;
         padding: 5px 20px;
     }
     .foot1{
         margin-right: 0px;
+    }
+    .hd1{
+        font-size: 17px;
+        letter-spacing: 0;
+        margin-left: 10px;
     }
     
 }

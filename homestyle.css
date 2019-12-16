@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
+    
 }
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 /* .parent {
     overflow: scroll;
@@ -31,7 +33,7 @@ nav{
     text-transform: uppercase;
     /* letter-spacing: 2px; */
     font-size: 20px;
-    width: 50%;
+    width: 60%;
     margin-bottom: 1.5vh;
 }
 .adg-logo{
@@ -43,11 +45,13 @@ nav{
 .hd1{
     margin-top: 2vh;
     margin-left: 2vh;
+    word-spacing: 3px;
+    letter-spacing: 2px;
 }
 .nav-links
 {
     display: flex;
-    width: 50%;
+    width: 40%;
     justify-content: space-around;
     /* margin-left: 40vw; */
     
@@ -61,7 +65,7 @@ nav{
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 20px;
-    padding: 10px;
+    padding: 10px 7px 5px 15px;
 }
 .nav-links a:hover{
     color: #0066ff;
@@ -88,28 +92,50 @@ nav{
     background-position: center center;
     background-attachment: fixed;
     height: 92vh;
+    /* overflow: hidden; */
 }
 .txt{
     text-align: center;
     padding-top: 44vh;
-    font-size: 8vh;
+    /* font-size: 8vh; */
+    /* padding: 0;
+    margin: 0; */
+    /* position: absolute; */
+    font-size: 50px;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
     font-weight: 500;
     color: white;
     letter-spacing: 0.1em;
+    /* animation-name: fadeinBig;
+    animation-duration: 1.5s;    */
 }
-
+/* @keyframes fadeinBig {
+    from{
+        transform: translateX(-150px);
+        opacity: 0;
+        font-size: 0px;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+        font-size: 50px;
+    }
+} */
 .heading1{
     text-align: center;
     margin-top: 15px;
     font-weight: 700;
     font-size: 3.5em;
-    color: black;
+    color: black !important;
     letter-spacing: 0.08em;
 }
 .column{
     width: 50%;
     float: left;
-    padding: 15px 10px; 	
+    padding: 15px 10px;
+    overflow-x: hidden; 	
 }
 .row::after{
     content: "";
@@ -118,7 +144,7 @@ nav{
 }
 .card
 {
-    box-shadow: 0px 0px 50px rgba(0,0,0,0.16);
+    box-shadow: 0px 0px 50px rgba(103, 75, 231, 0.103);
     width: 22vw;
     height: 39.5vh;
     margin: 0px 14vw;
@@ -126,6 +152,7 @@ nav{
     text-align: center;
     border-radius: 10px;
     padding-bottom: 15px;
+    overflow: hidden
 }
 .img2{
     width: 100px; 
@@ -236,7 +263,7 @@ ul a{
 }
 ul li{
     margin: 5px 0;
-    height: 25px;
+    display: flex;
 }
 .social-media{
     width: 100%;
@@ -250,11 +277,16 @@ ul li{
     height: 30px;
     width: 30px;                                                                                                                                                                                                                                                                                                                                                                            
     margin-right: 40px;
+    margin-top: 1vh;
     color: rgb(212, 209, 209);
     transition: 0.3s;
+    padding: 0;
+    /* display: flexbox; */
+    float: left;
 }
 .social{
     font-size: 18px;
+    /* display: flex; */
 }
 .social li{
     margin-bottom: 15px;
@@ -297,6 +329,7 @@ ul li{
         /* letter-spacing: 3px; */
         font-weight: bold;
         font-size: 15px;
+        margin-bottom: 12vh;
     }
     .burger{
         display: block;
@@ -336,24 +369,28 @@ ul li{
     
     
     .adg-logo{
-        width: 40px; 
+        width: 50px; 
         height: 40px; 
         margin-top: 2vh;
-        margin-left: 0vw;
+        margin-left: 5px;
     }
     .txt{
         text-align: center;
     padding-top: 44vh;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 500;
     color: white;
     letter-spacing: 0.1em;
+    /* animation-name: fadein;
+    animation-duration: 1.5s; */
     }
     
     .hd1{
-        font-size: 2vh;
+        font-size: 17px;
         letter-spacing: 0;
-        margin-left: 1vw;
+        margin-left: 10px;
+        /* word-spacing: 0px; */
+        /* letter-spacing: 0px; */
     }
     .img2{
         margin: 20px;
@@ -419,6 +456,18 @@ ul li{
     display: flex;
     /* visibility: visible; */
 }
+/* @keyframes fadein {
+    from{
+        transform: translateX(-150px);
+        opacity: 0;
+        font-size: 0px;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+        font-size: 24px;
+    }
+} */
 @media screen and (max-width:400px)
 {
     .card{
