@@ -23,7 +23,70 @@
     color: black;
 }
 */
-
+nav{
+    display: flex;
+    /* position: fixed; */
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: #fff;
+}
+.logo{
+    display: flex;
+    text-transform: uppercase;
+    /* letter-spacing: 2px; */
+    font-size: 20px;
+    width: 60%;
+    margin-bottom: 1.5vh;
+}
+.adg-logo{
+    width: 35px; 
+    height: 35px; 
+    margin-top: 1.5vh;
+    margin-left: 2vw;
+}
+.hd1{
+    margin-top: 2vh;
+    margin-left: 2vh;
+    word-spacing: 3px;
+    letter-spacing: 2px;    
+}
+.nav-links
+{
+    display: flex;
+    width: 40%;
+    /* background-color: red; */
+    justify-content: space-around;
+    /* margin-left: 40vw; */
+    margin: 0 0 5px 0;
+    
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 10px 10px 20px;
+}
+.nav-links a:hover{
+    color: #0066ff;
+    font-size: 25px;    
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #0066ff;
+    margin: 5px;
+    transition: 0.3s;
+}
 .fonts {
     font-family: 'Poppins', sans-serif;
 }
@@ -99,12 +162,13 @@
 
 .inner-footer {
     width: 95%;
-    margin: auto;
-    padding: 10px 10px;
+    margin: 0 auto;
+    padding: 0px 10px;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: center;
+    height: auto;
 }
 
 .footer-items {
@@ -112,32 +176,35 @@
     padding: 10px 20px;
     box-sizing: border-box;
 }
-
+.foot1{
+    margin-right: 100px;
+}
 h1 {
-    padding: 15px 0;
-    font-size: 25px;
+    padding: 6px;
+    font-size: 18px;
     color: #fff;
     text-transform: uppercase;
 }
 
 .footer-items p {
-    color: #fff;
-    font-size: 18px;
+    color: rgb(212, 209, 209);
+    font-size: 14px;
     text-align: justify;
     line-height: 25px;
 }
 
 ul {
     list-style: none;
-    color: #fff;
+    color: rgb(212, 209, 209);
     font-size: 18px;
     letter-spacing: 0.5px;
+    padding: 0px;
 }
 
 ul a {
     text-decoration: none;
     outline: none;
-    color: #fff;
+    color: rgb(212, 209, 209);
     transition: 0.3s;
 }
 
@@ -148,7 +215,7 @@ ul li {
 
 .social-media {
     width: 100%;
-    color: #fff;
+    color: rgb(212, 209, 209);
 }
 
 .social-media a {
@@ -159,12 +226,12 @@ ul li {
     height: 30px;
     width: 30px;
     margin-right: 40px;
-    color: #fff;
+    color: rgb(212, 209, 209);
     transition: 0.3s;
 }
 
 .social {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .social li {
@@ -184,29 +251,101 @@ ul li {
     background-image: linear-gradient(to bottom right, rgb(101, 195, 233), rgb(66, 83, 231));
 }
 
-@media screen and (max-width:940px) {
-    .footer-items {
+@media screen and (max-width:1080px) {
+    body{
+        overflow-x: hidden;
+    }
+    .logo{
+        width: 60%;
+        margin-right: 94px;
+    }
+    .nav{
+        width: 10%;
+    }
+    .hd1{
+        font-size: 15px;
+    }
+    .adg-logo{
+        margin-top: 15px;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px ;
+        height: 92vh;
+        top: 8vh;
+        background-color: #f3f4f7;
+        display: none;
+        flex-direction: column;
+        align-items: center;
         width: 50%;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
     }
-    .big a {
-        font-size: 14px;
+    .nav-links a{
+        color: black;
+        text-decoration: none;
+        /* letter-spacing: 3px; */
+        font-weight: bold;
+        font-size: 15px;
+        /* margin-bottom: 12vh; */
     }
-    .logo-image {
-        width: 50px;
+    .burger{
+        display: block;
     }
+    .nav-links li{
+        opacity: 0;
+        margin-bottom: 12vh;
+    }
+    .head1{
+        margin: 0px;
+    }
+    .foot1{
+        margin-right: 50px;
+    }
+    
 }
 
 @media screen and (max-width:600px) {
-    .footer-items {
+    /* .inner-footer{
+        height: 250px;
+    } */
+    
+    .footer-items{
         width: 100%;
+        padding: 5px 20px;
     }
-    .big a {
-        font-size: 12px;
+    .foot1{
+        margin-right: 0px;
     }
-    .logo-image {
-        width: 30px;
+    .hd1{
+        font-size: 17px;
+        letter-spacing: 0;
+        margin-left: 10px;
     }
-    .logo-name {
-        font-size: 14px;
+    
+}
+
+.nav-active{
+    transform: translate(0%);
+    display: flex;
+    /* visibility: visible; */
+}
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translate(50px);
     }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
 }
