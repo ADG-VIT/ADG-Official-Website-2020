@@ -37,6 +37,12 @@ nav{
     width: 60%;
     margin-bottom: 1.5vh;
 }
+.index{
+    text-decoration: none;
+    outline: none;
+    color: black;
+    display: flex;
+}
 .adg-logo{
     width: 35px; 
     height: 35px; 
@@ -44,7 +50,7 @@ nav{
     margin-left: 2vw;
 }
 .hd1{
-    margin-top: 2vh;
+    margin-top: 15px;
     margin-left: 2vh;
     word-spacing: 3px;
     letter-spacing: 2px;
@@ -67,11 +73,12 @@ nav{
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 20px;
-    margin: 10px 10px 10px 20px;
+    /* margin: 10px 10px 10px 20px; */
 }
 .nav-links a:hover{
     color: #0066ff;
     font-size: 25px;
+    letter-spacing: 8px;
 }
 .burger{
     display: none;
@@ -199,13 +206,13 @@ input[type=submit]:hover {
     .nav-links{
         position: absolute;
         right: 0px ;
-        height: 92vh;
+        height: 50vh;
         top: 8vh;
         background-color: #f3f4f7;
         display: none;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 100%;
         transform: translate(100%);
         transition: transform 0.5s ease-in;
     }
@@ -215,14 +222,13 @@ input[type=submit]:hover {
         /* letter-spacing: 3px; */
         font-weight: bold;
         font-size: 15px;
-        margin-bottom: 12vh;
+        padding: 0;
     }
     .burger{
         display: block;
     }
     .nav-links li{
         opacity: 0;
-        margin-bottom: 12vh;
     }
   .col-25, .col-75, input[type=submit] {
     width: 100%;
@@ -454,8 +460,10 @@ ul li{
         
     <nav>
                 <div class="logo">
+                    <a href="index.html" class="index">
                     <img src="/assets/adg logo.png" class="adg-logo" >
                     <h4 class="hd1"><b> Apple Developers Group</b></h4>
+                    </a>
                 </div>
                 <ul class="nav-links">
                     <li>
@@ -546,7 +554,7 @@ ul li{
               <div class="foot1">
                 <h1>About</h1>
                  <p>
-                    Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. It is a registered student community at VIT, Vellore established under the Apple University program. A coterie of talented minds seeking not just success but perfection.
+                  <b>Apple Developers Group (ADG)</b> is a name synonymous with excellence, simplicity and dedication. It is a registered student community at<b> VIT, Vellore</b> established under the <b>Apple University program</b>. A coterie of talented minds seeking not just success but perfection.
     
                  </p>
             </div>
