@@ -176,38 +176,23 @@ nav{
     margin-right: 100px;
 }
 h1 {
-<<<<<<< HEAD
     padding: 6px;
     font-size: 18px;
-=======
-    padding: 15px 0;
-    font-size: 20px;
->>>>>>> 9c8ad774f7ec1f13434055eb5745d331bcc88155
     color: #fff;
     text-transform: uppercase;
 }
 
 .footer-items p {
-<<<<<<< HEAD
     color: #fff;
     font-size: 16px;
-=======
-    color: rgb(212, 209, 209);
-    font-size: 14px;
->>>>>>> 9c8ad774f7ec1f13434055eb5745d331bcc88155
     text-align: justify;
     line-height: 25px;
 }
 
 ul {
     list-style: none;
-<<<<<<< HEAD
     color: #fff;
     font-size: 14px;
-=======
-    color: rgb(212, 209, 209);
-    font-size: 18px;
->>>>>>> 9c8ad774f7ec1f13434055eb5745d331bcc88155
     letter-spacing: 0.5px;
     padding: 0px;
 }
