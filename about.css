@@ -192,16 +192,16 @@ h1 {
 }
 
 .footer-items p {
-    color: rgb(212, 209, 209);
-    font-size: 14px;
+    color: #fff;
+    font-size: 16px;
     text-align: justify;
     line-height: 25px;
 }
 
 ul {
     list-style: none;
-    color: rgb(212, 209, 209);
-    font-size: 18px;
+    color: #fff;
+    font-size: 14px;
     letter-spacing: 0.5px;
     padding: 0px;
 }
