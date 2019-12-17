@@ -542,11 +542,10 @@ ul li{
         margin-top: 2vh;
         margin-left: 5px;
     }
-    .hd1{        
+    .hd1{
         font-size: 17px;
         letter-spacing: 0;
         margin-left: 10px;
-        margin-bottom: 0;
     }
     .text{
         padding: 2.5% 0;
@@ -603,7 +602,19 @@ ul li{
     display: flex;
     /* visibility: visible; */
 }
-
+@media screen and (max-width:400px)
+{
+    .adg-logo {
+        width: 37px;
+        height: 35px;
+        margin-top: 0vh;
+        margin-left: 5px;
+    }
+    .hd1{
+        font-size: 13px;
+        margin-top: 0.7vh;
+    }
+}
 @keyframes navLinkFade{
     from{
         opacity: 0;

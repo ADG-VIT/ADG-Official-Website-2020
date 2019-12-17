@@ -387,6 +387,18 @@ ul li {
     display: flex;
     /* visibility: visible; */
 }
+@media screen and (max-width:400px)
+{
+    .adg-logo {
+        width: 37px;
+        height: 35px;
+        margin-top: 2vh;
+        margin-left: 5px;
+    }
+    .hd1{
+        font-size: 13px;
+    }
+}
 @keyframes navLinkFade{
     from{
         opacity: 0;
