@@ -23,6 +23,14 @@
     color: black;
 }
 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
 nav{
     display: flex;
     /* position: fixed; */
@@ -39,6 +47,16 @@ nav{
     width: 60%;
     margin-bottom: 1.5vh;
 }
+.index{
+    text-decoration: none;
+    outline: none;
+    color: black;
+    display: flex;
+}
+.index:hover{
+    color: black;
+    text-decoration: none;
+}
 .adg-logo{
     width: 35px; 
     height: 35px; 
@@ -46,10 +64,26 @@ nav{
     margin-left: 2vw;
 }
 .hd1{
-    margin-top: 2vh;
+    margin-top: 15px;
     margin-left: 2vh;
     word-spacing: 3px;
     letter-spacing: 2px;    
+}
+.heading
+{
+    padding-bottom: 20px;
+}
+.text
+{
+    color:white;
+    font-size: 60px;
+    text-align:center;
+    padding-top: 5%;
+    background: linear-gradient(to bottom right, rgb(101, 195, 233), rgb(66, 83, 231));
+    width: 100%;
+    /* height: 200px; */
+    font-weight: bold;
+    padding-bottom: 5%;
 }
 .nav-links
 {
@@ -70,11 +104,12 @@ nav{
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 20px;
-    margin: 10px 10px 10px 20px;
+    /* margin: 10px 10px 10px 20px; */
 }
 .nav-links a:hover{
     color: #0066ff;
-    font-size: 25px;    
+    font-size: 25px;  
+    letter-spacing: 8px;  
 }
 .burger{
     display: none;
@@ -87,17 +122,13 @@ nav{
     margin: 5px;
     transition: 0.3s;
 }
-.fonts {
-    font-family: 'Poppins', sans-serif;
-}
 
 .about_us {
     background: rgb(47, 166, 187);
     font-size: 5vw;
     color: white;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    font-family: 'Poppins', sans-serif;
+    padding-top: 5%;
+    padding-bottom: 5%;
     text-decoration: bold;
 }
 
@@ -108,7 +139,6 @@ nav{
     padding-bottom: 4%;
     text-align: justify;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -140,14 +170,10 @@ nav{
     color: black;
     margin: 0%;
     padding: 0%;
-    font-family: 'Kanit', sans-serif;
     text-decoration: bold;
     line-height: 90%;
 }
 
-.textinside {
-    font-family: 'Montserrat', sans-serif;
-}
 
 .black {
     background: black;
@@ -187,16 +213,16 @@ h1 {
 }
 
 .footer-items p {
-    color: rgb(212, 209, 209);
-    font-size: 14px;
+    color: #fff;
+    font-size: 16px;
     text-align: justify;
     line-height: 25px;
 }
 
 ul {
     list-style: none;
-    color: rgb(212, 209, 209);
-    font-size: 18px;
+    color: #fff;
+    font-size: 14px;
     letter-spacing: 0.5px;
     padding: 0px;
 }
@@ -262,23 +288,27 @@ ul li {
     .nav{
         width: 10%;
     }
+    .heading{
+        text-align: center;
+        font-size: 6vh;
+    }
     .hd1{
         font-size: 15px;
     }
     .adg-logo{
-        margin-top: 15px;
+        margin-top: 20px;
     }
     .nav-links{
         position: absolute;
         right: 0px ;
-        height: 92vh;
+        height: 50vh;
         top: 8vh;
         background-color: #f3f4f7;
         display: none;
         flex-direction: column;
         align-items: center;
-        width: 50%;
-        transform: translate(100%);
+        width: 100%;
+        transform: translateY(100%);
         transition: transform 0.5s ease-in;
     }
     .nav-links a{
@@ -287,20 +317,26 @@ ul li {
         /* letter-spacing: 3px; */
         font-weight: bold;
         font-size: 15px;
-        /* margin-bottom: 12vh; */
+        padding: 0;
     }
     .burger{
         display: block;
     }
     .nav-links li{
         opacity: 0;
-        margin-bottom: 12vh;
     }
     .head1{
         margin: 0px;
     }
     .foot1{
         margin-right: 50px;
+    }
+    .text
+    {
+        /*text-align: center;*/
+        font-size: 5vh;
+        padding-bottom: 15%; 
+        height: 75px;
     }
     
 }
@@ -309,7 +345,18 @@ ul li {
     /* .inner-footer{
         height: 250px;
     } */
-    
+    .heading{
+        text-align: center;
+        /* margin-top: 15px; */
+        font-size: 4vh;
+       
+    }
+    .text{
+        padding: 2.5% 0;
+        text-align: center;
+        font-size: 40px;
+        height: auto;  
+    }
     .footer-items{
         width: 100%;
         padding: 5px 20px;
@@ -321,6 +368,16 @@ ul li {
         font-size: 17px;
         letter-spacing: 0;
         margin-left: 10px;
+    }
+    .text2{
+        font-size: 25px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+    .textsection1{
+        height: 40vh;
     }
     
 }

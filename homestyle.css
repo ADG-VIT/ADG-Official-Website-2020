@@ -3,7 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     overflow-x: hidden;
-    
+
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -28,6 +28,12 @@ nav{
     height: 8vh;
     background-color: #fff;
 }
+.index{
+    text-decoration: none;
+    outline: none;
+    color: black;
+    display: flex;
+}
 .logo{
     display: flex;
     text-transform: uppercase;
@@ -41,9 +47,10 @@ nav{
     height: 35px; 
     margin-top: 1vh;
     margin-left: 2vw;
+    overflow: hidden;
 }
 .hd1{
-    margin-top: 2vh;
+    margin-top: 15px;
     margin-left: 2vh;
     word-spacing: 3px;
     letter-spacing: 2px;
@@ -65,12 +72,13 @@ nav{
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 20px;
-    padding: 10px 7px 5px 15px;
+    /* padding: 10px 7px 5px 15px; */
 }
 .nav-links a:hover{
     color: #0066ff;
     /* background: #488aec ; */
     font-size: 25px;
+    letter-spacing: 8px;
 }
 .burger{
     display: none;
@@ -303,6 +311,12 @@ ul li{
     body{
         overflow-x: hidden;
     }
+    .adg-logo{
+        width: 50px; 
+        height: 40px; 
+        margin-top: 2vh;
+        margin-left: 5px;
+    }
     .logo{
         width: 60%;
         margin-right: 94px;
@@ -313,14 +327,14 @@ ul li{
     .nav-links{
         position: absolute;
         right: 0px ;
-        height: 92vh;
+        height: 50vh;
         top: 8vh;
         background-color: #f3f4f7;
         display: none;
         flex-direction: column;
         align-items: center;
-        width: 50%;
-        transform: translate(100%);
+        width: 100%;
+        transform: translateY(100%);
         transition: transform 0.5s ease-in;
     }
     .nav-links a{
@@ -329,7 +343,7 @@ ul li{
         /* letter-spacing: 3px; */
         font-weight: bold;
         font-size: 15px;
-        margin-bottom: 12vh;
+        padding: 0;
     }
     .burger{
         display: block;
@@ -420,7 +434,7 @@ ul li{
     .card{
         margin: 0vh 10vw;
         width: 80vw;
-        height: 42vh;
+        height: 40vh;
         align-items: center;
         align-content: center;
     }

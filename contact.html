@@ -37,6 +37,12 @@ nav{
     width: 60%;
     margin-bottom: 1.5vh;
 }
+.index{
+    text-decoration: none;
+    outline: none;
+    color: black;
+    display: flex;
+}
 .adg-logo{
     width: 35px; 
     height: 35px; 
@@ -44,7 +50,7 @@ nav{
     margin-left: 2vw;
 }
 .hd1{
-    margin-top: 2vh;
+    margin-top: 15px;
     margin-left: 2vh;
     word-spacing: 3px;
     letter-spacing: 2px;
@@ -67,11 +73,12 @@ nav{
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 20px;
-    margin: 10px 10px 10px 20px;
+    /* margin: 10px 10px 10px 20px; */
 }
 .nav-links a:hover{
     color: #0066ff;
     font-size: 25px;
+    letter-spacing: 8px;
 }
 .burger{
     display: none;
@@ -199,13 +206,13 @@ input[type=submit]:hover {
     .nav-links{
         position: absolute;
         right: 0px ;
-        height: 92vh;
+        height: 50vh;
         top: 8vh;
         background-color: #f3f4f7;
         display: none;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 100%;
         transform: translate(100%);
         transition: transform 0.5s ease-in;
     }
@@ -215,14 +222,13 @@ input[type=submit]:hover {
         /* letter-spacing: 3px; */
         font-weight: bold;
         font-size: 15px;
-        margin-bottom: 12vh;
+        padding: 0;
     }
     .burger{
         display: block;
     }
     .nav-links li{
         opacity: 0;
-        margin-bottom: 12vh;
     }
   .col-25, .col-75, input[type=submit] {
     width: 100%;
@@ -241,7 +247,22 @@ input[type=submit]:hover {
  
 }
 
-
+.heading
+{
+    padding-bottom: 20px;
+}
+.text
+{
+    color:white;
+    font-size: 60px;
+    text-align:center;
+    padding-top: 5%;
+    background: linear-gradient(to bottom right, rgb(101, 195, 233), rgb(66, 83, 231));
+    width: 100%;
+    /* height: 75px; */
+    font-weight: bold;
+    padding-bottom: 5%;
+}
 
 .card {
   background-color: white;
@@ -255,6 +276,14 @@ input[type=submit]:hover {
   margin-left: 2px;
   
   
+}
+
+.card p{
+  padding: 0px;
+  word-wrap: break-word;
+  overflow: hidden;
+  white-space: pre-line;
+  font-size: 14px;
 }
 
 
@@ -379,6 +408,18 @@ ul li{
 }
 @media screen and (max-width:600px)
 {
+  .heading{
+        text-align: center;
+        /* margin-top: 15px; */
+        font-size: 4vh;
+       
+    }
+    .text{
+        padding: 2.5% 0;
+        text-align: center;
+        font-size: 40px;
+        height: auto;  
+    }
   .adg-logo{
         width: 40px; 
         height: 40px; 
@@ -399,7 +440,7 @@ ul li{
     }
 }
 
-@media screen and (max-width: 9px) {
+@media screen and (max-width: 1080px) {
   .leftcolumn, .rightcolumn {   
     width: 80vw;
     padding: 0;
@@ -417,6 +458,17 @@ ul li{
       margin: 5vh 10vw;
       width: 80vw;
 }
+.heading{
+        text-align: center;
+        font-size: 6vh;
+    }
+.text
+    {
+        /*text-align: center;*/
+        font-size: 5vh;
+        padding-bottom: 15%; 
+        height: 75px;
+    }
 }
 
 
@@ -454,8 +506,10 @@ ul li{
         
     <nav>
                 <div class="logo">
+                    <a href="index.html" class="index">
                     <img src="/assets/adg logo.png" class="adg-logo" >
                     <h4 class="hd1"><b> Apple Developers Group</b></h4>
+                    </a>
                 </div>
                 <ul class="nav-links">
                     <li>
@@ -481,9 +535,9 @@ ul li{
 
         
     </div>
-    <div class="Contact11">
-            <h1> Contact </h1>
-    </div>
+    <div class="heading">
+      <div class="text">Contact</div>
+</div>
 
 
 
@@ -546,7 +600,7 @@ ul li{
               <div class="foot1">
                 <h1>About</h1>
                  <p>
-                    Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. It is a registered student community at VIT, Vellore established under the Apple University program. A coterie of talented minds seeking not just success but perfection.
+                  <b>Apple Developers Group (ADG)</b> is a name synonymous with excellence, simplicity and dedication. It is a registered student community at<b> VIT, Vellore</b> established under the <b>Apple University program</b>. A coterie of talented minds seeking not just success but perfection.
     
                  </p>
             </div>
