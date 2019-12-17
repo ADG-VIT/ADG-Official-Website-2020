@@ -494,6 +494,18 @@ ul li{
     .hd{
         font-size: 1.5em;
     }
+    .adg-logo {
+        width: 37px;
+        height: 35px;
+        margin-top: 2vh;
+        margin-left: 5px;
+    }
+    .hd1{
+        font-size: 13px;
+    }
+    .text{
+        font-size: 23px;
+    }
     .img2{
         width: 80px;
         height: 80px;
