@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="homestyle.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="icon" type="image/jpeg" href="/assets/adg logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>ADG | VIT Vellore</title>
 </head>
 <body>
         <nav>
                 <div class="logo">
-                    <img src="/assets/adg logo.png" class="adg-logo" >
-                    <h4 class="hd1"><b> Apple Developers Group</b></h4>
+                    <a href="index.html" class="index">
+                    <img src="/assets/adg logo.png" class="adg-logo">
+                    <h4 class="hd1"><b>Apple Developers Group</b></h4>
+                </a>
                 </div>
                 <ul class="nav-links">
                     <li>
@@ -43,21 +45,21 @@
     <div class="parent row">
     <section class="one">
     <div class="cover">
-       <b> <p class="txt">Create <span style="color: blue;"><b>|</b></span > Ideate <span style="color: blue;"> <b>|</b> </span> Innovate</p></b>
+       <b> <p class="txt"> Create <span style="color: blue;"><b>|</b></span > Ideate<span style="color: blue;"> <b>|</b> </span>Innovate</p></b>
     </div>
 </section>
     <section class="two">
-    <h1 class="heading1"><b> Apple Developers Group</b></h1>
+    <h1 class="heading1" id="apple"><b> Apple Developers Group</b></h1>
     <div class="row">
         <div class="column">
-            <div class="card">
+            <div class="card" id="top">
                 <img src="/assets/partners.png" alt="" class="img2">
                 <h2 class="head1">PARTNERS</h2>
                 <p class="title">A shortcut to companies helping us out</p>
             </div>
         </div>
         <div class="column">
-            <div class="card">
+            <div class="card" id="top">
                 <img src="/assets/smartphone.png" alt="" class="img2">
                 <h2 class="head1">PROJECT</h2>
                 <p class="title">See what we have made</p>
@@ -68,7 +70,7 @@
 
     <div class="row">
         <div class="column">
-            <div class="card">
+            <div class="card" id="bottom">
                     <a href="events.html" class="events">
                 <img src="/assets/calendar.png" alt="" class="img2">
                 <h2 class="head1"> EVENTS</h2>
@@ -77,7 +79,7 @@
             </div>
         </div>
         <div class="column">
-            <div class="card">
+            <div class="card" id="bottom">
                 <img src="/assets/teamwork.png" alt="" class="img2">
                 <h2 class="head1">TEAM</h2>
                 <p class="title">Meet the masterminds behind ADG</p>
@@ -88,42 +90,42 @@
 
 
 <section class="three">
-    <h1 class="heading1">About Us</h1>  
+    <h1 class="heading1" id="about">About Us</h1>  
 
-    <p class="hd">We bring out th developer in you. Become not only someone who
+    <p class="hd" id="desc">We bring out th developer in you. Become not only someone who
         deploys apps, but also builds the world Brick by Brick
     </p>
     <div class="row">
         <div class="column2">
-            <div class="card2">
+            <div class="card2" id="left">
                 <img src="/assets/XCode-512.png" alt="" class="img3">
                 <h2 class="head1">iOS</h2>
                 <p class="title2">Engaging, purposeful, and creative. You can expect nothing less than perfect.</p>
             </div>
         </div>
-        <div class="column2">
-            <div class="card2">
+        <div class="column2" >
+            <div class="card2" id="left">
                 <img src="/assets/android.png" alt="" class="img3">
                 <h2 class="head1">ANDROID</h2>
                 <p class="title2">Running with a burning desire to change the open source world of Android.</p>
             </div>
         </div>
         <div class="column2">
-            <div class="card2">
+            <div class="card2" id="center">
                 <img src="/assets/responsive.png" alt="" class="img3">
                 <h2 class="head1">DESIGN</h2>
                 <p class="title2">The most important things are not things, so we'll design experiences.</p>
             </div>
         </div>
         <div class="column2">
-            <div class="card2">
+            <div class="card2" id="right">
                 <img src="/assets/web.png" alt="" class="img3">
                 <h2 class="head1">WEB</h2>
                 <p class="title2">Crafting visually stunning memorable experiences for web and interfaces.</p>
             </div>
         </div>
         <div class="column2">
-                <div class="card2">
+                <div class="card2" id="right">
                     <img src="/assets/web.png" alt="" class="img3">
                     <h2 class="head1">ML</h2>
                     <p class="title2">Crafting visually stunning memorable experiences for web and interfaces.</p>
@@ -164,14 +166,13 @@
                         <div class="border">
                          <div class="social-media">
                              <ul class="social">
-                                <li><a href="https://www.facebook.com/vitios/" target="_blank"><i class="fa fa-facebook fa-lg " aria-hidden="true"></i>Facebook</a></li>
-                                 <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><i class="fa fa-linkedin fa-lg " aria-hidden="true"></i>Linkedin</a></li>
-                                 <li><a href="https://www.instagram.com/adgvit/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i>Instagram</a></li>
-                                 <li><a href="https://twitter.com/adgvit" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>Twitter</a></li>
+                                <li><a href="https://www.facebook.com/vitios/" target="_blank"><img src="/assets/facebook-logo.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span style="margin-left: 40px;" >Facebook </span></a></li>
+                                 <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><img src="/assets/linkedin-logo.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span style="margin-left: 40px;" >Linkedin</span></a></li>
+                                 <li><a href="https://www.instagram.com/adgvit/" target="_blank"><img src="/assets/instagram-logo.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span style="margin-left: 40px;" >Instagram</span></a></li>
+                                 <li><a href="https://twitter.com/adgvit" target="_blank"><img src="/assets/twitter-2.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span style="margin-left: 40px;" >Twitter</span></a></li>
                              </ul>
                          </div>
-                    </div>
-                </div>
+                    </div18                </div>
             </div>
     </div>
     <div class="footer-bottom">
@@ -180,6 +181,10 @@
 </div>
 
 <!-- </section> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js" integrity="sha256-qGOnfp7iY6DsnB55K7M+0PZjWCtzafRyJh33tgQJkMQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js" integrity="sha256-UJoqRMiZ86QgG17Pw8Dy4XoUyGg8JuBAxH8YC8qTjcQ=" crossorigin="anonymous"></script>
 <script src="app.js"></script>
 </body>
 
