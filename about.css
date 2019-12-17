@@ -329,12 +329,9 @@ ul li {
     .text2{
         font-size: 25px;
         text-align: center;
-        margin-top: 15px;
+        margin-top: 20px;
         margin-bottom: 20px;
 
-    }
-    .textinside{
-        margin-bottom: 20px;
     }
     .textsection1{
         height: 40vh;
