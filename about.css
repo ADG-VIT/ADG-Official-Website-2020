@@ -320,7 +320,7 @@ ul li {
         /* letter-spacing: 3px; */
         font-weight: bold;
         font-size: 15px;
-        padding: 0;
+        padding: 20px 120px;
     }
     .burger{
         display: block;
@@ -422,6 +422,17 @@ ul li {
     .hd1{
         font-size: 13px;
     }
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#0066ff);
+    border-radius: 6px;
+    height: 100px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,#00c6ff);
 }
 @keyframes navLinkFade{
     from{
