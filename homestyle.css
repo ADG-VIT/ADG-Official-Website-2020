@@ -7,6 +7,8 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
 }
 /* .parent {
     overflow: scroll;
@@ -20,18 +22,33 @@ body{
     scroll-snap-align: start;
     position: relative;
   } */
+
+
+  #overlay{
+    height: 100vh;
+    background-image: url('/assets/adggif.gif');
+    background-size: 7vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(18,18,18,0.0);
+    z-index: -4;
+  }
+
+
+
 nav{
     display: flex;
     /* position: fixed; */
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 8vh;
-    background-color: #fff;
+    background-color: black;
+    overflow: hidden;
 }
 .index{
     text-decoration: none;
     outline: none;
-    color: black;
+    color: white;
     display: flex;
 }
 .logo{
@@ -39,14 +56,14 @@ nav{
     text-transform: uppercase;
     /* letter-spacing: 2px; */
     font-size: 20px;
-    width: 60%;
+    width: 65%;
     margin-bottom: 1.5vh;
 }
 .adg-logo{
-    width: 35px; 
-    height: 35px; 
+    width: 300px; 
+    /* height: 300px;  */
     margin-top: 1vh;
-    margin-left: 2vw;
+    margin-left: 10px;
     overflow: hidden;
 }
 .hd1{
@@ -58,7 +75,7 @@ nav{
 .nav-links
 {
     display: flex;
-    width: 40%;
+    width: 35%;
     justify-content: space-around;
     /* margin-left: 40vw; */
     
@@ -67,7 +84,7 @@ nav{
     list-style: none;
 }
 .nav-links a{
-    color: black;
+    color: white;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -77,12 +94,12 @@ nav{
 .nav-links a:hover{
     color: #0066ff;
     /* background: #488aec ; */
-    font-size: 25px;
-    letter-spacing: 8px;
+    font-size: 25px; 
 }
 .burger{
     display: none;
     cursor: pointer;
+    margin-right: 20px;
 }
 .burger div{
     width: 25px;
@@ -136,11 +153,11 @@ nav{
     margin-top: 15px;
     font-weight: 700;
     font-size: 3.5em;
-    color: black !important;
+    color: white;
     letter-spacing: 0.08em;
 }
 .column{
-    width: 50%;
+    width: 25%;
     float: left;
     padding: 15px 10px;
     overflow-x: hidden; 	
@@ -155,12 +172,13 @@ nav{
     box-shadow: 0px 0px 50px rgba(103, 75, 231, 0.103);
     width: 22vw;
     height: 39.5vh;
-    margin: 0px 14vw;
-    background-color: white;
+    margin: 0px 0vw;
+    background-color: #121212;
     text-align: center;
     border-radius: 10px;
     padding-bottom: 15px;
-    overflow: hidden
+    overflow: hidden;
+    color: white;
 }
 .img2{
     width: 100px; 
@@ -169,7 +187,7 @@ nav{
     margin: 25px 20px;
 }
 .title{
-    color: black;
+    color: white;
     font-size: 20px;
     margin: 20px 0 10px 0;
     padding: 0 10px;
@@ -177,11 +195,9 @@ nav{
 .events{
     text-decoration: none;
     outline: none;
-    color: black;
+    color: white;
 }
-/* .head1{
-    margin: 20px;
-} */
+
 .hd{
     text-align: center;
     font-size: 30px;
@@ -201,13 +217,14 @@ nav{
     max-width: 40vw;
     height: auto;
     /* margin-top: 15px; */
-    background-color: white;
+    background-color: transparent;
     text-align: center;
     /* border-radius: 35px; */
     padding-bottom: 15px;
+    color: white;
 }
 .title2{
-    color: black;
+    color: white;
     font-size: 20px;
     margin: 20px;
     text-justify: auto;
@@ -215,9 +232,17 @@ nav{
 .img3{
     width: 100px; height: 100px; padding-top: 10px; margin: 30px;
 }
+.video{
+    width: 50vw;
+    height: 60vh;
+    margin: 0 25vw;
+    background-color: #121212;
+    border-radius: 50px;
+    outline: none;
+}
 .footer{
     width: 100%;
-    background: black;
+    background: #121212;
     display: block;
 }
 .inner-footer{
@@ -302,9 +327,12 @@ ul li{
 .footer-bottom{
     padding: 10px;
     text-align: center;
-    background: black;
+    background: #121212;
     color: #fff;
     font-size: 12px;
+}
+.icons{
+    margin-left: 40px;
 }
 @media screen and (max-width:1080px)
 {
@@ -312,8 +340,8 @@ ul li{
         overflow-x: hidden;
     }
     .adg-logo{
-        width: 50px; 
-        height: 40px; 
+        /* width: 50px; 
+        height: 40px;  */
         margin-top: 2vh;
         margin-left: 5px;
     }
@@ -343,7 +371,7 @@ ul li{
         /* letter-spacing: 3px; */
         font-weight: bold;
         font-size: 15px;
-        padding: 0;
+        padding: 20px 120px;
     }
     .burger{
         display: block;
@@ -351,10 +379,12 @@ ul li{
     .nav-links li{
         opacity: 0;
     }
-    
+    .column{
+        width: 50%;
+    }
     .card{
         width: 40vw;
-        height: 40vh;
+        height: 30vh;
         margin: 0 5vw;
         padding: 0;
     }
@@ -383,8 +413,8 @@ ul li{
     
     
     .adg-logo{
-        width: 50px; 
-        height: 40px; 
+        /* width: 300px; 
+        height: 300px;  */
         margin-top: 2vh;
         margin-left: 5px;
     }
@@ -454,9 +484,32 @@ ul li{
         /* margin-left: 27%;
         margin-right: 27%; */
     }
-    .footer-items{
+    .video{
+        width: 80vw;
+        height: 40vh;
+        margin: 0 10vw;
+        
+    }
+    /* .footer-items{
         width: 100%;
         padding: 5px 20px;
+    } */
+    .footer-items:nth-child(1){
+        width: 100%;
+        padding: 0;
+    }
+    .footer-items:nth-child(2){
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-items:nth-child(3){
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .icons{
+        margin-left: 20px;
     }
     .foot1{
         margin-right: 0px;
@@ -495,8 +548,8 @@ ul li{
         font-size: 1.5em;
     }
     .adg-logo {
-        width: 37px;
-        height: 35px;
+        /* width: 37px;
+        height: 35px; */
         margin-top: 2vh;
         margin-left: 5px;
     }
@@ -511,6 +564,17 @@ ul li{
         height: 80px;
         margin: 15px 0;
     }
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#0066ff);
+    border-radius: 6px;
+    height: 100px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,#00c6ff);
 }
 @keyframes navLinkFade{
     from{
@@ -531,5 +595,3 @@ ul li{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
-/* #56ccF2
-#2F80ED */
