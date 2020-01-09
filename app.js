@@ -31,13 +31,13 @@ const controller = new ScrollMagic.Controller();
 
 tl.from('.txt', 2, {opacity: 0, fontSize: 0});
 // tl2.from('#apple', 1, {opacity: 0, fontSize: 0 });
-tl3.fromTo('#top', 1.5, {y:-100, opacity: 0}, {y:0, opacity: 1});
-tl3.from('#bottom', 1.5, {y:-100, opacity: 0},{y:0, opacity: 1});
+tl3.fromTo('#top', 1, {y:-100, opacity: 0}, {y:0, opacity: 1});
+// tl3.from('#bottom', 1.5, {y:-100, opacity: 0},{y:0, opacity: 1});
 // tl5.from('#about', 0.5, {opacity: 0, fontSize: 0 });
 // tl6.from('#desc', 1, {opacity: 0});
-tl4.from('#left', 0.5, {x:-200, opacity: 0}, {x:0, opacity: 1});
-tl4.from('#center', 0.5, {y:-100, opacity: 0}, {y:0, opacity: 1});
-tl4.from('#right', 0.5, {x:200, opacity: 0}), {x:0, opacity: 1};
+tl4.from('#left', 1, {x:-200, opacity: 0}, {x:0, opacity: 1});
+tl6.from('#center', 1, {y:-200, opacity: 0}, {y:0, opacity: 1});
+tl5.from('#right', 1, {x:200, opacity: 0}), {x:0, opacity: 1};
 
 
 
@@ -60,18 +60,18 @@ const scene3 = new ScrollMagic.Scene({
         .addTo(controller);    
         
         
-// const scene4 = new ScrollMagic.Scene({
-//     triggerElement: ".three"
-// })
-//     .setTween(tl5)
-//         .addTo(controller);
+const scene4 = new ScrollMagic.Scene({
+    triggerElement: ".column2"
+})
+    .setTween(tl5)
+        .addTo(controller);
 
 
-// const scene6 = new ScrollMagic.Scene({
-//     triggerElement: "#about"
-// })
-//     .setTween(tl6)
-//         .addTo(controller);     
+const scene6 = new ScrollMagic.Scene({
+    triggerElement: ".column2"
+})
+    .setTween(tl6)
+        .addTo(controller);     
     
 const scene5 = new ScrollMagic.Scene({
     triggerElement: ".column2"

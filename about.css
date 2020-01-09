@@ -34,34 +34,36 @@ body{
 nav{
     display: flex;
     /* position: fixed; */
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 8vh;
-    background-color: #fff;
+    background-color: black;
+    overflow: hidden;
 }
 .logo{
     display: flex;
     text-transform: uppercase;
     /* letter-spacing: 2px; */
     font-size: 20px;
-    width: 60%;
+    width: 65%;
     margin-bottom: 1.5vh;
 }
 .index{
     text-decoration: none;
     outline: none;
-    color: black;
+    color: white;
     display: flex;
 }
-.index:hover{
+/* .index:hover{
     color: black;
     text-decoration: none;
-}
+} */
 .adg-logo{
-    width: 35px; 
-    height: 35px; 
-    margin-top: 1.5vh;
-    margin-left: 2vw;
+    width: 300px; 
+    /* height: 300px;  */
+    margin-top: 1vh;
+    margin-left: 10px;
+    overflow: hidden;
 }
 .hd1{
     margin-top: 15px;
@@ -88,7 +90,7 @@ nav{
 .nav-links
 {
     display: flex;
-    width: 40%;
+    width: 35%;
     /* background-color: red; */
     justify-content: space-around;
     /* margin-left: 40vw; */
@@ -99,7 +101,7 @@ nav{
     list-style: none;
 }
 .nav-links a{
-    color: black;
+    color: white;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -109,11 +111,11 @@ nav{
 .nav-links a:hover{
     color: #0066ff;
     font-size: 25px;  
-    letter-spacing: 8px;  
 }
 .burger{
     display: none;
     cursor: pointer;
+    margin-right: 20px;
 }
 .burger div{
     width: 25px;
@@ -182,7 +184,7 @@ nav{
 
 .footer {
     width: 100%;
-    background: black;
+    background: #121212;
     display: block;
 }
 
@@ -267,7 +269,7 @@ ul li {
 .footer-bottom {
     padding: 10px;
     text-align: center;
-    background: black;
+    background: #121212;
     color: #fff;
     font-size: 12px;
 }
@@ -296,7 +298,8 @@ ul li {
         font-size: 15px;
     }
     .adg-logo{
-        margin-top: 20px;
+        margin-top: 2vh;
+        margin-left: 5px;
     }
     .nav-links{
         position: absolute;
@@ -345,6 +348,12 @@ ul li {
     /* .inner-footer{
         height: 250px;
     } */
+    .adg-logo{
+        /* width: 300px; 
+        height: 300px;  */
+        margin-top: 2vh;
+        margin-left: 5px;
+    }
     .heading{
         text-align: center;
         /* margin-top: 15px; */
@@ -357,10 +366,25 @@ ul li {
         font-size: 40px;
         height: auto;  
     }
-    .footer-items{
+    /* .footer-items{
         width: 100%;
         padding: 5px 20px;
+    } */
+    .footer-items:nth-child(1){
+        width: 100%;
+        padding: 0;
     }
+    .footer-items:nth-child(2){
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-items:nth-child(3){
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    
     .foot1{
         margin-right: 0px;
     }
@@ -386,6 +410,18 @@ ul li {
     transform: translate(0%);
     display: flex;
     /* visibility: visible; */
+}
+@media screen and (max-width:400px)
+{
+    .adg-logo {
+        /* width: 37px;
+        height: 35px; */
+        /* margin-top: 2vh; */
+        margin-left: 5px;
+    }
+    .hd1{
+        font-size: 13px;
+    }
 }
 @keyframes navLinkFade{
     from{
