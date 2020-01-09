@@ -24,30 +24,32 @@ body {
 nav{
     display: flex;
     /* position: fixed; */
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 8vh;
-    background-color: #fff;
+    background-color: black;
+    overflow: hidden;
 }
 .logo{
     display: flex;
     text-transform: uppercase;
     /* letter-spacing: 2px; */
     font-size: 20px;
-    width: 60%;
+    width: 65%;
     margin-bottom: 1.5vh;
 }
 .index{
     text-decoration: none;
     outline: none;
-    color: black;
+    color: white;
     display: flex;
 }
 .adg-logo{
-    width: 35px; 
-    height: 35px; 
+    width: 300px; 
+    /* height: 300px;  */
     margin-top: 1vh;
-    margin-left: 2vw;
+    margin-left: 10px;
+    overflow: hidden;
 }
 .hd1{
     margin-top: 15px;
@@ -58,7 +60,7 @@ nav{
 .nav-links
 {
     display: flex;
-    width: 40%;
+    width: 35%;
     /* background-color: red; */
     justify-content: space-around;
     /* margin-left: 40vw; */
@@ -68,7 +70,7 @@ nav{
     list-style: none;
 }
 .nav-links a{
-    color: black;
+    color: white;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -78,11 +80,11 @@ nav{
 .nav-links a:hover{
     color: #0066ff;
     font-size: 25px;
-    letter-spacing: 8px;
 }
 .burger{
     display: none;
     cursor: pointer;
+    margin-right: 20px;
 }
 .burger div{
     width: 25px;
@@ -196,6 +198,12 @@ input[type=submit]:hover {
     .logo{
         width: 60%;
         margin-right: 94px;
+    }
+    .adg-logo{
+        /* width: 50px; 
+        height: 40px;  */
+        margin-top: 2vh;
+        margin-left: 5px;
     }
     .nav{
         width: 10%;
@@ -420,15 +428,29 @@ ul li{
         font-size: 40px;
         height: auto;  
     }
-  .adg-logo{
-        width: 40px; 
-        height: 40px; 
+    .adg-logo{
+        /* width: 300px; 
+        height: 300px;  */
         margin-top: 2vh;
         margin-left: 5px;
     }
-    .footer-items{
+    /* .footer-items{
         width: 100%;
         padding: 5px 20px;
+    } */
+    .footer-items:nth-child(1){
+        width: 100%;
+        padding: 0;
+    }
+    .footer-items:nth-child(2){
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-items:nth-child(3){
+        width: 50%;
+        padding: 0;
+        margin: 0;
     }
     .hd1{
       font-size: 17px;
@@ -505,10 +527,10 @@ ul li{
 
 @media screen and (max-width:400px)
 {
-    .adg-logo {
-        width: 37px;
-        height: 35px;
-        margin-top: 1vh;
+  .adg-logo {
+        /* width: 37px;
+        height: 35px; */
+        margin-top: 2vh;
         margin-left: 5px;
     }
     .hd1{
@@ -524,34 +546,36 @@ ul li{
 <body>
 
         
-    <nav>
-                <div class="logo">
-                    <a href="index.html" class="index">
-                    <img src="/assets/adg logo.png" class="adg-logo" >
-                    <h4 class="hd1"><b> Apple Developers Group</b></h4>
-                    </a>
-                </div>
-                <ul class="nav-links">
-                    <li>
-                        <a href="index.html"> Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html"> About</a>
-                    </li>
-                    <li>
-                        <a href="events.html"> Event</a>
-                    </li>
-                    <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav>
-
+  <nav>
+    <div class="logo">
+        <a href="index.html" class="index">
+        <img src="/assets/ADG Logo.svg" class="adg-logo">
+        <!-- <h4 class="hd1"><b>Apple Developers Group</b></h4> -->
+    </a>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <a href="index.html"> Home</a>
+        </li>
+        <li>
+            <a href="about.html"> About</a>
+        </li>
+        <li>
+            <a href="events.html"> Event</a>
+        </li>
+        <!-- <li>
+            <a href="#">Support Us</a>
+        </li> -->
+        <li>
+                <a href="contact.html">Contact</a>
+            </li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
 
         
     </div>
@@ -642,10 +666,10 @@ ul li{
                             <div class="border">
                              <div class="social-media">
                                  <ul class="social">
-                                    <li><a href="https://www.facebook.com/vitios/" target="_blank"><i class="fa fa-facebook " aria-hidden="true"></i>Facebook</a></li>
-                                     <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><i class="fa fa-linkedin " aria-hidden="true"></i>Linkedin</a></li>
-                                     <li><a href="https://www.instagram.com/adgvit/" target="_blank"><i class="fa fa-instagram " aria-hidden="true"></i>Instagram</a></li>
-                                     <li><a href="#" target="_blank"><i class="fa fa-twitter " aria-hidden="true"></i>Twitter</a></li>
+                                    <li><a href="https://www.facebook.com/vitios/" target="_blank"><i class="fa fa-facebook " aria-hidden="true"></i><span class="icons" >Facebook </span></a></li>
+                                     <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><i class="fa fa-linkedin " aria-hidden="true"></i><span class="icons">Linkedin</span></a></li>
+                                     <li><a href="https://www.instagram.com/adgvit/" target="_blank"><i class="fa fa-instagram " aria-hidden="true"></i><span class="icons" >Instagram</span></a></li>
+                                     <li><a href="#" target="_blank"><i class="fa fa-twitter " aria-hidden="true"></i><span class="icons" >Twitter</span></a></li>
                                  </ul>
                              </div>
                         </div>
