@@ -25,17 +25,18 @@ body {
 nav{
     display: flex;
     /* position: fixed; */
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 8vh;
-    background-color: #fff;
+    background-color: black;
+    overflow: hidden;
 }
 .logo{
     display: flex;
     text-transform: uppercase;
     /* letter-spacing: 2px; */
     font-size: 20px;
-    width: 60%;
+    width: 65%;
     margin-bottom: 1.5vh;
 }
 .index{
@@ -45,10 +46,11 @@ nav{
     display: flex;
 }
 .adg-logo{
-    width: 35px; 
-    height: 35px; 
+    width: 250px; 
+    /* height: 300px;  */
     margin-top: 1vh;
-    margin-left: 2vw;
+    margin-left: 10px;
+    overflow: hidden;
 }
 .hd1{
     margin-top: 15px;
@@ -59,7 +61,7 @@ nav{
 .nav-links
 {
     display: flex;
-    width: 40%;
+    width: 35%;
     /* background-color: red; */
     justify-content: space-around;
     /* margin-left: 40vw; */
@@ -69,7 +71,7 @@ nav{
     list-style: none;
 }
 .nav-links a{
-    color: black;
+    color: white;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -84,6 +86,7 @@ nav{
 .burger{
     display: none;
     cursor: pointer;
+    margin-right: 20px;
 }
 .burger div{
     width: 25px;
@@ -99,7 +102,7 @@ nav{
   padding-top: 4%;
   padding-bottom:4%;
 
-  background:linear-gradient(to right, black,rgb(71, 69, 69));
+  background:linear-gradient(45deg, #000000,#434343);
   
 }
 
@@ -124,7 +127,7 @@ nav{
   border: 1px solid #020202;
   border-radius: 4px;
   resize: vertical;
-  background-color:#020202;
+  background-color:#404040;
   color:#fff;
 }
 input[type=number], select, textarea {
@@ -133,7 +136,7 @@ input[type=number], select, textarea {
   border: 1px solid #020202;
   border-radius: 4px;
   resize: vertical;
-  background-color:#020202;
+  background-color:#404040;
   color: #fff;
 }
 input[type="text"]::placeholder {  
@@ -217,6 +220,12 @@ textarea::-webkit-input-placeholder {
     .nav{
         width: 10%;
     }
+    .adg-logo{
+        /* width: 50px; 
+        height: 40px;  */
+        margin-top: 2vh;
+        margin-left: 5px;
+    }
     .hd1{
       font-size: 15px;
     }
@@ -297,6 +306,17 @@ textarea::-webkit-input-placeholder {
     display: flex;
     /* visibility: visible; */
 }
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#0066ff);
+    border-radius: 6px;
+    height: 100px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,#00c6ff);
+}
 @keyframes navLinkFade{
     from{
         opacity: 0;
@@ -325,7 +345,7 @@ textarea::-webkit-input-placeholder {
 }
 .footer{
     width: 100%;
-    background: black;
+    background: #121212;
     display: block;
 }
 .inner-footer{
@@ -398,7 +418,7 @@ ul li{
 .footer-bottom{
     padding: 10px;
     text-align: center;
-    background: black;
+    background: #121212;
     color: #fff;
     font-size: 12px;
 }
@@ -414,14 +434,28 @@ ul li{
 @media screen and (max-width:600px)
 {
   .adg-logo{
-        width: 40px; 
-        height: 40px; 
+        /* width: 300px; 
+        height: 300px;  */
         margin-top: 2vh;
         margin-left: 5px;
     }
-    .footer-items{
+    /* .footer-items{
         width: 100%;
         padding: 5px 20px;
+    } */
+    .footer-items:nth-child(1){
+        width: 100%;
+        padding: 0;
+    }
+    .footer-items:nth-child(2){
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-items:nth-child(3){
+        width: 50%;
+        padding: 0;
+        margin: 0;
     }
     .hd1{
       font-size: 17px;
@@ -489,7 +523,7 @@ ul li{
     <nav>
                 <div class="logo">
                     <a href="index.html" class="index">
-                    <img src="/assets/adg logo.png" class="adg-logo" >
+                    <img src="/assets/adglogo3.svg" class="adg-logo" >
                     <h4 class="hd1"><b> Apple Developers Group</b></h4>
                     </a>
                 </div>

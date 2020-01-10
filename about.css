@@ -62,7 +62,7 @@ nav{
     text-decoration: none;
 } */
 .adg-logo{
-    width: 300px; 
+    width: 250px; 
     /* height: 300px;  */
     margin-top: 1vh;
     margin-left: 10px;
@@ -84,7 +84,7 @@ nav{
     font-size: 60px;
     text-align:center;
     padding-top: 5%;
-    background: linear-gradient(to bottom right,black, rgb(71, 69, 69));
+    background:linear-gradient(45deg, #000000,#434343);
     width: 100%;
     /* height: 200px; */
     font-weight: bold;
@@ -177,6 +177,7 @@ nav{
     padding: 0%;
     text-decoration: bold;
     line-height: 90%;
+    font-weight: 1500;
 }
 
 
@@ -402,7 +403,7 @@ ul li {
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
-
+        font-weight: 1500;
     }
     .textsection1{
         height: 40vh;
