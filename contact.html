@@ -6,6 +6,7 @@
         <link rel="icon" type="image/jpeg" href="/assets/adg logo.png">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <title>ADG | VIT Vellore</title>
+        
 <style>
     @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
 * {
@@ -17,7 +18,7 @@
 body {
   
   padding: 0px;
-  background:white;
+  background:black;
   margin:0px;
   font-family: 'Roboto', sans-serif; 
 }
@@ -41,11 +42,11 @@ nav{
 .index{
     text-decoration: none;
     outline: none;
-    color: white;
+    color: black;
     display: flex;
 }
 .adg-logo{
-    width: 300px; 
+    width: 250px; 
     /* height: 300px;  */
     margin-top: 1vh;
     margin-left: 10px;
@@ -80,6 +81,7 @@ nav{
 .nav-links a:hover{
     color: #0066ff;
     font-size: 25px;
+    letter-spacing: 8px;
 }
 .burger{
     display: none;
@@ -100,7 +102,7 @@ nav{
   padding-top: 4%;
   padding-bottom:4%;
 
-  background:linear-gradient(to bottom right, rgb(101, 195, 233), rgb(66, 83, 231));
+  background:linear-gradient(45deg, #000000,#434343);
   
 }
 
@@ -116,23 +118,32 @@ nav{
 .leftcolumn {   
   float: left;
   width: 70%;
-  background-color: white;
+  background-color: black;
   
 }
 .input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #020202;
   border-radius: 4px;
   resize: vertical;
+  background-color:#404040;
+  color:#fff;
 }
 input[type=number], select, textarea {
   width: 100%;
   padding: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #020202;
   border-radius: 4px;
   resize: vertical;
+  background-color:#404040;
+  color: #fff;
 }
+input[type="text"]::placeholder {  
+           /* Firefox, Chrome, Opera */ 
+   text-align: left;
+   color: #fff;
+} 
 
 label {
   padding: 12px 12px 12px 0;
@@ -140,7 +151,7 @@ label {
 }
 
 input[type=submit] {
-  background-color:#668fff;
+  background-color:#020202;
   color: white;
   padding: 15px 30px;
   border: none;
@@ -148,17 +159,20 @@ input[type=submit] {
   width: 250px;
   cursor: pointer;
   float: left;
-  margin-top: 10px;
+  margin-top: 15px;
+  text-align: left;
+  background-image:linear-gradient(to right, black 20%, #302e2e 51%, #464242 100%) 
 }
 
 input[type=submit]:hover {
-  background-color: #668fff;
+  background-color: rgb(39, 37, 37);
+  background-position: right center;
 }
 
 
 .container {
   border-radius: 5px;
-  background-color: white;
+  background-color:#121212;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -167,9 +181,13 @@ input[type=submit]:hover {
   box-shadow: 0px 0px 50px rgba(103, 75, 231, 0.103);
  margin-right: 20px;
  margin-left: 50px;
- 
+ color:white;
 }
-
+textarea::-webkit-input-placeholder { 
+            color:white; 
+            font-size: 16px;
+            font-family: 'Roboto';
+        } 
 
 .col-25 {
   float: left;
@@ -199,14 +217,14 @@ input[type=submit]:hover {
         width: 60%;
         margin-right: 94px;
     }
+    .nav{
+        width: 10%;
+    }
     .adg-logo{
         /* width: 50px; 
         height: 40px;  */
         margin-top: 2vh;
         margin-left: 5px;
-    }
-    .nav{
-        width: 10%;
     }
     .hd1{
       font-size: 15px;
@@ -248,32 +266,17 @@ input[type=submit]:hover {
 .rightcolumn {
   float: left;
   width: 30%;
-  background-color: white;
+  background-color:black;
   padding-left: 20px;
 
   
  
 }
 
-.heading
-{
-    padding-bottom: 20px;
-}
-.text
-{
-    color:white;
-    font-size: 60px;
-    text-align:center;
-    padding-top: 5%;
-    background: linear-gradient(to bottom right, rgb(101, 195, 233), rgb(66, 83, 231));
-    width: 100%;
-    /* height: 75px; */
-    font-weight: bold;
-    padding-bottom: 5%;
-}
+
 
 .card {
-  background-color: white;
+  background-color: #121212;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 17px;
@@ -292,13 +295,27 @@ input[type=submit]:hover {
   overflow: hidden;
   white-space: pre-line;
   font-size: 14px;
+  color:white;
 }
-
+.card h2{
+  color:white;
+}
 
 .nav-active{
     transform: translate(0%);
     display: flex;
     /* visibility: visible; */
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#0066ff);
+    border-radius: 6px;
+    height: 100px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,#00c6ff);
 }
 @keyframes navLinkFade{
     from{
@@ -433,19 +450,7 @@ ul li{
 }
 @media screen and (max-width:600px)
 {
-  .heading{
-        text-align: center;
-        /* margin-top: 15px; */
-        font-size: 4vh;
-       
-    }
-    .text{
-        padding: 2.5% 0;
-        text-align: center;
-        font-size: 40px;
-        height: auto;  
-    }
-    .adg-logo{
+  .adg-logo{
         /* width: 300px; 
         height: 300px;  */
         margin-top: 2vh;
@@ -500,17 +505,6 @@ ul li{
       margin: 3vh 10vw;
       width: 80vw;
 }
-.heading{
-        text-align: center;
-        font-size: 6vh;
-    }
-.text
-    {
-        /*text-align: center;*/
-        font-size: 5vh;
-        padding-bottom: 15%; 
-        height: 75px;
-    }
 }
 
 
@@ -528,13 +522,6 @@ ul li{
     width: 80vw;
     margin-top: 5vw;
   }
-  .hd1{
-        font-size: 17px;
-        letter-spacing: 0;
-        margin-left: 10px;
-        /* word-spacing: 0px; */
-        /* letter-spacing: 0px; */
-    }
   .container{
       margin: 5vh 10vw;
       width: 80vw;
@@ -545,30 +532,6 @@ ul li{
   }
 }
 
-@media screen and (max-width:400px)
-{
-  .adg-logo {
-        /* width: 37px;
-        height: 35px; */
-        margin-top: 2vh;
-        margin-left: 5px;
-    }
-    .hd1{
-        font-size: 13px;
-        margin-top: 1.5vh;
-    }
-}
-::-webkit-scrollbar{
-    width: 12px;
-}
-::-webkit-scrollbar-thumb{
-    background: linear-gradient(transparent,#0066ff);
-    border-radius: 6px;
-    height: 100px;
-}
-::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(transparent,#00c6ff);
-}
   
 
 
@@ -577,42 +540,40 @@ ul li{
 <body>
 
         
-  <nav>
-    <div class="logo">
-        <a href="index.html" class="index">
-        <img src="/assets/ADG Logo.svg" class="adg-logo">
-        <!-- <h4 class="hd1"><b>Apple Developers Group</b></h4> -->
-    </a>
-    </div>
-    <ul class="nav-links">
-        <li>
-            <a href="index.html"> Home</a>
-        </li>
-        <li>
-            <a href="about.html"> About</a>
-        </li>
-        <li>
-            <a href="events.html"> Event</a>
-        </li>
-        <!-- <li>
-            <a href="#">Support Us</a>
-        </li> -->
-        <li>
-                <a href="contact.html">Contact</a>
-            </li>
-    </ul>
-    <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
-</nav>
+    <nav>
+                <div class="logo">
+                    <a href="index.html" class="index">
+                    <img src="/assets/adglogo3.svg" class="adg-logo" >
+                    <h4 class="hd1"><b> Apple Developers Group</b></h4>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html"> Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html"> About</a>
+                    </li>
+                    <li>
+                        <a href="events.html"> Event</a>
+                    </li>
+                    <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+
 
         
     </div>
-    <div class="heading">
-      <div class="text">Contact</div>
-</div>
+    <div class="Contact11">
+            <h1> Contact </h1>
+    </div>
 
 
 
@@ -621,27 +582,27 @@ ul li{
    <div class="container">
   <form action="https://formspree.io/appledevelopersgroup@gmail.com" method="POST">
   <div class="row">
-    <label class="required" for="name">Full name:</label><br />
-    <input id="name" class="input" name="name" type="text" value="" size="50" /><br />
+    <label class="required" for="name">   </label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="50"  placeholder=" YOUR NAME " /><br />
     <span id="name_validation" class="error_message"></span>
   </div>
   <div class="row">
-    <label class="required" for="email"> Email address:</label><br />
-    <input id="email" class="input" name="email" type="text" value="" size="50" /><br />
+    <label class="required" for="email"> </label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="50" placeholder=" YOUR EMAIL ID " /><br />
     <span id="email_validation" class="error_message"></span>
   </div>
   <div class="row">
-        <label class="required" for="phoneno"> Phone no:</label><br />
-        <input id="phoneno" class="input" name="phoneno" type="text" value="" size="50" /><br />
+        <label class="required" for="phoneno"> </label><br />
+        <input id="phoneno" class="input" name="phoneno" type="text" value="" size="50" placeholder=" YOUR PHONE NO " /><br />
         <span id="phoneno_validation" class="error_message"></span>
       </div>
   <div class="row">
-    <label class="required" for="message"> Message:</label><br />
-    <textarea id="message" class="input" name="message" rows="7" cols="47.5"></textarea><br />
+    <label class="required" for="message"></label><br />
+    <textarea id="message" class="input" name="message"  rows="7" cols="47.5" placeholder="YOUR MESSAGE " ></textarea><br />
     <span id="message_validation" class="error_message"></span>
   </div>
     
-    <input id="submit_button" type="submit" value="Send Message" />
+    <input id="submit_button" type="submit" value="SEND MESSAGE" />
   </form>
 </div>
     
