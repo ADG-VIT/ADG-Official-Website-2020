@@ -1,10 +1,12 @@
 var preloader = document.getElementById("overlay");
+var main = document.getElementById("main");
 		// window.addEventListener('load', function(){
 		// 	preloader.style.display = 'none';
 		// 	})
 
 		function myFunction(){
-			preloader.style.display = 'none';
+            preloader.style.display = 'none';
+            main.style.display = 'initial';
 		};
 
 

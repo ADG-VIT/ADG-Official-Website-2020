@@ -368,6 +368,7 @@ nav{
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: center;
+    /* text-align: center; */
     /* height: 32vh; */
 }
 .footer-items{
@@ -375,27 +376,32 @@ nav{
     padding: 10px 20px;
     box-sizing: border-box;
 }
-.hdd{
-    /* padding: 15px 0; */
+.foot1{
+    margin-right: 80px;
+}
+/* .foot2{
+    margin-left: 10vw;
+}
+.foot3{
+    float: right;
+} */
+.aa{
+    padding: 15px 0;
     font-size: 20px;
     color: #fff;
     text-transform: uppercase;
-}
-.foot1{
-    margin-right: 100px;
 }
 .footer-items p{
     color: rgb(212, 209, 209);
     font-size: 14px;
     text-align: justify;
-    line-height: 25px;
+    line-height: 24px;
 }
 ul{
     list-style: none;
     color: #fff;
     font-size: 16px;
     letter-spacing: 0.5px;
-    padding: 0;
     margin: 0;
 }
 ul a{
@@ -406,12 +412,11 @@ ul a{
 }
 ul li{
     margin: 5px 0;
-    height: 25px;
+    display: flex;
 }
 .social-media{
     width: 100%;
     color: rgb(212, 209, 209);
-    
 }
 
 .social-media a{
@@ -421,13 +426,18 @@ ul li{
     height: 30px;
     width: 30px;                                                                                                                                                                                                                                                                                                                                                                            
     margin-right: 40px;
+    margin-top: 1vh;
     color: rgb(212, 209, 209);
     transition: 0.3s;
+    padding: 0;
+    /* display: flexbox; */
+    float: left;
 }
 .social{
-    font-size: 15px;
-    padding: 0;
+    font-size: 18px;
+    /* display: flex; */
     margin: 0;
+    padding: 0;
 }
 .social li{
     margin-bottom: 15px;
@@ -438,6 +448,9 @@ ul li{
     background: #121212;
     color: #fff;
     font-size: 12px;
+}
+.icons{
+    margin-left: 40px;
 }
 @media screen and (max-width:1080px)
 {
@@ -612,7 +625,9 @@ ul li{
         padding: 0;
         margin: 0;
     }
-    
+    .icons{
+        margin-left: 20px;
+    }
     .foot1{
         margin-right: 0px;
     }

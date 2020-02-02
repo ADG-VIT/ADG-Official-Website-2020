@@ -23,7 +23,9 @@ body{
     position: relative;
   } */
 
-
+#main{
+    display: none;
+}
   #overlay{
     height: 100vh;
     background-image: url('/assets/adggif.gif');
@@ -43,7 +45,7 @@ nav{
     align-items: center;
     height: 8vh;
     background-color: black;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .index{
     text-decoration: none;
@@ -64,7 +66,7 @@ nav{
     /* height: 300px;  */
     margin-top: 1vh;
     margin-left: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .hd1{
     margin-top: 15px;
