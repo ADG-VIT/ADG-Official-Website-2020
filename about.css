@@ -307,6 +307,7 @@ ul li{
         font-size: 15px;
     }
     .adg-logo{
+        width: 220px;
         margin-top: 2vh;
         margin-left: 5px;
     }
@@ -358,7 +359,7 @@ ul li{
         height: 250px;
     } */
     .adg-logo{
-        /* width: 300px; 
+        /* width: 250px; 
         height: 300px;  */
         margin-top: 2vh;
         margin-left: 5px;
