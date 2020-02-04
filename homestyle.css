@@ -39,8 +39,9 @@ body{
     z-index: -4;
   }
 
-
-
+.two , .three {
+    min-height: 100vh;
+}
 nav{
     display: flex;
     /* position: fixed; */
@@ -50,6 +51,7 @@ nav{
     background-color: black;
     overflow: hidden;
 }
+
 .index{
     text-decoration: none;
     outline: none;
@@ -156,6 +158,7 @@ nav{
 .heading1{
     text-align: center;
     margin-top: 15px;
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 3.5em;
     color: white;
@@ -164,7 +167,7 @@ nav{
 .column{
     width: 25%;
     float: left;
-    padding: 15px 10px;
+    padding: 70px 22px;
     overflow-x: hidden; 	
 }
 .row::after{
@@ -191,6 +194,10 @@ nav{
     /* padding-top: 10px;  */
     margin: 25px 20px;
 }
+#vid{
+    margin-bottom: 80px;
+}
+
 .title{
     color: white;
     font-size: 20px;
@@ -213,7 +220,7 @@ nav{
 .column2{
     width: 20%;
     float: left;
-    padding: 30px 10px;
+    padding: 0px 10px;
 }
 
 .card2
@@ -441,17 +448,29 @@ ul li{
         /* word-spacing: 0px; */
         /* letter-spacing: 0px; */
     }
+    .three{
+        min-height: 0;
+        height: auto;
+    }
+    .hd{
+        margin: 30px 10px;
+    }
+    #row{
+        margin-top: 50px;
+    }
     .img2{
-        margin: 20px;
+        margin: 40px;
     }
     .heading1{
         text-align: center;
         /* margin-top: 15px; */
         font-size: 2em;
+        margin: 45px 0;
     }
     .title{
         margin: 5px 0;
     }
+   
     .head1{
         margin-top: 3vh;
         margin-bottom: 2.5vh;
@@ -462,7 +481,7 @@ ul li{
         align-items: center;
         align-content: center;
         padding: 2vh 0px;
-        /* margin-bottom: 10px; */
+        margin-bottom: 30px;
         /* margin-left: 18%;
         margin-right: 18%; */
     }
@@ -571,16 +590,16 @@ ul li{
     }
 }
 ::-webkit-scrollbar{
-    width: 12px;
+    width: 0px;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(transparent,#0066ff);
+    background: transparent;
     border-radius: 6px;
     height: 100px;
 }
-::-webkit-scrollbar-thumb:hover{
+/* ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(transparent,#00c6ff);
-}
+} */
 @keyframes navLinkFade{
     from{
         opacity: 0;
