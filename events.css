@@ -656,7 +656,7 @@ ul li{
     width: 0px;
 }
 ::-webkit-scrollbar-thumb{
-    background: transparent);
+    background: transparent;
     border-radius: 6px;
     height: 100px;
 }
