@@ -81,7 +81,7 @@ nav{
 .nav-links a:hover{
     color: #0066ff;
     font-size: 25px;
-    letter-spacing: 8px;
+    /* letter-spacing: 8px; */
 }
 .burger{
     display: none;
@@ -223,8 +223,8 @@ textarea::-webkit-input-placeholder {
         width: 10%;
     }
     .adg-logo{
-        /* width: 50px; 
-        height: 40px;  */
+        width: 220px; 
+        /* height: 40px;  */
         margin-top: 2vh;
         margin-left: 5px;
     }
@@ -313,16 +313,16 @@ textarea::-webkit-input-placeholder {
     /* visibility: visible; */
 }
 ::-webkit-scrollbar{
-    width: 12px;
+    width: 0px;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(transparent,#0066ff);
+    background: transparent;
     border-radius: 6px;
     height: 100px;
 }
-::-webkit-scrollbar-thumb:hover{
+/* ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(transparent,#00c6ff);
-}
+} */
 @keyframes navLinkFade{
     from{
         opacity: 0;
@@ -362,6 +362,7 @@ textarea::-webkit-input-placeholder {
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: center;
+    /* text-align: center; */
     /* height: 32vh; */
 }
 .footer-items{
@@ -369,7 +370,16 @@ textarea::-webkit-input-placeholder {
     padding: 10px 20px;
     box-sizing: border-box;
 }
-h1{
+.foot1{
+    margin-right: 80px;
+}
+/* .foot2{
+    margin-left: 10vw;
+}
+.foot3{
+    float: right;
+} */
+.aa{
     padding: 15px 0;
     font-size: 20px;
     color: #fff;
@@ -379,16 +389,14 @@ h1{
     color: rgb(212, 209, 209);
     font-size: 14px;
     text-align: justify;
-    line-height: 25px;
-}
-.foot1{
-    margin-right: 100px;
+    line-height: 24px;
 }
 ul{
     list-style: none;
-    color: rgb(212, 209, 209);
-    font-size: 18px;
+    color: #fff;
+    font-size: 16px;
     letter-spacing: 0.5px;
+    margin: 0;
 }
 ul a{
     text-decoration: none;
@@ -398,7 +406,7 @@ ul a{
 }
 ul li{
     margin: 5px 0;
-    height: 25px;
+    display: flex;
 }
 .social-media{
     width: 100%;
@@ -412,11 +420,16 @@ ul li{
     height: 30px;
     width: 30px;                                                                                                                                                                                                                                                                                                                                                                            
     margin-right: 40px;
+    margin-top: 1vh;
     color: rgb(212, 209, 209);
     transition: 0.3s;
+    padding: 0;
+    /* display: flexbox; */
+    float: left;
 }
 .social{
     font-size: 18px;
+    /* display: flex; */
 }
 .social li{
     margin-bottom: 15px;
@@ -428,6 +441,10 @@ ul li{
     color: #fff;
     font-size: 12px;
 }
+.icons{
+    margin-left: 40px;
+}
+
 @media screen and (max-width:1080px)
 {   .head1{
         margin: 0px;
@@ -462,6 +479,9 @@ ul li{
         width: 50%;
         padding: 0;
         margin: 0;
+    }
+    .icons{
+        margin-left: 20px;
     }
     .hd1{
       font-size: 17px;
@@ -530,7 +550,7 @@ ul li{
                 <div class="logo">
                     <a href="index.html" class="index">
                     <img src="/assets/adglogo3.svg" class="adg-logo" >
-                    <h4 class="hd1"><b> Apple Developers Group</b></h4>
+                    <!-- <h4 class="hd1"><b> Apple Developers Group</b></h4> -->
                     </a>
                 </div>
                 <ul class="nav-links">
@@ -618,47 +638,49 @@ ul li{
 </div>
 
 <div class="footer">
-        <div class="inner-footer">
-            <div class="footer-items">
-              <div class="foot1">
-                <h1>About</h1>
-                 <p>
-                  <b>Apple Developers Group (ADG)</b> is a name synonymous with excellence, simplicity and dedication. It is a registered student community at<b> VIT, Vellore</b> established under the <b>Apple University program</b>. A coterie of talented minds seeking not just success but perfection.
-    
-                 </p>
-            </div>
-          </div>
-            <div class="footer-items">
-                    <h1>Quick Links</h1>
-                     <div class="border">
-                         <ul class="social">
-                            <a href="index.html"><li>Home</li></a>
-                            <a href="about.html"><li>About</li></a>
-                            <a href="events.html"><li>Event</li></a>
-                            <a href="contact.html"><li>Contact</li></a>
-                         </ul>
-                     </div>
-                </div>
-                    <div class="footer-items">
-                            <h1>Social</h1>
-                            <div class="border">
-                             <div class="social-media">
-                                 <ul class="social">
-                                    <li><a href="https://www.facebook.com/vitios/" target="_blank"><i class="fa fa-facebook " aria-hidden="true"></i>Facebook</a></li>
-                                     <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><i class="fa fa-linkedin " aria-hidden="true"></i>Linkedin</a></li>
-                                     <li><a href="https://www.instagram.com/adgvit/" target="_blank"><i class="fa fa-instagram " aria-hidden="true"></i>Instagram</a></li>
-                                     <li><a href="#" target="_blank"><i class="fa fa-twitter " aria-hidden="true"></i>Twitter</a></li>
-                                 </ul>
-                             </div>
-                        </div>
-                    </div>
-        </div>
-        <div class="footer-bottom">
-            Copyright &copy; 2k19 Apple Developers Group
-        </div>
-    </div>
-    </div>
+  <div class="inner-footer">
+      <div class="footer-items">
+          <div class="foot1">
+          <h1 class="aa">About</h1>
+           <p>
+                  Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. It is a registered student community at VIT, Vellore established under the Apple University program. A coterie of talented minds seeking not just success but perfection.
 
+           </p>
+      </div>
+  </div>
+      <div class="footer-items">
+          <div class="foot2">
+              <h1 class="aa">Quick Links</h1>
+               <div class="border">
+                   <ul class="social">
+                       <a href="index.html"><li>Home</li></a>
+                       <a href="about.html"><li>About</li></a>
+                       <a href="events.html"><li>Event</li></a>
+                       <a href="contact.html"><li>Contact</li></a>
+                   </ul>
+               </div>
+          </div>
+      </div>
+              <div class="footer-items">
+                  <div class="foot3">
+                      <h1 class="aa">Social</h1>
+                      <div class="border">
+                       <div class="social-media">
+                           <ul class="social">
+                              <li><a href="https://www.facebook.com/vitios/" target="_blank"><img src="/assets/facebook-logo.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Facebook </span></a></li>
+                               <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><img src="/assets/linkedin-logo.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons">Linkedin</span></a></li>
+                               <li><a href="https://www.instagram.com/adgvit/" target="_blank"><img src="/assets/instagram-logo.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Instagram</span></a></li>
+                               <li><a href="https://twitter.com/adgvit" target="_blank"><img src="/assets/twitter-2.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Twitter</span></a></li>
+                           </ul>
+                       </div>
+                        </div>
+          </div>
+  </div>
+  </div>
+  <div class="footer-bottom">
+      Copyright &copy; 2k19 Apple Developers Group
+  </div>
+</div>
 
 
 

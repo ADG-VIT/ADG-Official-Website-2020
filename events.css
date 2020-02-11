@@ -29,7 +29,7 @@ nav{
     /* margin-bottom: 1.5vh; */
 }
 .adg-logo{
-    width: 250px; 
+    width: 250.2px; 
     /* height: 300px;  */
     /* margin-top: 1vh; */
     margin-left: 10px;
@@ -79,7 +79,7 @@ nav{
     margin: 5px;
     transition: 0.3s;
 }
-.text
+/* .text
 {
     color:white;
     font-size: 60px;
@@ -87,24 +87,24 @@ nav{
     padding-top: 5%;
     background:linear-gradient(45deg, #000000,#434343);
     width: 100%;
-    /* height: 75px; */
+    height: 75px;
     font-weight: bold;
     padding-bottom: 5%;
-}
-.sub-text
+} */
+/* .sub-text
 {
     color:white;
-    /* padding-left: 45%; */
+    padding-left: 45%;
     padding-top: 0.5%;
     font-size:50px;
     font-weight: bold;
     padding-bottom: 0.5%;
     text-align: center;
-}
-.heading
+} */
+/* .heading
 {
     padding-bottom: 20px;
-}
+} */
 /*.container
 {
     position: relative;
@@ -357,6 +357,72 @@ nav{
     -moz-box-shadow: 0 0 5px #000;
     box-shadow: 0 0 5px #000;
 }*/
+
+.column{
+    width: 100%;
+    float: left;
+    padding: 35px 0px;
+    overflow-x: hidden; 	
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.heading1{
+    text-align: center;
+    font-size: 60px;
+    margin: 10px;
+    color: white;
+}
+.heading{
+    font-size: 50px;
+    text-align: center;
+    margin: 0 10px 10px 10px ;
+    color: white;
+}
+.card
+{
+    width: 70vw;
+    height: auto;
+    margin: 0px 15vw;
+    background-color: #121212;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    color: white;
+}
+.img1{
+    width: 64vw;
+    height: auto;
+    margin: 3vh 2vw;
+    border-radius: 20px;
+}
+.txt1{
+    line-height: 25px;
+    margin: 0 2vw 0vh 2vw;
+    text-align: center;
+    text-justify: distribute;
+}
+@media screen and (max-width:600px)
+{
+    .column{
+        padding: 20px 0;
+    }
+    .card{
+        width: 80vw;
+        margin: 0 10vw;
+    }
+    .img1{
+        width: 74vw;
+        height: auto;
+    }
+    .heading{
+        margin: 20px;
+    }
+}
+
 .footer{
     width: 100%;
     background: #121212;
@@ -370,6 +436,7 @@ nav{
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: center;
+    /* text-align: center; */
     /* height: 32vh; */
 }
 .footer-items{
@@ -377,27 +444,32 @@ nav{
     padding: 10px 20px;
     box-sizing: border-box;
 }
-.hdd{
-    /* padding: 15px 0; */
+.foot1{
+    margin-right: 80px;
+}
+/* .foot2{
+    margin-left: 10vw;
+}
+.foot3{
+    float: right;
+} */
+.aa{
+    padding: 15px 0;
     font-size: 20px;
     color: #fff;
     text-transform: uppercase;
-}
-.foot1{
-    margin-right: 100px;
 }
 .footer-items p{
     color: rgb(212, 209, 209);
     font-size: 14px;
     text-align: justify;
-    line-height: 25px;
+    line-height: 24px;
 }
 ul{
     list-style: none;
     color: #fff;
     font-size: 16px;
     letter-spacing: 0.5px;
-    padding: 0;
     margin: 0;
 }
 ul a{
@@ -408,12 +480,11 @@ ul a{
 }
 ul li{
     margin: 5px 0;
-    height: 25px;
+    display: flex;
 }
 .social-media{
     width: 100%;
     color: rgb(212, 209, 209);
-    
 }
 
 .social-media a{
@@ -423,13 +494,18 @@ ul li{
     height: 30px;
     width: 30px;                                                                                                                                                                                                                                                                                                                                                                            
     margin-right: 40px;
+    margin-top: 1vh;
     color: rgb(212, 209, 209);
     transition: 0.3s;
+    padding: 0;
+    /* display: flexbox; */
+    float: left;
 }
 .social{
-    font-size: 15px;
-    padding: 0;
+    font-size: 18px;
+    /* display: flex; */
     margin: 0;
+    padding: 0;
 }
 .social li{
     margin-bottom: 15px;
@@ -440,6 +516,9 @@ ul li{
     background: #121212;
     color: #fff;
     font-size: 12px;
+}
+.icons{
+    margin-left: 40px;
 }
 @media screen and (max-width:1080px)
 {
@@ -452,9 +531,9 @@ ul li{
         font-size: 15px;
     }
     .adg-logo{
-        /* width: 50px; 
-        height: 40px;  */
-        /* margin-top: 2vh; */
+        width: 220px; 
+        /* height: 40px;  */
+        margin-top: 1vh;
         margin-left: 5px;
     }
     .nav{
@@ -507,10 +586,10 @@ ul li{
         padding-right: 0%;
     }
 
-    .heading,.sub-text{
+    /* .heading,.sub-text{
         text-align: center;
         font-size: 6vh;
-    }
+    } */
     .text
     {
         /*text-align: center;*/
@@ -614,7 +693,9 @@ ul li{
         padding: 0;
         margin: 0;
     }
-    
+    .icons{
+        margin-left: 20px;
+    }
     .foot1{
         margin-right: 0px;
     }
@@ -638,16 +719,16 @@ ul li{
     }
 }
 ::-webkit-scrollbar{
-    width: 12px;
+    width: 0px;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(transparent,#0066ff);
+    background: transparent;
     border-radius: 6px;
     height: 100px;
 }
-::-webkit-scrollbar-thumb:hover{
+/* ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(transparent,#00c6ff);
-}
+} */
 @keyframes navLinkFade{
     from{
         opacity: 0;
