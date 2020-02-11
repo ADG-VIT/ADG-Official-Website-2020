@@ -1,0 +1,13 @@
+.heading{
+    padding-top: 2%;
+  padding-bottom:2%;
+
+  background:linear-gradient(45deg, #000000,#434343);
+}
+.text{
+    font-size: 80px;
+  color: white;
+  font-family: roboto;
+  text-align: center;
+  text-transform:capitalize;
+}
