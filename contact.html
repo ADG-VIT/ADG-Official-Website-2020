@@ -98,11 +98,11 @@ nav{
 
   
 
-.Contact11 {
+ .Contact11 {
   padding-top: 4%;
   padding-bottom:4%;
 
-  background:linear-gradient(45deg, #000000,#434343);
+  
   
 }
 
@@ -112,7 +112,7 @@ nav{
   font-family: roboto;
   text-align: center;
   text-transform:capitalize;
-}
+} 
 
 
 .leftcolumn {   
@@ -126,23 +126,24 @@ nav{
   padding: 12px;
   border: 1px solid #020202;
   border-radius: 4px;
-  resize: vertical;
-  background-color:#404040;
-  color:#fff;
+  background-color:black;
+  margin-top: 12px;
+  color:#c8c8c8;
 }
 input[type=number], select, textarea {
   width: 100%;
   padding: 15px;
   border: 1px solid #020202;
   border-radius: 4px;
-  resize: vertical;
-  background-color:#404040;
-  color: #fff;
+  resize: none;
+  background-color:black;
+  color: #c8c8c8;
 }
 input[type="text"]::placeholder {  
            /* Firefox, Chrome, Opera */ 
    text-align: left;
-   color: #fff;
+   color: #c8c8c8;
+   resize:none;
 } 
 
 label {
@@ -151,17 +152,17 @@ label {
 }
 
 input[type=submit] {
-  background-color:#020202;
-  color: white;
+  background-color:black;
+  color: #c8c8c8;
   padding: 15px 30px;
   border: none;
-  border-radius: 12px;
-  width: 250px;
+  border-radius: 10px;
+  width: 189px;
   cursor: pointer;
   float: left;
-  margin-top: 15px;
+  margin-top: 30px;
   text-align: left;
-  background-image:linear-gradient(to right, black 20%, #302e2e 51%, #464242 100%) 
+  background-image:black;
 }
 
 input[type=submit]:hover {
@@ -172,19 +173,20 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color:#121212;
+  background-color:#1a1a1a;
   padding: 20px;
   margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 25px;
-  height: 540px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  height: 600px;
   box-shadow: 0px 0px 50px rgba(103, 75, 231, 0.103);
- margin-right: 20px;
- margin-left: 50px;
- color:white;
+ margin-right: 70px;
+ margin-left: 70px;
+ color:#c8c8c8;
+ 
 }
 textarea::-webkit-input-placeholder { 
-            color:white; 
+            color:#c8c8c8; 
             font-size: 16px;
             font-family: 'Roboto';
         } 
@@ -273,32 +275,36 @@ textarea::-webkit-input-placeholder {
  
 }
 
-
+.nav-links .selected{
+  color: #0066ff;
+}
 
 .card {
-  background-color: #121212;
+  background-color: #1a1a1a;
   padding: 20px;
   margin-top: 20px;
-  margin-bottom: 17px;
-  border-radius: 25px;
-  height: 260px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  height: 275px;
   box-shadow: 0px 0px 50px rgba(103, 75, 231, 0.103);
-  margin-right: 50px;
+  margin-right: 70px;
   margin-left: 2px;
   
   
 }
 
 .card p{
-  padding: 0px;
+  padding: 1px;
   word-wrap: break-word;
   overflow: hidden;
   white-space: pre-line;
-  font-size: 14px;
-  color:white;
+  font-size: 15px;
+  color:#c8c8c8;
+  text-align: left;
 }
 .card h2{
-  color:white;
+  color:#c8c8c8;
+  text-align: left;
 }
 
 .nav-active{
@@ -307,16 +313,16 @@ textarea::-webkit-input-placeholder {
     /* visibility: visible; */
 }
 ::-webkit-scrollbar{
-    width: 12px;
+    width: 0px;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(transparent,#0066ff);
+    background: transparent;
     border-radius: 6px;
     height: 100px;
 }
-::-webkit-scrollbar-thumb:hover{
+/* ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(transparent,#00c6ff);
-}
+} */
 @keyframes navLinkFade{
     from{
         opacity: 0;
@@ -558,7 +564,7 @@ ul li{
                         <a href="events.html"> Event</a>
                     </li>
                     <li>
-                            <a href="contact.html">Contact</a>
+                            <a class="selected" href="contact.html">Contact</a>
                         </li>
                 </ul>
                 <div class="burger">
@@ -616,10 +622,10 @@ ul li{
       <p>Vellore Institute Of Technology, Vellore 632014, Tamilnadu</p>
       <br>
       <p><b>Phone</b></p>
-      <p>223344555</p>
+      <p>+91 9099946404 </p>
       <br>
       <p><b>Email</b></p>
-      <p> appledevelopersgroup@gmail.com</p>
+      <p> ios@vit.ac.in</p>
     </div>
     
     <div class="card">
