@@ -57,6 +57,7 @@ body {
 .mobile {
   display: none;
 }
+
 @media screen and (max-width: 320px) {
   .laptop {
     display: none;
