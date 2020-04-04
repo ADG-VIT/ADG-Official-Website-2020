@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: black;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.welcome {
+  height: 46vh;
+  font-size: 5em;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 200%;
+  margin: 4% 30% 20% 30%;
+}
+
+.card-container {
+  display: flex;
+  align-items: space-evenly;
+  margin: 2%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 30vw;
+  height: auto;
+  align-items: center;
+  border: 1px solid #0066ff;
+  margin: 1%;
+  border-radius: 5%;
+  background: #1d1d1f;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 23px;
+  margin: 0 1% 1% 2%;
+  padding-bottom: 3%;
+}
+
+.title {
+  font-size: 4em;
+  text-align: center;
+  line-height: 150%;
+  padding-left: 1.5%;
+}
+
+.lead {
+  font-size: 30px;
+  text-align: center;
+  word-spacing: 3px;
+}
+
+.section {
+  height: 100vh;
+}
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.thin-text {
+  font-weight: 200;
+}
+
+.lesser-spacing {
+  word-spacing: 0px;
+}
+
+.video-section h1 {
+  font-weight: 400;
+}
+
+.icons {
+  width: 100px;
+  height: 100px;
+  padding-top: 10px;
+  margin: 30px;
+}
+
+.section-1 {
+  height: 95.5vh;
+  background: #fff;
+}
+
+#video {
+  width: 50vw;
+  height: 60vh;
+  margin: 6vh 25vw;
+  background-color: #121212;
+  border-radius: 50px;
+  outline: none;
+}
+
+#our-name {
+  word-spacing: 0px;
+}
+
+#namaste {
+  font-size: 1.25em;
+}
+
+#welcome-text {
+  line-height: 300%;
+}
+
+#our-domains {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-direction;
+  align-items: center;
+}
+
+#our-domains-title {
+  font-size: 80px;
+  margin: 0 0 2% 0;
+}
+
+#our-domains-desc {
+  margin: 3% 0 7% 0;
+  line-height: 200%;
+}
+
+#welcome-iPhone {
+  display: flex;
+  float: center;
+  align-items: center;
+  height: 80vh;
+  position: absolute;
+  bottom: 0px;
+  right: 32.5vw;
+}
