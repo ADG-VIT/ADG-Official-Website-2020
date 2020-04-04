@@ -16,15 +16,14 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Font - Roboto, Source Sans Pro -> Google Fonts -->
+    <!-- Font - Roboto -> Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,700,900|Source+Sans+Pro:200,300,400,700,900&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,700,900&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Fonts - Raleway, Open Sans, Monsterrat -> Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Open+Sans:400,700,900|Raleway:400,700,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap"
       rel="stylesheet"
     />
 
@@ -110,6 +109,31 @@
     <!-- NAVBAR Ends -->
 
     <!-- MAIN STARTS -->
+    <div class="main-wrapper">
+      <div class="introduction">
+        <div class="quote">
+          <p>
+            Coming togther is a Beginning. <br />
+            Staying togther is Progress. <br />
+            And, Working togther is Success.
+          </p>
+          <p>-Henry Ford</p>
+        </div>
+        <div class="adg-line">
+          <p>
+            The Apple Developers Group is forever grateful to all its partners
+            for inpiring us and motivating us to do more.
+          </p>
+        </div>
+        <div class="symbol">
+          <img
+            class="mini-icon"
+            id="down-arrow"
+            src="commonAssets/icons/down-arrow.png"
+            alt="down-arrow"
+          />
+        </div>
+      </div>
       <div class="partners">
         <div class="card" data-aos="zoom-in" data-aos-duration="800">
           <a href="https://www.axure.com/" target="_blank">
@@ -335,11 +359,23 @@
         <p>Copyright &copy; 2k20 Apple Developers Group</p>
       </div>
     </div> -->
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <script src="commonAssets/js/navbar1.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $("#down-arrow");
+          $nav.toggleClass("hidden", $(this).scrollTop() > $nav.height());
+        });
+      });
     </script>
   </body>
 </html>
