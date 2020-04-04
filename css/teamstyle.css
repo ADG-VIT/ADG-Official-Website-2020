@@ -90,6 +90,9 @@ body {
   height: 100%;
   padding: 20px 50px;
 }
+.crop{
+  border-radius: 50%;
+}
 .name {
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -398,8 +401,8 @@ ul li {
   .card2,
   .card3,
   .card4 {
-    width: 80vw;
-    margin: 0 10vw;
+    width: 70vw;
+    margin: 0 15vw;
   }
   /* .footer-items:nth-child(1) {
     width: 100%;

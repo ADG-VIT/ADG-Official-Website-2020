@@ -54,7 +54,7 @@ body {
   height: 93vh;
 }
 
-.mobile {
+.mobile1 {
   display: none;
 }
 
@@ -67,7 +67,7 @@ body {
     text-align: center;
   }
 
-  .mobile {
+  .mobile1 {
     display: block;
     max-width: 30vh;
     /* padding-top: 120%; */
@@ -110,7 +110,7 @@ body {
     text-align: center;
   }
 
-  .mobile {
+  .mobile1 {
     display: block;
     max-width: 30vh;
     padding-top: 40%;
@@ -166,7 +166,7 @@ body {
     text-align: center;
   }
 
-  .mobile {
+  .mobile1 {
     display: block;
     max-width: 30vh;
   }
