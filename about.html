@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Custom Common Navbar CSS -->
     <link rel="stylesheet" href="commonAssets/css/navbar1.css" />
 
@@ -117,7 +120,7 @@
 
     <!-- Main -->
     <div class="main-wrapper">
-      <div class="introduction">
+      <div class="introduction" data-aos="fade-up" data-aos-duration="1000">
         <div class="intro-text">
           <p>
             <b>Apple Developers Group (ADG)</b> is a name synonymous with
@@ -142,14 +145,14 @@
       <!-- End Intro -->
 
       <div class="mission">
-        <div class="img">
+        <div class="img" data-aos="fade-right" data-aos-duration="1500">
           <img
             src="commonAssets/imgs/image1.png"
             alt="Techinical workshop taking place"
             class="image"
           />
         </div>
-        <div class="mission-text">
+        <div class="mission-text" data-aos="fade-left" data-aos-duration="1500">
           <div class="title"><b> OUR MISSION. </b></div>
           <div class="text">
             Our mission is to provide a base for zealous students so that they
@@ -164,14 +167,18 @@
       </div>
       <!-- End Mission -->
       <div class="vission">
-        <div class="img">
+        <div class="img" data-aos="fade-left" data-aos-duration="1500">
           <img
             src="commonAssets/imgs/image2.png"
             alt="Techinical workshop taking place"
             class="image padding"
           />
         </div>
-        <div class="mission-text">
+        <div
+          class="mission-text"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <div class="title"><b> OUR VISSION. </b></div>
           <div class="text">
             At ADG-VIT, our vision is to elevate the standards of technical
@@ -189,5 +196,9 @@
     </div>
     <!-- End Main -->
     <script src="commonAssets/js/navbar1.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
