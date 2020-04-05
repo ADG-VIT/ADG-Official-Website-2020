@@ -48,7 +48,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .row {
-    height: 33vh;
+    height: 40%;
     margin-bottom: 15%;
   }
 
@@ -57,10 +57,10 @@ body {
   }
 
   .heading {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .txt {
-    font-size: 11px;
+    font-size: 17px;
   }
 }
