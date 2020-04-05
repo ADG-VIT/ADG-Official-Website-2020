@@ -46,6 +46,9 @@ body {
   text-justify: distribute;
 }
 @media screen and (max-width: 600px) {
+  .txt1 {
+    font-size: 11px;
+  }
   .column {
     padding: 20px 0;
   }
