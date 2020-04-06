@@ -1,70 +1,47 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap");
 
-.center {
-  text-align: center;
+.footer-wrapper {
+  background-color: #121212;
+  width: 100%;
 }
 
-.dandi {
-  color: #0066ff;
-  font-weight: bold;
-}
-
-.inner-footer-flexed {
-  display: flex;
-  justify-content: space-evenly;
-  height: 490px;
-  line-height: 300%;
-}
-
-.social {
-  list-style-type: none;
-  padding: 0 0 0 40px;
-}
-
-.social a {
-  color: rgb(230, 217, 217);
-  text-decoration: none;
-}
-
-.social a:hover {
-  color: #0066ff;
-  font-weight: 300;
-  transition: 0.2s;
-}
-
-.footer-bottom {
+.footer {
+  width: 80%;
+  margin: 0 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
-#footer {
-  color: rgb(230, 217, 217);
-  background-color: #1d1d1f;
-  height: 76vh;
+.footer .links {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-#cii {
+.footer .quick-links .ulzz {
+  display: flex;
+}
+
+.footer p {
   text-align: center;
-  font-size: 70px;
-  margin-top: 40px;
 }
 
-#footer-logo {
-  height: 80px;
+.footer .head {
+  font-size: 30px;
+  font-weight: 700;
 }
 
-#quick-links {
-  list-style-type: none;
+.footer ul {
+  list-style: none;
+  line-height: 200%;
 }
 
-#quick-links a {
+.footer ul a {
   color: rgb(230, 217, 217);
   text-decoration: none;
 }
 
-#quick-links a:hover {
+.footer ul a:hover {
   color: #0066ff;
-  font-weight: 300;
-  transition: 0.2s;
+  transition: 0.3s;
 }
