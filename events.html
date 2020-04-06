@@ -10,6 +10,9 @@
       name="keywords"
       content="css3, transitions, thumbnail, animation, hover, effect, description, caption"
     />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" type="text/css" href="css/events.css" />
     <link rel="stylesheet" href="commonAssets/css/navbar1.css" />
     <link
@@ -104,12 +107,16 @@
     </nav>
     <!-- END NAVBAR -->
     <div class="main-wrapper">
-      <div class="row row1">
+      <div class="row row1" data-aos="fade-up" data-aos-duration="800">
         <div class="header">
           <h2 class="heading">iOS Fusion</h2>
         </div>
         <div class="card">
-          <img src="commonAssets/imgs/iOS_Fusion.png" alt="" class="img" />
+          <img
+            src="commonAssets/imgs/iOS_Fusion.png"
+            alt="People in a Gallery"
+            class="img"
+          />
           <p class="txt">
             iOS Fusion is a premium workshop conducted by Apple Developers
             Group, VIT. Participants in our workshop are taught to create apps
@@ -121,12 +128,16 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" data-aos="fade-up" data-aos-duration="800">
         <div class="header">
           <h2 class="heading">UniDev</h2>
         </div>
         <div class="card">
-          <img src="commonAssets/imgs/UniDev.png" alt="" class="img" />
+          <img
+            src="commonAssets/imgs/UniDev.png"
+            alt="People in a Gallery"
+            class="img"
+          />
           <p class="txt">
             UNIDEV, a one-day workshop for both novices and experts, that gives
             a chance to explore tricks and tweaks of using Unity Software along
@@ -136,12 +147,16 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" data-aos="fade-up" data-aos-duration="800">
         <div class="header">
           <h2 class="heading">HackGrid</h2>
         </div>
-        <div class="card">
-          <img src="commonAssets/imgs/Hackgrid.png" alt="" class="img" />
+        <div class="card" style="margin-bottom: 5%;">
+          <img
+            src="commonAssets/imgs/Hackgrid.png"
+            alt="People in a Gallery"
+            class="img"
+          />
           <p class="txt">
             Apple Developers Group conducts a 48 hour long hackathon that
             encourages young developers to come up with scintillating technical
@@ -150,7 +165,10 @@
         </div>
       </div>
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="commonAssets/js/navbar1.js"></script>
   </body>
 </html>

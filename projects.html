@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Custom Common Navbar CSS -->
     <link rel="stylesheet" href="commonAssets/css/navbar1.css" />
 
@@ -115,16 +118,20 @@
           src="commonAssets/imgs/TapVIT.svg"
           alt="iPhone"
           class="photo laptop"
+          data-aos="fade-right"
+          data-aos-duration="800"
         />
         <div class="center">
           <img
             src="commonAssets/imgs/tap_half.svg"
             alt="cropped iPhone"
             class="mobile1"
+            data-aos="zoom-in"
+            data-aos-duration="800"
           />
         </div>
 
-        <div class="text">
+        <div class="text" data-aos="fade-left" data-aos-duration="800">
           <h1>TAP.</h1>
           <p class="description">
             TAP is an app with powerful feautures to login to VIT WiFi without
@@ -164,14 +171,19 @@
           src="commonAssets/imgs/iphone.png"
           alt="iPhone"
           class="photo laptop"
+          data-aos="fade-right"
+          data-aos-duration="800"
         />
+
         <img
           src="commonAssets/imgs/iphone_mock_cropped.png"
           alt="cropped iPhone"
           class="mobile1"
+          data-aos="zoom-in"
+          data-aos-duration="800"
         />
 
-        <div class="text">
+        <div class="text" data-aos="fade-left" data-aos-duration="800">
           <h1>Paper VIT.</h1>
           <p class="description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
@@ -286,6 +298,10 @@
         <p>Copyright &copy; 2k20 Apple Developers Group</p>
       </div>
     </section> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="commonAssets/js/navbar1.js"></script>
   </body>
 </html>

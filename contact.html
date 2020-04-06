@@ -4,11 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Custom common Navbar CSS -->
     <link rel="stylesheet" href="commonAssets/css/navbar1.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="icon" type="image/jpeg" href="/assets/adg logo.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
@@ -97,7 +98,7 @@
       <!-- END NAVBAR -->
 
       <div class="main-wrapper">
-        <div class="form-wrapper">
+        <div class="form-wrapper" data-aos="fade-up" data-aos-duration="800">
           <form
             action="https://formspree.io/appledevelopersgroup@gmail.com"
             method="POST"
@@ -154,7 +155,12 @@
         </div>
 
         <div class="contact-details">
-          <div class="info-wrapper" id="info">
+          <div
+            class="info-wrapper"
+            id="info"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <div class="info">
               <p class="heading">Contact Info</p>
               <!-- List -->
@@ -179,7 +185,12 @@
               <!-- List ends -->
             </div>
           </div>
-          <div class="info-wrapper" id="more-info">
+          <div
+            class="info-wrapper"
+            id="more-info"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <div class="info">
               <p class="heading">More Info</p>
               <p class="detail">
@@ -194,5 +205,10 @@
       </div>
     </div>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="commonAssets/js/navbar1.js"></script>
   <script src="commonAssets/js/navbar1.js"></script>
 </html>
