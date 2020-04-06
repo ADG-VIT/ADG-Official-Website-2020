@@ -3,6 +3,7 @@
 .footer-wrapper {
   background-color: #121212;
   width: 100%;
+  padding-top: 3%;
 }
 
 .footer {
@@ -44,4 +45,25 @@
 .footer ul a:hover {
   color: #0066ff;
   transition: 0.3s;
+}
+
+@media screen and (max-width: 950px) {
+  .footer .head {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer .links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quick-links .ulzz {
+    justify-content: space-evenly;
+  }
+
+  .pad0 {
+    padding: 0;
+  }
 }
