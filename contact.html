@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Custom common Navbar CSS -->
+    <link rel="stylesheet" href="commonAssets/css/navbar1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/jpeg" href="/assets/adg logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="icon" type="image/jpeg" href="commonAssets/icons/adg logo.png" />
+    <title>ADG | VIT Vellore</title>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <nav>
+        <div class="navbar">
+          <div class="laptop">
+            <ul class="nav-links">
+              <li>
+                <a href="index.html">
+                  <img src="commonAssets/icons/adg logo.png" class="adg-logo" />
+                </a>
+              </li>
+              <li>
+                <a href="about.html"> About</a>
+              </li>
+              <li>
+                <a href="partners.html"> Partners</a>
+              </li>
+              <li>
+                <a href="events.html"> Events</a>
+              </li>
+              <li>
+                <a href="projects.html">Projects</a>
+              </li>
+              <li>
+                <a href="team.html">Team</a>
+              </li>
+              <li>
+                <a href="contact.html" class="selected">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile">
+            <div class="mobile-nav">
+              <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+              <div id="mobile-adg-logo">
+                <a href="index.html">
+                  <img src="commonAssets/icons/adg logo.png" class="adg-logo" />
+                </a>
+              </div>
+            </div>
+            <div class="menu hidden" id="menu">
+              <ul class="menu-links">
+                <li>
+                  <a href="index.html">
+                    <img
+                      src="commonAssets/icons/adg logo.png"
+                      style="width: 65%;"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="about.html"> About</a>
+                </li>
+                <li>
+                  <a href="partners.html"> Partners</a>
+                </li>
+                <li>
+                  <a href="events.html"> Events</a>
+                </li>
+                <li>
+                  <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                  <a href="team.html">Team</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="selected">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- END NAVBAR -->
+
+      <div class="main-wrapper">
+        <div class="form-wrapper">
+          <div class="form">
+            <div style="margin-top: 20px;">
+              <label for="name" class="label">Name:</label>
+              <br />
+              <input
+                type="text"
+                id="Name"
+                class="input"
+                placeholder="Please Enter Your Full Name"
+              />
+            </div>
+            <div>
+              <label for="email" class="label">E-Mail:</label>
+              <br />
+              <input
+                type="email"
+                id="email"
+                class="input"
+                placeholder="Please Enter Your Work email address"
+              />
+            </div>
+            <div>
+              <label for="phone" class="label">Phone Number:</label>
+              <br />
+              <input
+                type="number"
+                id="phone"
+                class="input"
+                placeholder="Please Enter Your Phone Number"
+              />
+            </div>
+            <div>
+              <label for="message" class="label">Your Message:</label>
+              <br />
+              <textarea
+                type="text"
+                id="message"
+                class="input"
+                placeholder="We'd Love To Hear From You!"
+              ></textarea>
+            </div>
+            <div>
+              <input type="submit" id="submit" class="input" value="Send" />
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-details">
+          <div class="info-wrapper" id="info">
+            <div class="info">
+              <p class="heading">Contact Info</p>
+              <!-- List -->
+              <div>
+                <div>
+                  <p class="label">Address:</p>
+                  <address class="detail">
+                    Vellore Institute Of Technology, Vellore 632014, Tamilnadu
+                  </address>
+                </div>
+
+                <div>
+                  <p class="label">Phone Number:</p>
+                  <p class="detail">+91 9099946404</p>
+                </div>
+
+                <div>
+                  <p class="label">E-Mail Address:</p>
+                  <p class="detail">ios@vit.ac.in</p>
+                </div>
+              </div>
+              <!-- List ends -->
+            </div>
+          </div>
+          <div class="info-wrapper" id="more-info">
+            <div class="info">
+              <p class="heading">More Info</p>
+              <p class="detail">
+                Apple Developers group is a group of inspired individuals who
+                are committed to bring the best of technology to the next
+                generation of programmers. Apple Developers group is affiliated
+                to Apple University Program.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="commonAssets/js/navbar1.js"></script>
+</html>
