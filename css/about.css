@@ -2,6 +2,10 @@ html {
   font-size: 62.5%;
 }
 
+* {
+  overflow-x: hidden;
+}
+
 body {
   background: black;
   color: rgb(230, 217, 217);
