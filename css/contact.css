@@ -16,6 +16,16 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+a {
+  color: rgb(230, 217, 217);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #06f;
+  transition: 0.3s;
+}
+
 .main-wrapper {
   display: flex;
   justify-content: space-between;
