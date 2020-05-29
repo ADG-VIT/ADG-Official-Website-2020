@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
+    <link rel="stylesheet" href=
 
     <!-- Custom common Navbar CSS -->
     <link rel="stylesheet" href="commonAssets/css/navbar1.css" />
@@ -29,10 +30,18 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/jpeg" href="commonAssets/icons/adg logo.png" />
+    <link rel="stylesheet" href="css/preloader.css">
+    
+    
     <title>ADG | VIT Vellore</title>
   </head>
 
-  <body>
+  <body >
+    <div id="overlay" >
+      <img src="commonAssets/icons/adggif.gif" class="gif">
+
+    </div>
+   <div id="main">
     <!-- NAVBAR Starts -->
     <nav>
       <div class="navbar">
@@ -130,14 +139,79 @@
       </section>
       <section class="two">
         <h1 class="heading1" id="apple"><b> Apple Developers Group</b></h1>
+     
         <p class="hd" id="desc">
           We bring out the developer in you. Become not only someone who deploys
           apps, but also builds the world Brick by Brick
         </p>
+
+           <!--Cards Start -->
+           <div class="cardContainer">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                 <img class="cardicons" src="commonAssets/icons/partners.svg" alt="Partners">
+                  <h1 >Partners</h1>
+                </div>
+                <div class="flip-card-back">
+
+                  <p class="desc">A short cut to companies helping us out</p>
+                  <a  href="partners.html"><button class="btn">View More</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                 <img class="cardicons" src="commonAssets/icons/projects.svg" alt="Projects">
+                  <h1 >Projects</h1>
+                </div>
+                <div class="flip-card-back">
+
+                  <p class="desc">See what we have made.</p>
+                  <a  href="projects.html"><button class="btn">View More</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                 <img class="cardicons" src="commonAssets/icons/calendar.svg" alt="Events">
+                  <h1 >Events</h1>
+                </div>
+                <div class="flip-card-back">
+
+                  <p class="desc">Come see us.</p>
+                  <a  href="events.html"><button class="btn">View More</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                 <img class="cardicons" src="commonAssets/icons/teams.svg" alt="Team">
+                  <h1 >Team</h1>
+                </div>
+                <div class="flip-card-back">
+
+                  <p class="desc">Meet the masterminds behind ADG.</p>
+                  <a  href="team.html"><button class="btn">View More</button></a>
+                </div>
+              </div>
+            </div>
+            
+           
+            </div>
+          
+    
+          
+          <!--CArds end-->
+    
         <video class="video1" poster="commonAssets/icons/adglogo3.svg" controls>
-          <source src="commonAssets/Video/adgIntro1.mp4" type="video/mp4" />
+          <source src="commonAssets/Video/finalADGWebsite.mp4" type="video/mp4" />
         </video>
       </section>
+               
 
       <section class="four">
         <h1 class="heading1" id="about">Our Domains</h1>
@@ -220,76 +294,49 @@
       </section>
     </div>
     <!-- Footer Start -->
-    <div class="footer-wrapper">
-      <div class="footer">
-        <div class="links">
-          <div class="quick-links">
-            <p class="head">QUICK LINKS</p>
-            <div class="ulzz">
-              <ul class="pad0">
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="parters.html">Partners</a>
-                </li>
-                <li>
-                  <a href="events.html">Events</a>
-                </li>
-              </ul>
-              <ul class="pad0">
-                <li>
-                  <a href="projects.html">Projects</a>
-                </li>
-                <li>
-                  <a href="team.html">Team</a>
-                </li>
-                <li>
-                  <a href="contact.html">Contact Us</a>
-                </li>
-              </ul>
-            </div>
+    <div class="footer">
+      <div class="inner-footer">
+          <div class="footer-items">
+              <div class="foot1">
+              <h1>About</h1>
+               <p>
+                Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. It is a registered student community at VIT, Vellore established under the Apple University program. A coterie of talented minds seeking not just success but perfection.
+  
+               </p>
           </div>
-          <div class="contacts">
-            <p class="head">Have an Idea or Query?</p>
-            <div class="ulzz">
-              <ul class="pad0">
-                <li>
-                  <a href="tel://+919099946404"
-                    ><i class="fas fa-phone-alt"></i> +91 9099946404</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:ios@vit.ac.in"
-                    ><i class="fas fa-at"></i> ios@vit.ac.in</a
-                  >
-                </li>
-              </ul>
-            </div>
+      </div>
+          <div class="footer-items">
+              <div class="foot2">
+                  <h1 class="headQL">Quick Links</h1>
+                   <div class="border">
+                       <ul class="social qlinks">
+                           <a href="index.html"><li>Home</li></a>
+                           <a href="about.html"><li>About</li></a>
+                           <a href="partners.html"><li>Partners</li></a>
+                           <a href="events.html"><li>Events</li></a>
+                           <a href="projects.html"><li>Projects</li></a>
+                           <a href="team.html"><li>Team</li></a>
+                           <a href="contact.html"><li>Contact Us</li></a>
+                       </ul>
+                   </div>
+              </div>
           </div>
-          <div class="social-media">
-            <p class="head">Stay Updated!</p>
-            <div class="ulzz">
-              <ul class="pad0">
-                <li>
-                  <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+                  <div class="footer-items">
+                      <div class="foot3">
+                          <h1>Social</h1>
+                          <div class="border">
+                           <div class="social-media">
+                               <ul class="social sm">
+                                  <li><a href="https://www.facebook.com/vitios/" target="_blank"><img src="commonAssets/imgs/facebook-logo-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Facebook </span></a></li>
+                                   <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><img src="commonAssets/imgs/linkedin-logo-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons">Linkedin</span></a></li>
+                                   <li><a href="https://www.instagram.com/adgvit/" target="_blank"><img src="commonAssets/imgs/instagram-logo-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Instagram</span></a></li>
+                                   <li><a href="https://twitter.com/adgvit" target="_blank"><img src="commonAssets/imgs/twitter-2-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Twitter</span></a></li>
+                               </ul>
+                           </div>
+                            </div>
+              </div>
+      </div>
+      </div>
         <div class="copyright">
           <p>
             Copyright &copy;
@@ -300,7 +347,6 @@
           </p>
         </div>
       </div>
-    </div>
     <!-- End Footer -->
 
     <script src="commonAssets/js/navbar1.js"></script>
@@ -310,5 +356,8 @@
     <script>
       AOS.init();
     </script>
+   </div>
+   <script src="commonAssets/js/preloader.js">
+   </script>
   </body>
 </html>

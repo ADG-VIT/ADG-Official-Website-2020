@@ -21,9 +21,15 @@
     />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="icon" type="image/jpeg" href="commonAssets/icons/adg logo.png" />
+    <link rel="stylesheet" href="css/preloader.css">
     <title>ADG | VIT Vellore</title>
   </head>
   <body>
+    <div id="overlay" >
+      <img src="commonAssets/icons/adggif.gif" class="gif">
+
+    </div>
+    <div id='main'>
     <div class="site-wrapper">
       <nav>
         <div class="navbar">
@@ -214,89 +220,62 @@
       </div>
     </div>
     <!-- End Main -->
-    <!-- Footer Start -->
-    <div class="footer-wrapper">
-      <div class="footer">
-        <div class="links">
-          <div class="quick-links">
-            <p class="head">QUICK LINKS</p>
-            <div class="ulzz">
-              <ul class="pad0">
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="parters.html">Partners</a>
-                </li>
-                <li>
-                  <a href="events.html">Events</a>
-                </li>
-              </ul>
-              <ul class="pad0">
-                <li>
-                  <a href="projects.html">Projects</a>
-                </li>
-                <li>
-                  <a href="team.html">Team</a>
-                </li>
-                <li>
-                  <a href="contact.html">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="contacts">
-            <p class="head">Have an Idea or Query?</p>
-            <div class="ulzz">
-              <ul class="pad0">
-                <li>
-                  <a href="tel://+919099946404"
-                    ><i class="fas fa-phone-alt"></i> +91 9099946404</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:ios@vit.ac.in"
-                    ><i class="fas fa-at"></i> ios@vit.ac.in</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="social-media">
-            <p class="head">Stay Updated!</p>
-            <div class="ulzz">
-              <ul class="pad0">
-                <li>
-                  <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="copyright">
-          <p>
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            All rights reserved
-          </p>
-        </div>
+  <!-- Footer Start -->
+<div class="footer">
+  <div class="inner-footer">
+      <div class="footer-items">
+          <div class="foot1">
+          <h1>About</h1>
+           <p>
+            Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. It is a registered student community at VIT, Vellore established under the Apple University program. A coterie of talented minds seeking not just success but perfection.
+
+           </p>
       </div>
+  </div>
+      <div class="footer-items">
+          <div class="foot2">
+              <h1 class="headQL">Quick Links</h1>
+               <div class="border">
+                   <ul class="social qlinks">
+                       <a href="index.html"><li>Home</li></a>
+                       <a href="about.html"><li>About</li></a>
+                       <a href="partners.html"><li>Partners</li></a>
+                       <a href="events.html"><li>Events</li></a>
+                       <a href="projects.html"><li>Projects</li></a>
+                       <a href="team.html"><li>Team</li></a>
+                       <a href="contact.html"><li>Contact Us</li></a>
+                   </ul>
+               </div>
+          </div>
+      </div>
+              <div class="footer-items">
+                  <div class="foot3">
+                      <h1>Social</h1>
+                      <div class="border">
+                       <div class="social-media">
+                           <ul class="social">
+                              <li><a href="https://www.facebook.com/vitios/" target="_blank"><img src="commonAssets/imgs/facebook-logo-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Facebook </span></a></li>
+                               <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><img src="commonAssets/imgs/linkedin-logo-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons">Linkedin</span></a></li>
+                               <li><a href="https://www.instagram.com/adgvit/" target="_blank"><img src="commonAssets/imgs/instagram-logo-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Instagram</span></a></li>
+                               <li><a href="https://twitter.com/adgvit" target="_blank"><img src="commonAssets/imgs/twitter-2-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Twitter</span></a></li>
+                           </ul>
+                       </div>
+                        </div>
+          </div>
+  </div>
+  </div>
+    <div class="copyright">
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        All rights reserved
+      </p>
     </div>
-    <!-- End Footer -->
+  </div>
+<!-- End Footer -->
+    </div>
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
@@ -304,3 +283,6 @@
   </script>
   <script src="commonAssets/js/navbar1.js"></script>
 </html>
+<script src="commonAssets/js/preloader.js">
+
+</script>

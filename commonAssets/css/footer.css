@@ -1,69 +1,199 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap");
+a{
+  margin-bottom: 3%;
+  
 
-.footer-wrapper {
-  background-color: #121212;
+}
+
+.footer{
   width: 100%;
-  padding-top: 3%;
+  background: #121212;
+  display: block;
 }
-
-.footer {
-  width: 80%;
-  margin: 0 10%;
+.inner-footer{
+  width: 95%;
+  margin: 0 auto;
+  padding: 0px 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  /* text-align: center; */
+  /* height: 32vh; */
 }
-
-.footer .links {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.footer .quick-links .ulzz {
-  display: flex;
-}
-
-.footer p {
+.footer-items{
+  width: 33%;
+  padding: 10px 20px;
+  box-sizing: border-box;
   text-align: center;
 }
 
-.footer .head {
-  font-size: 25px;
-  font-weight: 700;
+
+
+
+
+
+/* .foot2{
+  margin-left: 10vw;
+*/
+.foot3{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+
+} 
+.sm{
+  margin-left: 20%;
+  
+}
+.social-media ul{
+  margin-left: 35%;
+
+}
+.footer-items p{
+  color: rgb(212, 209, 209);
+  font-size: 14px;
+  text-align: justify;
+  line-height: 24px;
+}
+.footer-bottom{
+  padding: 10px;
+  text-align: center;
+  background: #121212;
+  color: #fff;
+  font-size: 12px;
+}
+@media screen and (min-width:1200px){
+  .footer-items .foot2{
+    
+    margin-left: 30%;
+  }
+  .footer-items .foot1,.foot3{
+    margin-left: 20%;
+  
+  }
+ 
+}
+@media screen and (min-width:380px) and (max-width:1200px)
+{
+  .footer-items:nth-child(1){
+    width: 100%;
+  
+    padding: 5px 10px;
+}
+.footer-items:nth-child(2){
+    width: 50%;
+    padding: 0;
+   
+ 
+}
+.footer-items:nth-child(3){
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+.foot1{
+  margin-right: 0px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer-items .foot2 ,.foot1 , .foot3{
+  padding:  0;
+  margin-left: 0;
+}
+}
+@media screen and (max-width:490px){
+  .social-media ul{
+    margin-left: 10%;
+  }
+  .footer-items .foot2 ,.foot1 , .foot3{
+    padding:  0;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width:379px){
+  .footer{
+    width: 100%;
+  }
+  .footer-items{
+    width: 100%;
+  }
+.foot1,.foot3{
+
+  align-items: center;
+  justify-content:
+  
+  center;
+  text-align: center;
+}
+.footer-items .foot2{
+  padding-left: 0;
+}
+.footer-items .foot2 ,.foot1 , .foot3{
+  padding:  0;
+  margin-left: 0;
+}
+ 
 }
 
-.footer ul {
+.copyright{
+  text-align: center;
+  padding: 2%;
+  font-size: 16px;
+}
+h1 {
+  padding: 15px 0;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+ul {
   list-style: none;
-  line-height: 200%;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding-inline-start: 0;
 }
 
-.footer ul a {
-  color: rgb(230, 217, 217);
+ul a {
   text-decoration: none;
-}
-
-.footer ul a:hover {
-  color: #0066ff;
+  outline: none;
+  color: rgb(212, 209, 209);
   transition: 0.3s;
 }
 
-@media screen and (max-width: 950px) {
-  .footer .head {
-    font-size: 19px;
-  }
+ul li {
+  margin: 5px 0;
+  display: flex;
+
+}
+ul li:hover{
+  color:mintcream;
 }
 
-@media screen and (max-width: 700px) {
-  .footer .links {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .quick-links .ulzz {
-    justify-content: space-evenly;
-  }
-
-  .pad0 {
-    padding: 0;
-  }
+.icons {
+  margin-left: 20px;
+  
+}
+.icons:hover{
+  color:mintcream;
+}
+.qlinks{
+  margin-left: 15%;
+}
+.qlinks li{
+ float: left;
+  width: 50%;
+  margin-bottom: 2%;
+  margin-left: 0;
+  
+  overflow-wrap: initial;
+  
+  
+}
+.headQL{
+ margin-right: 10%;
 }
