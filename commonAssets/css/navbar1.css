@@ -7,12 +7,13 @@ body {
 
 .navbar {
   width: 100%;
-  background-color: #121212;
+  background-color: black;
+  
 }
 
 .nav-links {
   margin: 0;
-  height: 5vh;
+  height: 8vh;
   display: flex;
   list-style: none;
   justify-content: space-evenly;
@@ -21,7 +22,7 @@ body {
 }
 
 .nav-links a {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 200;
   text-decoration: none;
   color: white;
@@ -41,13 +42,13 @@ body {
 .mobile {
   display: none;
 }
-
-.hidden {
+.hidden{
   display: none;
 }
 
+
 .adg-logo {
-  width: 65%;
+  width: 68%;
 }
 
 @media only screen and (max-width: 1020px) {
@@ -58,26 +59,34 @@ body {
     display: none;
   }
   .menu {
-    height: 80vh;
-    background-color: #121212;
-    transition: 0.3s;
+    height: 70vh;
+    background-color: black;
   }
-
+  hr{
+    margin: 0 50px;
+    border: 0.1px solid darkgray;
+  }
+  .img5{
+    width: 5%;
+    margin-left: 45%;
+    margin-top: 0;
+  }
   .menu-links {
     margin: 0;
     padding: 0;
-    height: 90%;
-    font-size: 20px;
+    height: 100%;
+    font-size: 15px;
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-self: left;
   }
 
   .menu-links a {
     color: white;
     text-decoration: none;
+    margin: 0 50px;
   }
 
   .menu-links a:hover {
@@ -97,13 +106,14 @@ body {
   }
 
   .adg-logo {
-    margin: 4% 0;
-    width: 65%;
+    width: 60%;
   }
-
+  #mobile-adg-logo{
+    margin: 0;
+  }
   .burger {
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 8px;
   }
   .burger div {
     width: 25px;
@@ -120,6 +130,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 5%;
+    margin: 0 2%;
+    height: 9vh;
   }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+  transition-duration: 0.5s;
+}
+.toggle .line2{
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+  transition-duration: 0.5s;
 }
