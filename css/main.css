@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+
+.two,
+.four {
+  min-height: 100vh;
+}
+.index {
+  text-decoration: none;
+  outline: none;
+  color: white;
+  display: flex;
+}
+.logo {
+  display: flex;
+  text-transform: uppercase;
+  /* letter-spacing: 2px; */
+  font-size: 20px;
+  width: 65%;
+  margin-bottom: 1.5vh;
+}
+.hd1 {
+  margin-top: 15px;
+  margin-left: 2vh;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+}
+.cover {
+  background: url("../commonAssets/imgs/home_cover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 95vh;
+  overflow: hidden;
+}
+.txt {
+  text-align: center;
+  padding-top: 44vh;
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.1em;
+}
+.heading1 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  
+  font-weight: 700;
+  font-size: 3.5em;
+  color: white;
+  letter-spacing: 0.08em;
+}
+.column {
+  width: 25%;
+  float: left;
+  padding: 70px 22px;
+  overflow-x: hidden;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+  width: 22vw;
+  height: 39.5vh;
+  margin: 0px 0vw;
+  background-color: #121212;
+  text-align: center;
+  border-radius: 10px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  
+}
+.cardContainer{
+  width: 100%;
+  position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    margin-top:10vh ;
+}
+
+.flip-card {
+  display: flex;
+ flex-direction: row;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  margin: 3%;
+  margin-bottom: 10%;
+  
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  
+  
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  border-radius: 25px;
+  backface-visibility: hidden;
+  box-shadow: darkgrey;
+}
+
+.flip-card-front {
+  background-color: #121212;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #F5F6F7;
+  color: black;
+  transform: rotateY(180deg);
+  text-align: center;
+  
+  font-size: larger;
+
+}
+.desc{
+  margin-top: 20%;
+
+}
+.btn{
+
+border-radius:10px;
+border: transparent;
+width: fit-content;
+background-color: #121212;
+color: azure;
+width: 50%;
+position: absolute;
+top: 65%;
+align-items: center;
+margin: 5%;
+padding: 7%;
+left: 20%;
+
+}
+.btn:hover{
+  background-color: rgb(36, 42, 42);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+
+.img2 {
+  width: 100px;
+  height: 100px;
+  margin: 25px 20px;
+}
+.four {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#vid {
+  margin-bottom: 80px;
+}
+.title {
+  color: white;
+  font-size: 20px;
+  margin: 20px 0 10px 0;
+  padding: 0 10px;
+}
+.events {
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+.team {
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+.hd {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 40px 50px;
+}
+
+.column2 {
+  width: 20%;
+  float: left;
+  padding: 0px 5px;
+}
+
+.card2 {
+  max-width: 40vw;
+  height: auto;
+  background-color: transparent;
+  text-align: center;
+  padding-bottom: 15px;
+  color: white;
+}
+.title2 {
+  color: white;
+  font-size: 20px;
+  margin: 20px;
+  text-justify: auto;
+}
+.img3 {
+  width: 100px;
+  height: 100px;
+  padding-top: 10px;
+  margin: 30px;
+}
+.video1 {
+  width: 50vw;
+  height: 60vh;
+  margin: 0 25vw;
+  background-color: #121212;
+  border-radius: 50px;
+  outline: none;
+}
+
+h1 {
+  padding: 15px 0;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+ul a {
+  text-decoration: none;
+  outline: none;
+  color: rgb(212, 209, 209);
+  transition: 0.3s;
+}
+
+ul li {
+  margin: 5px 0;
+  display: flex;
+}
+
+.icons {
+  margin-left: 40px;
+}
+.cardicons{
+  padding: 2%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  height: 120px;
+  width: 120px;
+}
+@media screen and (max-width: 1080px) {
+  
+
+  .logo {
+    width: 60%;
+    margin-right: 94px;
+  }
+
+  .column {
+    width: 50%;
+  }
+  .card {
+    width: 40vw;
+    height: 30vh;
+    margin: 0 5vw;
+    padding: 0;
+  }
+  .column2 {
+    width: 50%;
+    align-items: center;
+  }
+  .head1 {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .txt {
+    text-align: center;
+    padding-top: 44vh;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.1em;
+  }
+  .hd1 {
+    font-size: 17px;
+    letter-spacing: 0;
+    margin-left: 10px;
+  }
+  .three {
+    min-height: 0;
+    height: auto;
+  }
+  .hd {
+    margin: 30px 10px;
+  }
+  #row {
+    margin-top: 50px;
+  }
+  .img2 {
+    margin: 40px;
+  }
+  .two .h1{
+    margin-bottom: 10%;
+  }
+  .heading1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 45px 0;
+  }
+  .title {
+    margin: 5px 0;
+  }
+
+  .head1 {
+    margin-top: 3vh;
+    margin-bottom: 2.5vh;
+  }
+  .column {
+    width: 100%;
+    display: block;
+    align-items: center;
+    align-content: center;
+    padding: 2vh 0px;
+    margin-bottom: 30px;
+  }
+  .card {
+    margin: 0vh 10vw;
+    width: 80vw;
+    height: 40vh;
+    align-items: center;
+    align-content: center;
+  }
+  .card2 {
+    margin: 0vh 10vw;
+    max-width: 80vw;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .column2 {
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    padding: 1vh 0px;
+  }
+  .video1 {
+    width: 80vw;
+    height: 40vh;
+    margin: 0 10vw;
+  }
+  .icons {
+    margin-left: 20px;
+  }
+  .img3 {
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card {
+    margin: 0vh 10vw;
+    width: 80vw;
+    height: 42vh;
+    align-items: center;
+    align-content: center;
+  }
+  .hd {
+    font-size: 1.5em;
+  }
+
+  .hd1 {
+    font-size: 13px;
+  }
+  .text {
+    font-size: 23px;
+  }
+  .img2 {
+    width: 80px;
+    height: 80px;
+    margin: 15px 0;
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

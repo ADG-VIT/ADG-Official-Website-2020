@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+  background-color: black;
+  
+}
+
+.nav-links {
+  margin: 0 100px;
+  height: 8vh;
+  display: flex;
+  flex: 1 2 2 2 2 2 2 2;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-links a {
+  font-size: 17px;
+  font-weight: 300;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  letter-spacing: normal;
+}
+
+.nav-links a:hover {
+  color: #06f;
+  transition: 0.3s;
+}
+
+.nav-links .selected {
+  color: #06f;
+  font-weight: 400;
+}
+
+.mobile {
+  display: none;
+}
+.hidden{
+  display: none;
+}
+
+
+.adg-logo {
+  padding-top: 2%;
+  width: 85%;
+}
+
+@media only screen and (max-width: 1080px) {
+  .laptop {
+    display: none;
+  }
+  .nav-links{
+    display: none;
+  }
+  .menu {
+    height: 70vh;
+    background-color: black;
+  }
+  hr{
+    margin: 0 50px;
+    border: 0.1px solid darkgray;
+  }
+  .img5{
+    width: 5%;
+    margin-left: 45%;
+    margin-top: 0;
+  }
+  .menu-links {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: left;
+  }
+
+  .menu-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 50px;
+  }
+
+  .menu-links a:hover {
+    color: #06f;
+    transition: 0.3s;
+  }
+
+  .menu-links li {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .menu-links .selected {
+    color: #06f;
+    font-weight: 400;
+  }
+
+  .adg-logo {
+    width: 70%;
+  }
+  #mobile-adg-logo{
+    margin: 0;
+  }
+  .burger {
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #0066ff;
+    margin: 5px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2%;
+    height: 9vh;
+  }
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 6px;
+  height: 100px;
+}
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+  transition-duration: 0.5s;
+}
+.toggle .line2{
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+  transition-duration: 0.5s;
+}

@@ -1,687 +1,288 @@
 <!DOCTYPE html>
 <html>
-<head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" type="image/jpeg" href="/assets/adg logo.png">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <title>ADG | VIT Vellore</title>
-        
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
-* {
-    padding: 0;
-    margin: 0;
-  box-sizing: border-box;
-}
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Custom common Navbar CSS -->
+    <link rel="stylesheet" href="commonAssets/css/navbar1.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="commonAssets/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="icon" type="image/jpeg" href="commonAssets/icons/adg logo.png" />
+    <link rel="stylesheet" href="css/preloader.css">
+    <title>ADG | VIT Vellore</title>
+  </head>
+  <body>
+    <div id="overlay" >
+      <img src="commonAssets/icons/adggif.gif" class="gif">
 
-body {
-  
-  padding: 0px;
-  background:#121212;
-  margin:0px;
-  font-family: 'Roboto', sans-serif; 
-}
-nav{
-    display: flex;
-    /* position: fixed; */
-    justify-content: space-between;
-    align-items: center;
-    height: 8vh;
-    background-color: black;
-    overflow: hidden;
-}
-.logo{
-    display: flex;
-    text-transform: uppercase;
-    /* letter-spacing: 2px; */
-    font-size: 20px;
-    width: 65%;
-    margin-bottom: 1.5vh;
-}
-.index{
-    text-decoration: none;
-    outline: none;
-    color: black;
-    display: flex;
-}
-.adg-logo{
-    width: 11%; 
-    /* height: 300px;  */
-    margin-top: 1vh;
-    margin-left: 10px;
-    overflow: hidden;
-}
-.hd1{
-    margin-top: 15px;
-    margin-left: 2vh;
-    word-spacing: 3px;
-    letter-spacing: 2px;
-}
-.nav-links
-{
-    display: flex;
-    width: 35%;
-    /* background-color: red; */
-    justify-content: space-around;
-    /* margin-left: 40vw; */
-    
-}
-.nav-links li{
-    list-style: none;
-}
-.nav-links a{
-    color: white;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 20px;
-    /* margin: 10px 10px 10px 20px; */
-}
-.nav-links a:hover{
-    color: #0066ff;
-    /* font-size: 25px; */
-    /* letter-spacing: 8px; */
-}
-.burger{
-    display: none;
-    cursor: pointer;
-    margin-right: 20px;
-}
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: #0066ff;
-    margin: 5px;
-    transition: 0.3s;
-}
-
-  
-
- .Contact11 {
-background-color: #000000;
-}
-
-.Contact11 h1 {
-  font-size: 80px;
-  color: white;
-  font-family: roboto;
-  text-align: center;
-  text-transform:capitalize;
-} 
-
-
-.leftcolumn {   
-  float: left;
-  width: 60%;
-  background-color: black;
-  
-}
-.input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #020202;
-  border-radius: 4px;
-  background-color:black;
-  margin-top: 12px;
-  color:#c8c8c8;
-}
-input[type=number], select, textarea {
-  width: 100%;
-  padding: 15px;
-  border: 1px solid #020202;
-  border-radius: 4px;
-  resize: none;
-  background-color:black;
-  color: #c8c8c8;
-}
-input[type="text"]::placeholder {  
-           /* Firefox, Chrome, Opera */ 
-   text-align: left;
-   color: #c8c8c8;
-   resize:none;
-} 
-
-label {
-  padding: 12px 12px 12px 0;
-  display:inline-block;
-}
-
-input[type=submit] {
-  background-color:black;
-  color: #c8c8c8;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 10px;
-  width: 189px;
-  cursor: pointer;
-  float: left;
-  margin-top: 30px;
-  text-align: left;
-  background-image:black;
-}
-
-input[type=submit]:hover {
-  background-color: rgb(39, 37, 37);
-  background-position: right center;
-}
-
-
-.container {
-  border-radius: 5px;
-  background-color:#272727;
-  padding: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 800px;
-  height: 580px;
-  
- margin-right: 80px;
- margin-left: 100px;
- color:#c8c8c8;
- 
- 
-}
-textarea::-webkit-input-placeholder { 
-            color:#c8c8c8; 
-            font-size: 16px;
-            font-family: 'Roboto';
-        } 
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1080px) {
-  body{
-        overflow-x: hidden;
-    }
-    .logo{
-        width: 60%;
-        margin-right: 94px;
-    }
-    .nav{
-        width: 10%;
-    }
-    .adg-logo{
-        width: 21%; 
-        /* height: 40px;  */
-        margin-top: 2vh;
-        margin-left: 5px;
-    }
-    .hd1{
-      font-size: 15px;
-    }
-    .nav-links{
-        position: absolute;
-        right: 0px ;
-        height: 50vh;
-        top: 8vh;
-        background-color: #121212;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        transform: translate(100%);
-        transition: transform 0.5s ease-in;
-    }
-    .nav-links a{
-        color: white;
-        text-decoration: none;
-        /* letter-spacing: 3px; */
-        font-weight: bold;
-        font-size: 15px;
-        padding: 20px 120px;
-    }
-    .burger{
-        display: block;
-    }
-    .nav-links li{
-        opacity: 0;
-    }
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 10px;
-  }
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 40%;
-  background-color:black;
-  padding-left: 20px;
-
-  
- 
-}
-
-.nav-links .selected{
-  color: #0066ff;
-}
-
-.card {
-  background-color: #272727;
-  padding: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-radius: 15px;
-  height: 265px;
-  width: 400px;
-  margin-right: 80px;
-  margin-left: 80px;
-  border-radius: 5px;
-  
-  
-}
-
-.card p{
-  padding: 1px;
-  word-wrap: break-word;
-  overflow: hidden;
-  white-space: pre-line;
-  font-size: 15px;
-  color:#c8c8c8;
-  text-align: left;
-}
-.card h2{
-  color:#c8c8c8;
-  text-align: left;
-}
-
-.nav-active{
-    transform: translate(0%);
-    display: flex;
-    /* visibility: visible; */
-}
-::-webkit-scrollbar{
-    width: 0px;
-}
-::-webkit-scrollbar-thumb{
-    background: transparent;
-    border-radius: 6px;
-    height: 100px;
-}
-/* ::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(transparent,#00c6ff);
-} */
-@keyframes navLinkFade{
-    from{
-        opacity: 0;
-        transform: translate(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translate(0px);
-    }
-}
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line2{
-    opacity: 0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
-}
-
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.footer{
-    width: 100%;
-    background: #121212;
-    display: block;
-}
-.inner-footer{
-    width: 95%;
-    margin: 0 auto;
-    padding: 0px 10px;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    justify-content: center;
-    /* text-align: center; */
-    /* height: 32vh; */
-}
-.footer-items{
-    width: 33%;
-    padding: 10px 20px;
-    box-sizing: border-box;
-}
-.foot1{
-    margin-right: 80px;
-}
-/* .foot2{
-    margin-left: 10vw;
-}
-.foot3{
-    float: right;
-} */
-.aa{
-    padding: 15px 0;
-    font-size: 20px;
-    color: #fff;
-    text-transform: uppercase;
-}
-.footer-items p{
-    color: rgb(212, 209, 209);
-    font-size: 14px;
-    text-align: justify;
-    line-height: 24px;
-}
-ul{
-    list-style: none;
-    color: #fff;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    margin: 0;
-}
-ul a{
-    text-decoration: none;
-    outline: none;
-    color: rgb(212, 209, 209);
-    transition: 0.3s;
-}
-ul li{
-    margin: 5px 0;
-    display: flex;
-}
-.social-media{
-    width: 100%;
-    color: rgb(212, 209, 209);
-}
-
-.social-media a{
-    text-decoration: none;
-}
-.social-media i{
-    height: 30px;
-    width: 30px;                                                                                                                                                                                                                                                                                                                                                                            
-    margin-right: 40px;
-    margin-top: 1vh;
-    color: rgb(212, 209, 209);
-    transition: 0.3s;
-    padding: 0;
-    /* display: flexbox; */
-    float: left;
-}
-.social{
-    font-size: 18px;
-    /* display: flex; */
-}
-.social li{
-    margin-bottom: 15px;
-}
-.footer-bottom{
-    padding: 10px;
-    text-align: center;
-    background: #121212;
-    color: #fff;
-    font-size: 12px;
-}
-.icons{
-    margin-left: 40px;
-}
-
-@media screen and (max-width:1080px)
-{   .head1{
-        margin: 0px;
-    }
-    .foot1{
-        margin-right: 50px;
-    }
-
-}
-@media screen and (max-width:600px)
-{
-  .adg-logo{
-        width: 40%; 
-        /* height: 300px;  */
-        margin-top: 2vh;
-        margin-left: 5px;
-    }
-    /* .footer-items{
-        width: 100%;
-        padding: 5px 20px;
-    } */
-    .footer-items:nth-child(1){
-        width: 100%;
-        padding: 0;
-    }
-    .footer-items:nth-child(2){
-        width: 50%;
-        padding: 0;
-        margin: 0;
-    }
-    .footer-items:nth-child(3){
-        width: 50%;
-        padding: 0;
-        margin: 0;
-    }
-    .icons{
-        margin-left: 20px;
-    }
-    .hd1{
-      font-size: 17px;
-        letter-spacing: 0;
-        margin-left: 10px;
-    }
-    .foot1{
-        margin-right: 0px;
-    }
-    
-}
-
-@media screen and (max-width: 1080px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100vw;
-    padding: 0;
-    align-items: center;
-    align-content: center;
-    margin: 0 0;
-  }
-  .card{
-    margin: 5vh 10vw;
-     width: 80vw;
-}
-
-.container{
-      margin: 3vh 10vw;
-      width: 80vw;
-}
-}
-
-
-
-@media screen and (max-width: 600px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-    align-items: center;
-    align-content: center;
-    margin: 0 ;
-  }
-  .card{
-    margin: 10vh 10vw;
-    width: 80vw;
-    margin-top: 5vw;
-  }
-  .container{
-      margin: 5vh 10vw;
-      width: 80vw;
-      
-  }
-  .Contact11 h1 {
-      font-size:60px;
-  }
-}
-
-  
-
-
-</style>
-</head>
-<body>
-
-        
-    <nav>
-                <div class="logo">
-                    <a href="index.html" class="index">
-                    <img src="/assets/ADG_logo_w_text.png" class="adg-logo" >
-                    <!-- <h4 class="hd1"><b> Apple Developers Group</b></h4> -->
-                    </a>
-                </div>
-                <ul class="nav-links">
-                    <li>
-                        <a href="index.html"> Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html"> About</a>
-                    </li>
-                    <li>
-                        <a href="events.html"> Event</a>
-                    </li>
-                    <li>
-                            <a class="selected" href="contact.html">Contact</a>
-                        </li>
-                </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav>
-
-
-        
     </div>
-    <div class="Contact11">
-            <h1> CONTACT </h1>
-    </div>
+    <div id='main'>
+    <div class="site-wrapper">
+      <nav>
+        <div class="navbar">
+          <div class="laptop">
+            <ul class="nav-links">
+              <li>
+                <a href="index.html">
+                  <img src="commonAssets/icons/adg logo1.png" class="adg-logo" />
+                </a>
+              </li>
+              <li>
+                <a href="index.html"> Home</a>
+              </li>
+              <li>
+                <a href="about.html"> About</a>
+              </li>
+              <li>
+                <a href="partners.html"> Partners</a>
+              </li>
+              <li>
+                <a href="events.html"> Events</a>
+              </li>
+              <li>
+                <a href="projects.html">Projects</a>
+              </li>
+              <li>
+                <a href="team20-21.html">Team</a>
+              </li>
+              <li>
+                <a href="contact.html" class="selected">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile">
+            <div class="mobile-nav">
+              <div id="mobile-adg-logo">
+                <a href="index.html">
+                  <img src="commonAssets/icons/adg logo1.png" class="adg-logo" />
+                </a>
+              </div>
+              <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+           </div>
+            <div class="menu hidden" id="menu">
+              <ul class="menu-links" id="menu-links">
+                <hr style="margin: -10px 0 0 0;">
+                <li>
+                  <a href="index.html">Home</a>
+                </li><hr>
+                <li>
+                  <a href="about.html"> About</a>
+                </li><hr>
+                <li>
+                  <a href="partners.html"> Partners</a>
+                </li><hr>
+                <li>
+                  <a href="events.html"> Events</a>
+                </li><hr>
+                <li>
+                  <a href="projects.html">Projects</a>
+                </li><hr>
+                <li>
+                  <a href="team20-21.html">Team</a>
+                </li><hr>
+                <li>
+                  <a href="contact.html" class="selected">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- END NAVBAR -->
 
+      <div class="main-wrapper">
+        <div class="form-wrapper" data-aos="fade-up" data-aos-duration="800">
+          <form
+            action="https://formspree.io/appledevelopersgroup@gmail.com"
+            method="POST"
+            class="form"
+          >
+            <div style="margin-top: 20px;">
+              <label for="name" class="label">Name:</label>
+              <br />
+              <input
+                type="text"
+                id="Name"
+                class="input"
+                placeholder="Please Enter Your Full Name"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="label">E-Mail:</label>
+              <br />
+              <input
+                type="email"
+                id="email"
+                class="input"
+                placeholder="Please Enter Your Work email address"
+                required
+              />
+            </div>
+            <div>
+              <label for="phone" class="label">Phone Number:</label>
+              <br />
+              <input
+                type="number"
+                id="phone"
+                class="input"
+                placeholder="Please Enter Your Phone Number"
+                required
+              />
+            </div>
+            <div>
+              <label for="message" class="label">Your Message:</label>
+              <br />
+              <textarea
+                type="text"
+                id="message"
+                class="input"
+                placeholder="We'd Love To Hear From You!"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <input type="submit" id="submit" class="input" value="Send" />
+            </div>
+          </form>
+        </div>
 
+        <div class="contact-details">
+          <div
+            class="info-wrapper"
+            id="info"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <div class="info">
+              <p class="heading">Contact Info</p>
+              <!-- List -->
+              <div>
+                <div>
+                  <p class="label">Address:</p>
+                  <address class="detail">
+                    Vellore Institute Of Technology, Vellore 632014, Tamil Nadu
+                  </address>
+                </div>
 
-<div class="row">
-  <div class="leftcolumn">
-   <div class="container">
-  <form action="https://formspree.io/appledevelopersgroup@gmail.com" method="POST">
-  <div class="row">
-    <label class="required" for="name">   </label><br />
-    <input id="name" class="input" name="name" type="text" value="" size="50"  placeholder=" YOUR NAME " /><br />
-    <span id="name_validation" class="error_message"></span>
-  </div>
-  <div class="row">
-    <label class="required" for="email"> </label><br />
-    <input id="email" class="input" name="email" type="text" value="" size="50" placeholder=" YOUR EMAIL ID " /><br />
-    <span id="email_validation" class="error_message"></span>
-  </div>
-  <div class="row">
-        <label class="required" for="phoneno"> </label><br />
-        <input id="phoneno" class="input" name="phoneno" type="text" value="" size="50" placeholder=" YOUR PHONE NO " /><br />
-        <span id="phoneno_validation" class="error_message"></span>
+                <div>
+                  <p class="label">Phone Number:</p>
+                  <p class="detail">
+                    <i> <a href="tel://+91 8447667487">+91 8447667487</a></i>
+                  </p>
+                </div>
+
+                <div>
+                  <p class="label">E-Mail Address:</p>
+                  <p class="detail">
+                    <i><a href="maito:ios@vit.ac.in">ios@vit.ac.in</a></i>
+                  </p>
+                </div>
+              </div>
+              <!-- List ends -->
+            </div>
+          </div>
+          <div
+            class="info-wrapper"
+            id="more-info"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <div class="info">
+              <p class="heading">More Info</p>
+              <p class="detail">
+                Apple Developers group is a group of inspired individuals who
+                are committed to bring the best of technology to the next
+                generation of programmers. Apple Developers group is affiliated
+                to Apple University Program.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-  <div class="row">
-    <label class="required" for="message"></label><br />
-    <textarea id="message" class="input" name="message"  rows="7" cols="47.5" placeholder="YOUR MESSAGE " ></textarea><br />
-    <span id="message_validation" class="error_message"></span>
-  </div>
-    
-    <input id="submit_button" type="submit" value="SEND MESSAGE" />
-  </form>
-</div>
-    
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      
-      <h2> Contact info</h2>
-      <br>
-      <p><b>Address</b></p>
-      <p>Vellore Institute Of Technology, Vellore 632014, Tamilnadu</p>
-      <br>
-      <p><b>Phone</b></p>
-      <p>+91 9099946404 </p>
-      <br>
-      <p><b>Email</b></p>
-      <p> ios@vit.ac.in</p>
     </div>
-    
-    <div class="card">
-      <h2>More info</h2>
-      <br>
-      <p>Apple Developers group is a group of inspired individuals who are committed to bring the best of technology to the next generation of programmers. 
-        Apple Developers group is affiliated to Apple University Program.</p>
-    </div>
-  </div>
-</div>
-
+    <!-- End Main -->
+  <!-- Footer Start -->
 <div class="footer">
   <div class="inner-footer">
       <div class="footer-items">
           <div class="foot1">
-          <h1 class="aa">About</h1>
+          <h1>About</h1>
            <p>
-                  Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. It is a registered student community at VIT, Vellore established under the Apple University program. A coterie of talented minds seeking not just success but perfection.
+            Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. It is a registered student community at VIT, Vellore established under the Apple University program. A coterie of talented minds seeking not just success but perfection.
 
            </p>
       </div>
   </div>
       <div class="footer-items">
           <div class="foot2">
-              <h1 class="aa">Quick Links</h1>
+              <h1 class="headQL">Quick Links</h1>
                <div class="border">
-                   <ul class="social">
+                   <ul class="social qlinks">
                        <a href="index.html"><li>Home</li></a>
                        <a href="about.html"><li>About</li></a>
-                       <a href="events.html"><li>Event</li></a>
-                       <a href="contact.html"><li>Contact</li></a>
+                       <a href="partners.html"><li>Partners</li></a>
+                       <a href="events.html"><li>Events</li></a>
+                       <a href="projects.html"><li>Projects</li></a>
+                       <a href="team20-21.html"><li>Team</li></a>
+                       <a href="contact.html"><li>Contact Us</li></a>
                    </ul>
                </div>
           </div>
       </div>
               <div class="footer-items">
                   <div class="foot3">
-                      <h1 class="aa">Social</h1>
+                      <h1>Social</h1>
                       <div class="border">
                        <div class="social-media">
                            <ul class="social">
-                              <li><a href="https://www.facebook.com/vitios/" target="_blank"><img src="/assets/facebook-logo.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Facebook </span></a></li>
-                               <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><img src="/assets/linkedin-logo.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons">Linkedin</span></a></li>
-                               <li><a href="https://www.instagram.com/adgvit/" target="_blank"><img src="/assets/instagram-logo.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Instagram</span></a></li>
-                               <li><a href="https://twitter.com/adgvit" target="_blank"><img src="/assets/twitter-2.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Twitter</span></a></li>
+                              <li><a href="https://www.facebook.com/vitios/" target="_blank"><img src="commonAssets/imgs/facebook-logo-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Facebook </span></a></li>
+                               <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><img src="commonAssets/imgs/linkedin-logo-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons">Linkedin</span></a></li>
+                               <li><a href="https://www.instagram.com/adgvit/" target="_blank"><img src="commonAssets/imgs/instagram-logo-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Instagram</span></a></li>
+                               <li><a href="https://twitter.com/adgvit" target="_blank"><img src="commonAssets/imgs/twitter-2-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Twitter</span></a></li>
                            </ul>
                        </div>
                         </div>
           </div>
   </div>
   </div>
-  <div class="footer-bottom">
-      Copyright &copy; 2k19 Apple Developers Group
+    <div class="copyright">
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        All rights reserved
+      </p>
+    </div>
   </div>
-</div>
-
-
-
-</body>
-<script src="app.js"></script>
+<!-- End Footer -->
+    </div>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="commonAssets/js/navbar1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </html>
+<script src="commonAssets/js/preloader.js">
+
+</script>

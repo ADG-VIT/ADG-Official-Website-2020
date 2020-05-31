@@ -1,229 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="homestyle.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script> -->
-    <link rel="icon" type="image/jpeg" href="/assets/adg logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="animate.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="commonAssets/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    
+
+    <!-- Custom common Navbar CSS -->
+    <link rel="stylesheet" href="commonAssets/css/navbar1.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Custom common Footer CSS -->
+    <link rel="stylesheet" href="commonAssets/css/footer.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Font - Roboto -> Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/jpeg" href="commonAssets/icons/adg logo.png" />
+    <link rel="stylesheet" href="css/preloader.css">
+    
+    
     <title>ADG | VIT Vellore</title>
-</head>
-<body onload="myFunction()">
+  </head>
 
-    <div id="overlay">
+  <body >
+    <div id="overlay" >
+      <img src="commonAssets/icons/adggif.gif" class="gif">
+
     </div>
-    <div id="mainn">
-        <nav>
-                <div class="logo">
-                    <a href="index.html" class="index">
-                    <img src="/assets/ADG_logo_w_text.png" class="adg-logo">
-                    <!-- <h4 class="hd1"><b>Apple Developers Group</b></h4> -->
-                </a>
-                </div>
-                <ul class="nav-links">
-                    <li>
-                        <a href="index.html"> Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html"> About</a>
-                    </li>
-                    <li>
-                        <a href="events.html"> Event</a>
-                    </li>
-                    <!-- <li>
-                        <a href="#">Support Us</a>
-                    </li> -->
-                    <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav>
-    
+   <div id="main">
+    <!-- NAVBAR Starts -->
+    <nav>
+      <div class="navbar">
+        <div class="laptop">
+          <ul class="nav-links">
+            <li>
+              <a href="index.html">
+                <img src="commonAssets/icons/adg logo1.png" class="adg-logo" />
+              </a>
+            </li>
+            <li>
+              <a href="index.html" class="selected"> Home</a>
+            </li>
+            <li>
+              <a href="about.html"> About</a>
+            </li>
+            <li>
+              <a href="partners.html"> Partners</a>
+            </li>
+            <li>
+              <a href="events.html"> Events</a>
+            </li>
+            <li>
+              <a href="projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="team20-21.html">Team</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile">
+          <div class="mobile-nav">
+            <div id="mobile-adg-logo">
+              <a href="index.html">
+                <img src="commonAssets/icons/adg logo1.png" class="adg-logo" />
+              </a>
+            </div>
+            <div class="burger" id="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+         </div>
+          <div class="menu hidden" id="menu">
+            <ul class="menu-links" id="menu-links">
+              <hr style="margin: -10px 0 0 0;">
+              <li>
+                <a href="index.html" class="selected">Home</a>
+              </li><hr>
+              <li>
+                <a href="about.html"> About</a>
+              </li><hr>
+              <li>
+                <a href="partners.html"> Partners</a>
+              </li><hr>
+              <li>
+                <a href="events.html"> Events</a>
+              </li><hr>
+              <li>
+                <a href="projects.html">Projects</a>
+              </li><hr>
+              <li>
+                <a href="team20-21.html">Team</a>
+              </li><hr>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR Ends -->
+
+    <!-- Landing Page -->
+
     <div class="parent row">
-    <section class="one">
-    <div class="cover">
-       <b> <p class="txt"> Create <span style="color: blue;"><b>|</b></span > Ideate<span style="color: blue;"> <b>|</b> </span>Innovate</p></b>
-       <!-- <b><p class="txt">Create, <span style="color: blue;">Ideate, </span>Innovate</p></b> -->
-    </div>
-</section>
-    <section class="two">
-    <h1 class="heading1" id="apple"><b> Apple Developers Group</b></h1>
-    <p class="hd" id="desc">We bring out the           developer in you. Become not only someone who
-        deploys apps, but also builds the world Brick by Brick
-    </p>
-    <div class="row" id="row">
-        <div class="column">
-            <div class="card revealOnScroll"  data-animation="jackInTheBox" data-timeout="300">
-                <img src="/assets/partners.svg" alt="" class="img2">
-                <h2 class="head1">PARTNERS</h2>
-                <p class="title">A shortcut to companies helping us out</p>
-            </div>
+      <section class="one">
+        <div class="cover">
+          <b>
+            <p class="txt">
+              Create <span style="color: blue;"><b>|</b></span> Ideate<span
+                style="color: blue;"
+              >
+                <b>|</b> </span
+              >Innovate
+            </p></b
+          >
+          <!-- <b><p class="txt">Create, <span style="color: blue;">Ideate, </span>Innovate</p></b> -->
         </div>
-        <div class="column">
-            <div class="card revealOnScroll"  data-animation="jackInTheBox" data-timeout="300">
-                <img src="/assets/projects.svg" alt="" class="img2">
-                <h2 class="head1">PROJECT</h2>
-                <p class="title">See what we have made</p>
-            </div>
-        </div>
-    
+      </section>
+      <section class="two">
+        <h1 class="heading1" id="apple"><b> Apple Developers Group</b></h1>
+     
+        <p class="hd" id="desc">
+          We bring out the developer in you. Become not only someone who deploys
+          apps, but also builds the world Brick by Brick
+        </p>
 
-        <div class="column">
-            <div class="card revealOnScroll"  data-animation="jackInTheBox" data-timeout="300">
-                <a href="events.html" class="events">
-                <img src="/assets/calendar.svg" alt="" class="img2">
-                <h2 class="head1"> EVENTS</h2>
-                <p class="title">Come see us</p>
-            </a>
-            </div>
-        </div>
-        <div class="column">
-            <div class="card revealOnScroll"  data-animation="jackInTheBox" data-timeout="300">
-                <a href="/team.html" class="team">
-                <img src="/assets/team.svg" alt="" class="img2">
-                <h2 class="head1">TEAM</h2>
-                <p class="title">Meet the masterminds behind ADG</p>
-            </a>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="three">
-    <h1 class="heading1" id="vid">Let's Create An Opportunity</h1>
-    <video class="video1" poster="/assets/adglogo3.svg" controls>
-        <source src="/assets/adgIntro.mp4" type="video/mp4">
-      </video>
-</section>
-
-<section class="four">
-    <h1 class="heading1" id="about">Our Domains</h1>  
-
-    
-    <div class="row">
-        <div class="column2">
-            <div class="card2 revealOnScroll" data-animation="tada" data-timeout="200">
-                <img src="/assets/ios.svg" alt="" class="img3">
-                <h2 class="head1">iOS</h2>
-                <p class="title2">Engaging, purposeful, and creative. You can expect nothing less than perfect.</p>
-            </div>
-        </div>
-        <div class="column2" >
-            <div class="card2 revealOnScroll" data-animation="tada" data-timeout="200">
-                <img src="/assets/android.svg" alt="" class="img3">
-                <h2 class="head1">ANDROID</h2>
-                <p class="title2">Running with a burning desire to change the open source world of Android.</p>
-            </div>
-        </div>
-        <div class="column2">
-            <div class="card2 revealOnScroll" data-animation="tada" data-timeout="200">
-                <img src="/assets/design.svg" alt="" class="img3">
-                <h2 class="head1">DESIGN</h2>
-                <p class="title2">The most important things are not things, so we'll design experiences.</p>
-            </div>
-        </div>
-        <div class="column2">
-            <div class="card2 revealOnScroll" data-animation="tada" data-timeout="200">
-                <img src="/assets/web.svg" alt="" class="img3">
-                <h2 class="head1">WEB</h2>
-                <p class="title2">Crafting visually stunning memorable experiences for web and interfaces.</p>
-            </div>
-        </div>
-        <div class="column2">
-                <div class="card2 revealOnScroll" data-animation="tada" data-timeout="200">
-                    <img src="/assets/machine-learning.svg" alt="" class="img3">
-                    <h2 class="head1">ML</h2>
-                    <p class="title2">Rethink what you're doing and build the intelligent future.</p>
+           <!--Cards Start -->
+           <div class="cardContainer">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                 <img class="cardicons" src="commonAssets/icons/partners.svg" alt="Partners">
+                  <h1 >Partners</h1>
                 </div>
-            </div>
-    </div>
-</section>
-</div>
-<!-- footer -->
-<!-- <section class="four"> -->
-<div class="footer">
-    <div class="inner-footer">
-        <div class="footer-items">
-            <div class="foot1">
-            <h1>About</h1>
-             <p>
-                    Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. It is a registered student community at VIT, Vellore established under the Apple University program. A coterie of talented minds seeking not just success but perfection.
+                <div class="flip-card-back">
 
-             </p>
+                  <p class="desc">A short cut to companies helping us out</p>
+                  <a  href="partners.html"><button class="btn">View More</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                 <img class="cardicons" src="commonAssets/icons/projects.svg" alt="Projects">
+                  <h1 >Projects</h1>
+                </div>
+                <div class="flip-card-back">
+
+                  <p class="desc">See what we have made.</p>
+                  <a  href="projects.html"><button class="btn">View More</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                 <img class="cardicons" src="commonAssets/icons/calendar.svg" alt="Events">
+                  <h1 >Events</h1>
+                </div>
+                <div class="flip-card-back">
+
+                  <p class="desc">Come see us.</p>
+                  <a  href="events.html"><button class="btn">View More</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                 <img class="cardicons" src="commonAssets/icons/teams.svg" alt="Team">
+                  <h1 >Team</h1>
+                </div>
+                <div class="flip-card-back">
+
+                  <p class="desc">Meet the masterminds behind ADG.</p>
+                  <a  href="team20-21.html"><button class="btn">View More</button></a>
+                </div>
+              </div>
+            </div>
+            
+           
+            </div>
+          
+    
+          
+          <!--CArds end-->
+    
+        <video class="video1" poster="commonAssets/icons/adglogo3.svg" controls>
+          <source src="commonAssets/Video/finalADGWebsite.mp4" type="video/mp4" />
+        </video>
+      </section>
+               
+
+      <section class="four">
+        <h1 class="heading1" id="about">Our Domains</h1>
+
+        <div class="row">
+          <div class="column2">
+            <div
+              class="card2 revealOnScroll"
+              data-animation="tada"
+              data-timeout="200"
+            >
+              <img src="commonAssets/icons/ios.svg" alt="" class="img3" />
+              <h2 class="head1">iOS</h2>
+              <p class="title2">
+                Engaging, purposeful, and creative. You can expect nothing less
+                than perfect.
+              </p>
+            </div>
+          </div>
+          <div class="column2">
+            <div class="card2">
+              <img
+                src="commonAssets\icons\android.svg"
+                alt="android logo"
+                class="img3"
+              />
+              <h2 class="head1">ANDROID</h2>
+              <p class="title2">
+                Running with a burning desire to change the open source world of
+                Android.
+              </p>
+            </div>
+          </div>
+          <div class="column2">
+            <div
+              class="card2 revealOnScroll"
+              data-animation="tada"
+              data-timeout="200"
+            >
+              <img src="commonAssets/icons/design.svg" alt="" class="img3" />
+              <h2 class="head1">DESIGN</h2>
+              <p class="title2">
+                The most important things are not things, so we'll design
+                experiences.
+              </p>
+            </div>
+          </div>
+          <div class="column2">
+            <div
+              class="card2 revealOnScroll"
+              data-animation="tada"
+              data-timeout="200"
+            >
+              <img src="commonAssets/icons/web.svg" alt="" class="img3" />
+              <h2 class="head1">WEB</h2>
+              <p class="title2">
+                Crafting visually stunning memorable experiences for web and
+                interfaces.
+              </p>
+            </div>
+          </div>
+          <div class="column2">
+            <div
+              class="card2 revealOnScroll"
+              data-animation="tada"
+              data-timeout="200"
+            >
+              <img
+                src="commonAssets/icons/machine-learning.svg"
+                alt=""
+                class="img3"
+              />
+              <h2 class="head1">ML</h2>
+              <p class="title2">
+                Rethink what you're doing and build the intelligent future.
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
     </div>
-        <div class="footer-items">
-            <div class="foot2">
-                <h1>Quick Links</h1>
-                 <div class="border">
-                     <ul class="social">
-                         <a href="index.html"><li>Home</li></a>
-                         <a href="about.html"><li>About</li></a>
-                         <a href="events.html"><li>Event</li></a>
-                         <a href="contact.html"><li>Contact</li></a>
-                     </ul>
-                 </div>
-            </div>
+    <!-- Footer Start -->
+    <div class="footer">
+      <div class="inner-footer">
+          <div class="footer-items">
+              <div class="foot1">
+              <h1>About</h1>
+               <p>
+                Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. It is a registered student community at VIT, Vellore established under the Apple University program. A coterie of talented minds seeking not just success but perfection.
+  
+               </p>
+          </div>
+      </div>
+          <div class="footer-items">
+              <div class="foot2">
+                  <h1 class="headQL">Quick Links</h1>
+                   <div class="border">
+                       <ul class="social qlinks">
+                           <a href="index.html"><li>Home</li></a>
+                           <a href="about.html"><li>About</li></a>
+                           <a href="partners.html"><li>Partners</li></a>
+                           <a href="events.html"><li>Events</li></a>
+                           <a href="projects.html"><li>Projects</li></a>
+                           <a href="team20-21.html"><li>Team</li></a>
+                           <a href="contact.html"><li>Contact Us</li></a>
+                       </ul>
+                   </div>
+              </div>
+          </div>
+                  <div class="footer-items">
+                      <div class="foot3">
+                          <h1>Social</h1>
+                          <div class="border">
+                           <div class="social-media">
+                               <ul class="social sm">
+                                  <li><a href="https://www.facebook.com/vitios/" target="_blank"><img src="commonAssets/imgs/facebook-logo-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Facebook </span></a></li>
+                                   <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><img src="commonAssets/imgs/linkedin-logo-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons">Linkedin</span></a></li>
+                                   <li><a href="https://www.instagram.com/adgvit/" target="_blank"><img src="commonAssets/imgs/instagram-logo-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Instagram</span></a></li>
+                                   <li><a href="https://twitter.com/adgvit" target="_blank"><img src="commonAssets/imgs/twitter-2-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Twitter</span></a></li>
+                               </ul>
+                           </div>
+                            </div>
+              </div>
+      </div>
+      </div>
+        <div class="copyright">
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved
+          </p>
         </div>
-                <div class="footer-items">
-                    <div class="foot3">
-                        <h1>Social</h1>
-                        <div class="border">
-                         <div class="social-media">
-                             <ul class="social">
-                                <li><a href="https://www.facebook.com/vitios/" target="_blank"><img src="/assets/facebook-logo.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Facebook </span></a></li>
-                                 <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><img src="/assets/linkedin-logo.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons">Linkedin</span></a></li>
-                                 <li><a href="https://www.instagram.com/adgvit/" target="_blank"><img src="/assets/instagram-logo.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Instagram</span></a></li>
-                                 <li><a href="https://twitter.com/adgvit" target="_blank"><img src="/assets/twitter-2.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Twitter</span></a></li>
-                             </ul>
-                         </div>
-                          </div>
-            </div>
-    </div>
-    </div>
-    <div class="footer-bottom">
-        Copyright &copy; 2k19 Apple Developers Group
-    </div>
-</div>
-</div>
-<script src="app.js"></script>
-<script>
-    $(".revealOnScroll").css("visibility", "hidden")
+      </div>
+    <!-- End Footer -->
 
-var $window = $(window), win_height_padded = $window.height() * 0.6, isTouch = Modernizr.touch;
+    <script src="commonAssets/js/navbar1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-$window.on('scroll', revealOnScroll);
-
-
-
-function revealOnScroll() {
-    var scrolled = $window.scrollTop();
-    $(".revealOnScroll:not(.animated)").each(function () {
-        var $this = $(this),
-            offsetTop = $this.offset().top;
-
-        if (scrolled + win_height_padded > offsetTop) {
-            if ($this.data('timeout')) {
-                window.setTimeout(function () {
-                    $this.addClass('animated ' + $this.data('animation'));
-                    $this.css("visibility", "visible");
-                }, parseInt($this.data('timeout'), 10));
-            } else {
-                $this.addClass('animated ' + $this.data('animation'));
-            } 
-        }
-    });
-}
-</script>
-</body>
-
+    <script>
+      AOS.init();
+    </script>
+   </div>
+   <script src="commonAssets/js/preloader.js">
+   </script>
+  </body>
 </html>

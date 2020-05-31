@@ -1,167 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <title>ADG | VIT Vellore</title>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<meta name="description" content="Original Hover Effects with CSS3" />
-<meta name="keywords" content="css3, transitions, thumbnail, animation, hover, effect, description, caption" />
-<link rel="stylesheet" type="text/css" href="events.css">
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-<link rel="icon" type="image/jpeg" href="/assets/adg logo.png">
-</head>
-<body>
+  <head>
+    <title>ADG | VIT Vellore</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Original Hover Effects with CSS3" />
+    <meta
+      name="keywords"
+      content="css3, transitions, thumbnail, animation, hover, effect, description, caption"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="css/events.css" />
+    <link rel="stylesheet" href="commonAssets/css/navbar1.css" />
+    <link rel="stylesheet" href="commonAssets/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/jpeg" href="commonAssets/icons/adg logo.png" />
+    <link rel="stylesheet" href="css/preloader.css">
+  </head>
+  <body>
+    <div id="overlay" >
+      <img src="commonAssets/icons/adggif.gif" class="gif">
+
+    </div>
+    <div id='main'>
     <nav>
-        <div class="logo">
-            <a href="index.html" class="index">
-            <img src="/assets/ADG_logo_w_text.png" class="adg-logo">
-            <!-- <h4 class="hd1"><b>Apple Developers Group</b></h4> -->
-        </a>
-        </div>
-        <ul class="nav-links">
+      <div class="navbar">
+        <div class="laptop">
+          <ul class="nav-links">
             <li>
-                <a href="index.html"> Home</a>
+              <a href="index.html">
+                <img src="commonAssets/icons/adg logo1.png" class="adg-logo" />
+              </a>
             </li>
             <li>
+              <a href="index.html"> Home</a>
+            </li>
+            <li>
+              <a href="about.html"> About</a>
+            </li>
+            <li>
+              <a href="partners.html"> Partners</a>
+            </li>
+            <li>
+              <a href="events.html" class="selected"> Events</a>
+            </li>
+            <li>
+              <a href="projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="team20-21.html">Team</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile">
+          <div class="mobile-nav">
+            <div id="mobile-adg-logo">
+              <a href="index.html">
+                <img src="commonAssets/icons/adg logo1.png" class="adg-logo" />
+              </a>
+            </div>
+            <div class="burger" id="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+            
+          </div>
+          <div class="menu hidden" id="menu">
+            <ul class="menu-links" id="menu-links">
+              <hr style="margin: -10px 0 0 0;">
+              <li>
+                <a href="index.html">Home</a>
+              </li><hr>
+              <li>
                 <a href="about.html"> About</a>
-            </li>
-            <li>
-                <a href="events.html"> Event</a>
-            </li>
-            <!-- <li>
-                <a href="#">Support Us</a>
-            </li> -->
-            <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+              </li><hr>
+              <li>
+                <a href="partners.html"> Partners</a>
+              </li><hr>
+              <li>
+                <a href="events.html" class="selected"> Events</a>
+              </li><hr>
+              <li>
+                <a href="projects.html">Projects</a>
+              </li><hr>
+              <li>
+                <a href="team20-21.html">Team</a>
+              </li><hr>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
-    <!-- <div class="heading">
-                <div class="text">Events</div>
-    </div>
-    <div class="container">
-    <div class="row">
-        <div><p class="sub-text">iOS Fusion</p></div>    
-        <div class="column2"> 
-        <div class="card2">
-            <img src="./assets/IMG_5191.png" class="ig">
-            <div class="mask">
-                <p>iOS Fusion is a premium workshop conducted by Apple Developers Group, VIT.  Participants in our workshop are taught to create apps for iOS devices. It's great opportunity for the beginners as it gives them a chance to experience what it takes to be an iOS Developer. A plethora of topics are taught and an overall insight about development process is provided.</p>
-                <a href="#" class="info"><b>SEE MORE</b><i class="glyphicon glyphicon-arrow-right"></i></a>
-            </div>
+    <!-- END NAVBAR -->
+    <div class="main-wrapper">
+      <div class="row row1" data-aos="fade-up" data-aos-duration="800">
+        <div class="header">
+          <h2 class="heading">iOS Fusion</h2>
         </div>
-        </div> 
-    <div><p class="sub-text">UniDev</p></div>
-    <div class="column2">  
-    <div class="card2">
-            <img src="./assets/IMG_5253_event.png" class="ig">
-            <div class="mask">
-                <p>UNIDEV, a one-day workshop for both novices and experts, that gives a chance to explore tricks and tweaks of using Unity Software along with the powerful SDK Vuforia in order to build something as cool as Pokémon Go!</p>
-                <a href="#" class="info"><b>SEE MORE</b><i class="glyphicon glyphicon-arrow-right"></i></a>
-            </div>    
-    </div>
-    </div>
-    <div><p class="sub-text">Hackgrid</p></div>  
-    <div class="column2">
-    <div class="card2">
-            <img src="./assets/IMG_5275_event.png" class="ig">
-            <div class="mask">
-                <p>Apple Developers Group conducts a 48 hour long hackathon that encourages young developers to come up with scintillating technical solutions to real world problems.</p>
-                 <a href="#" class="info"><b>SEE MORE</b><i class="glyphicon glyphicon-arrow-right"></i></a> 
-            </div>    
-    </div>
-    </div>
-    </div>
-    </div>  -->
-    
-    <h1 class="heading1">EVENTS</h1>
-    <div class="row">
-        <div class="column">
-            <h2 class="heading">iOS Fusion</h2>
-            <div class="card">
-                <img src="/assets/IMG_5191.png" alt="" class="img1">
-                <p class="txt1">
-                    iOS Fusion is a premium workshop conducted by Apple Developers Group, VIT.  Participants in our workshop are taught to create apps for iOS devices. It's great opportunity for the beginners as it gives them a chance to experience what it takes to be an iOS Developer. A plethora of topics are taught and an overall insight about development process is provided.
-                </p>
-            </div>
+        <div class="card">
+          <img
+            src="commonAssets/imgs/iOS_Fusion.png"
+            alt="People in a Gallery"
+            class="img"
+          />
+          <p class="txt">
+            iOS Fusion is a premium workshop conducted by Apple Developers
+            Group, VIT. Participants in our workshop are taught to create apps
+            for iOS devices. It's great opportunity for the beginners as it
+            gives them a chance to experience what it takes to be an iOS
+            Developer. A plethora of topics are taught and an overall insight
+            about development process is provided.
+          </p>
         </div>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-duration="800">
+        <div class="header">
+          <h2 class="heading">UniDev</h2>
+        </div>
+        <div class="card">
+          <img
+            src="commonAssets/imgs/UniDev.png"
+            alt="People in a Gallery"
+            class="img"
+          />
+          <p class="txt">
+            UNIDEV, a one-day workshop for both novices and experts, that gives
+            a chance to explore tricks and tweaks of using Unity Software along
+            with the powerful SDK Vuforia in order to build something as cool as
+            Pokémon Go!
+          </p>
+        </div>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-duration="800">
+        <div class="header">
+          <h2 class="heading">HackGrid</h2>
+        </div>
+        <div class="card" style="margin-bottom: 5%;">
+          <img
+            src="commonAssets/imgs/Hackgrid.png"
+            alt="People in a Gallery"
+            class="img"
+          />
+          <p class="txt">
+            Apple Developers Group conducts a 48 hour long hackathon that
+            encourages young developers to come up with scintillating technical
+            solutions to real world problems.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="row" style="margin: 10px 0px;">
-        <div class="column">
-            <h2 class="heading">UniDev</h2>
-            <div class="card">
-                <img src="/assets/IMG_5253_event.png" alt="" class="img1">
-                <p class="txt1">
-                    UNIDEV, a one-day workshop for both novices and experts, that gives a chance to explore tricks and tweaks of using Unity Software along with the powerful SDK Vuforia in order to build something as cool as Pokémon Go!                </p>
-            </div>
-        </div>
+
+  <!-- Footer Start -->
+<div class="footer">
+  <div class="inner-footer">
+      <div class="footer-items">
+          <div class="foot1">
+          <h1>About</h1>
+           <p>
+            Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. It is a registered student community at VIT, Vellore established under the Apple University program. A coterie of talented minds seeking not just success but perfection.
+
+           </p>
+      </div>
+  </div>
+      <div class="footer-items">
+          <div class="foot2">
+              <h1 class="headQL">Quick Links</h1>
+               <div class="border">
+                   <ul class="social qlinks">
+                       <a href="index.html"><li>Home</li></a>
+                       <a href="about.html"><li>About</li></a>
+                       <a href="partners.html"><li>Partners</li></a>
+                       <a href="events.html"><li>Events</li></a>
+                       <a href="projects.html"><li>Projects</li></a>
+                       <a href="team20-21.html"><li>Team</li></a>
+                       <a href="contact.html"><li>Contact Us</li></a>
+                   </ul>
+               </div>
+          </div>
+      </div>
+              <div class="footer-items">
+                  <div class="foot3">
+                      <h1>Social</h1>
+                      <div class="border">
+                       <div class="social-media">
+                           <ul class="social">
+                              <li><a href="https://www.facebook.com/vitios/" target="_blank"><img src="commonAssets/imgs/facebook-logo-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Facebook </span></a></li>
+                               <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><img src="commonAssets/imgs/linkedin-logo-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons">Linkedin</span></a></li>
+                               <li><a href="https://www.instagram.com/adgvit/" target="_blank"><img src="commonAssets/imgs/instagram-logo-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Instagram</span></a></li>
+                               <li><a href="https://twitter.com/adgvit" target="_blank"><img src="commonAssets/imgs/twitter-2-min.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Twitter</span></a></li>
+                           </ul>
+                       </div>
+                        </div>
+          </div>
+  </div>
+  </div>
+    <div class="copyright">
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        All rights reserved
+      </p>
     </div>
-    <div class="row">
-        <div class="column" style="margin: 10px 0px;">
-            <h2 class="heading">HackGrid</h2>
-            <div class="card">
-                <img src="/assets/IMG_5275_event.png" alt="" class="img1">
-                <p class="txt1">
-                    Apple Developers Group conducts a 48 hour long hackathon that encourages young developers to come up with scintillating technical solutions to real world problems.                </p>
-            </div>
-        </div>
+  </div>
+<!-- End Footer -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="commonAssets/js/navbar1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </div>
-    <div class="footer">
-        <div class="inner-footer">
-            <div class="footer-items">
-                <div class="foot1">
-                <h1 class="aa">About</h1>
-                 <p>
-                        Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. It is a registered student community at VIT, Vellore established under the Apple University program. A coterie of talented minds seeking not just success but perfection.
-    
-                 </p>
-            </div>
-        </div>
-            <div class="footer-items">
-                <div class="foot2">
-                    <h1 class="aa">Quick Links</h1>
-                     <div class="border">
-                         <ul class="social">
-                             <a href="index.html"><li>Home</li></a>
-                             <a href="about.html"><li>About</li></a>
-                             <a href="events.html"><li>Event</li></a>
-                             <a href="contact.html"><li>Contact</li></a>
-                         </ul>
-                     </div>
-                </div>
-            </div>
-                    <div class="footer-items">
-                        <div class="foot3">
-                            <h1 class="aa">Social</h1>
-                            <div class="border">
-                             <div class="social-media">
-                                 <ul class="social">
-                                    <li><a href="https://www.facebook.com/vitios/" target="_blank"><img src="/assets/facebook-logo.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Facebook </span></a></li>
-                                     <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><img src="/assets/linkedin-logo.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons">Linkedin</span></a></li>
-                                     <li><a href="https://www.instagram.com/adgvit/" target="_blank"><img src="/assets/instagram-logo.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Instagram</span></a></li>
-                                     <li><a href="https://twitter.com/adgvit" target="_blank"><img src="/assets/twitter-2.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Twitter</span></a></li>
-                                 </ul>
-                             </div>
-                              </div>
-                </div>
-        </div>
-        </div>
-        <div class="footer-bottom">
-            Copyright &copy; 2k19 Apple Developers Group
-        </div>
-        </div>    
-        <!-- </section> -->
-        
-        
-</body>
-<script src="app.js"></script>
+  </body>
+  <script src="commonAssets/js/preloader.js"></script>
 </html>
