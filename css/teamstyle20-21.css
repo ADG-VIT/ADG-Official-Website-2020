@@ -58,6 +58,7 @@ body {
   text-align: center;
   font-size: 18px;
   padding-top: 8px;
+  margin-bottom: 0;
   display: none;
   opacity: 1;
   transition: 0.5ms all;
@@ -460,6 +461,9 @@ ul li {
     cursor: pointer;
     opacity: 0.5;
   }
+  .menuBtn{
+    padding: 12px 10%;
+  }
   .year {
     border-radius: 10px;
     border: white;
@@ -685,9 +689,12 @@ ul li {
   .ipad {
     display: none;
   }
-  .body {
-    height: 200vh;
+  .menuBtn{
+    padding: 12px 5%;
   }
+  /* .body {
+    height: 200vh;
+  } */
   .row {
     height: 167vh;
     display: block;
