@@ -35,7 +35,10 @@ a{
 }
 
 
-
+.footer-items h1:hover{
+  color: blue;
+  cursor: pointer;
+}
 
 
 
@@ -126,6 +129,9 @@ a{
   .footer-items{
     width: 100%;
     padding: 0;
+  }
+  h1{
+    margin-right: 0;
   }
 .foot1,.foot3{
 
