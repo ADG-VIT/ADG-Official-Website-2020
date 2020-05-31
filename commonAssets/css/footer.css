@@ -210,5 +210,6 @@ ul li:hover{
   
 }
 .headQL{
- margin-right: 10%;
+  display: flex;
+  justify-content:center;
 }
