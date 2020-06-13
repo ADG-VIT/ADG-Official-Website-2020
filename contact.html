@@ -122,6 +122,7 @@
                 id="Name"
                 class="input"
                 placeholder="Please Enter Your Full Name"
+                pattern="[a-zA-Z\s]{1,30}"
                 required
               />
             </div>
@@ -132,6 +133,7 @@
                 type="email"
                 id="email"
                 class="input"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 placeholder="Please Enter Your Work email address"
                 required
               />
@@ -140,10 +142,11 @@
               <label for="phone" class="label">Phone Number:</label>
               <br />
               <input
-                type="number"
+                type="tel"
                 id="phone"
                 class="input"
                 placeholder="Please Enter Your Phone Number"
+                pattern="^\d{10}$"
                 required
               />
             </div>
@@ -159,7 +162,7 @@
               ></textarea>
             </div>
             <div>
-              <input type="submit" id="submit" class="input" value="Send" />
+              <input type="submit" id="submit" class="input ripple" value="Send" />
             </div>
           </form>
         </div>
@@ -173,6 +176,7 @@
           >
             <div class="info">
               <p class="heading">Contact Info</p>
+              <br>
               <!-- List -->
               <div>
                 <div>
