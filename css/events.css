@@ -62,5 +62,10 @@ body {
 
   .txt {
     font-size: 17px;
+    margin: 3%;
+  }
+  .img{
+    margin:5%;
+    width: 90%;
   }
 }

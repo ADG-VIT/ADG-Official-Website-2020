@@ -35,7 +35,10 @@ a{
 }
 
 
-
+.footer-items h1:hover{
+  color: blue;
+  cursor: pointer;
+}
 
 
 
@@ -127,6 +130,9 @@ a{
     width: 100%;
     padding: 0;
   }
+  h1{
+    margin-right: 0;
+  }
 .foot1,.foot3{
 
   align-items: center;
@@ -204,5 +210,6 @@ ul li:hover{
   
 }
 .headQL{
- margin-right: 10%;
+  display: flex;
+  justify-content:center;
 }
