@@ -35,11 +35,6 @@ a{
 }
 
 
-.footer-items h1:hover{
-  color: blue;
-  cursor: pointer;
-}
-
 
 
 /* .foot2{
@@ -148,6 +143,9 @@ a{
   padding:  0;
   margin-left: 0;
 }
+.foot3 ul li {
+  margin-left: 20%;
+}
  
 }
 
@@ -185,7 +183,7 @@ ul li {
 
 }
 ul li:hover{
-  color:mintcream;
+  color:blue;
 }
 
 .icons {
@@ -193,7 +191,7 @@ ul li:hover{
   
 }
 .icons:hover{
-  color:mintcream;
+  color:blue;
 }
 .qlinks{
   margin-left: 15%;

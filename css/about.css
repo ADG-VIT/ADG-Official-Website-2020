@@ -132,14 +132,14 @@ body {
   .mission {
     flex-direction: column;
     justify-content: center;
-    height: 110vh;
+    height: 85vh;
 
   }
 
   .vission {
     flex-direction: column;
     justify-content: center;
-    height: 110vh;
+    height: 85vh;
   }
 
   .title {
@@ -165,7 +165,7 @@ body {
 
 @media screen and (max-width: 599px) {
   .introduction {
-    height: 70vh;
+    height: 60vh;
   }
 
   .intro-text {
@@ -176,14 +176,14 @@ body {
   .mission {
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 75vh;
     margin-bottom: 10vh;
   }
 
   .vission {
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 75vh;
     margin-bottom: 10vh;
   }
 
